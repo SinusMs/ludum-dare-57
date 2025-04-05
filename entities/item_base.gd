@@ -6,7 +6,20 @@ extends Control
 @export_multiline var description: String = ""
 @export var rarity := Utils.RARITY.COMMON
 
+
+func _ready() -> void:
+	$Highlight.hide()
+
+
 func _on_gui_input(event:InputEvent) -> void:
 	if event.is_action_pressed("left_click"): 
 		Utils.currently_selected_item = self
 		SignalBus.item_changed.emit()
+
+
+func _on_mouse_entered() -> void:
+	$Highlight.show()
+
+
+func _on_mouse_exited() -> void:
+	$Highlight.hide()

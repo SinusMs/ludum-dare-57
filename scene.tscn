@@ -1,3 +1,7 @@
-[gd_scene format=3 uid="uid://kva23e0islsy"]
+[gd_scene load_steps=2 format=3 uid="uid://kva23e0islsy"]
+
+[ext_resource type="PackedScene" uid="uid://nyt07ovjnjwb" path="res://entities/items/bibel.tscn" id="1_ulcgi"]
 
 [node name="Node2D" type="Node2D"]
+
+[node name="Bibel" parent="." instance=ExtResource("1_ulcgi")]
