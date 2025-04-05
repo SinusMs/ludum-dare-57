@@ -12,6 +12,9 @@ atlas = ExtResource("2_cadii")
 region = Rect2(0, 0, 64, 64)
 
 [node name="ItemBase" instance=ExtResource("1_7gylb")]
+item_name = "Rock that looks like a Face"
+description = "Is it a rock or ist it a face?
+I think its a metaphor!"
 
 [node name="Sprite" parent="." index="0"]
 texture = SubResource("AtlasTexture_c26lm")
