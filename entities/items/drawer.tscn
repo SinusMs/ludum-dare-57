@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://c57mdfkxd8de"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_0a1gh"]
+[ext_resource type="Texture2D" uid="uid://cdgw8oihtc1gk" path="res://assets/items/drawer.png" id="2_saxie"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eqy2f"]
+atlas = ExtResource("2_saxie")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eme4t"]
+atlas = ExtResource("2_saxie")
+region = Rect2(0, 512, 128, 128)
+
+[node name="Drawer" instance=ExtResource("1_0a1gh")]
+item_name = "Drawer"
+description = "My Grandmas old Drawer.
+still looks as good as new..."
+
+[node name="Sprite" parent="." index="0"]
+texture = SubResource("AtlasTexture_eqy2f")
+
+[node name="Highlight" parent="." index="1"]
+texture = SubResource("AtlasTexture_eme4t")

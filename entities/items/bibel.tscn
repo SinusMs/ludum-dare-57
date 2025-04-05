@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://nyt07ovjnjwb"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_up4j5"]
+[ext_resource type="Texture2D" uid="uid://1i272imiwci1" path="res://assets/items/bibel.png" id="2_bmup6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bmup6"]
+atlas = ExtResource("2_bmup6")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6lnf0"]
+atlas = ExtResource("2_bmup6")
+region = Rect2(0, 32, 32, 32)
+
+[node name="Bibel" instance=ExtResource("1_up4j5")]
+item_name = "The Holy Bibel"
+description = "some fantasy novel"
+
+[node name="Sprite" parent="." index="0"]
+offset_right = 32.0
+offset_bottom = 32.0
+texture = SubResource("AtlasTexture_bmup6")
+
+[node name="Highlight" parent="." index="1"]
+texture = SubResource("AtlasTexture_6lnf0")

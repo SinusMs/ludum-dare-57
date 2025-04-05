@@ -1,4 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://bpemnof78xo1g"]
+[gd_scene load_steps=2 format=3 uid="uid://clit3qrorn30j"]
 
 [ext_resource type="Script" uid="uid://bdqd4ww51i7pc" path="res://entities/item_base.gd" id="1_yh0nf"]
 
@@ -11,4 +11,10 @@ script = ExtResource("1_yh0nf")
 texture_filter = 1
 layout_mode = 0
 
+[node name="Highlight" type="TextureRect" parent="."]
+texture_filter = 3
+layout_mode = 0
+
 [connection signal="gui_input" from="." to="." method="_on_gui_input"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

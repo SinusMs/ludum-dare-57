@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://c81x0dytqx5yd"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_2b4j3"]
+[ext_resource type="Texture2D" uid="uid://58g17dff6gh6" path="res://assets/items/nougatbits.png" id="2_mj035"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_007u0"]
+atlas = ExtResource("2_mj035")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lifcw"]
+atlas = ExtResource("2_mj035")
+region = Rect2(0, 32, 32, 32)
+
+[node name="NougatBits" instance=ExtResource("1_2b4j3")]
+item_name = "Nougat Bits"
+description = "an open bag of cereals
+yummy"
+
+[node name="Sprite" parent="." index="0"]
+texture = SubResource("AtlasTexture_007u0")
+
+[node name="Highlight" parent="." index="1"]
+texture = SubResource("AtlasTexture_lifcw")

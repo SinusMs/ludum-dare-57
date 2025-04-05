@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://lqgdo86mwn8r"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_tiabs"]
+[ext_resource type="Texture2D" uid="uid://bue6v8p2org4f" path="res://assets/items/coffin.png" id="2_gmntn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_50cmg"]
+atlas = ExtResource("2_gmntn")
+region = Rect2(0, 0, 128, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hdi3p"]
+atlas = ExtResource("2_gmntn")
+region = Rect2(0, 64, 128, 64)
+
+[node name="Coffin" instance=ExtResource("1_tiabs")]
+item_name = "Coffin"
+description = "What could be in there?
+could it be.."
+
+[node name="Sprite" parent="." index="0"]
+texture = SubResource("AtlasTexture_50cmg")
+
+[node name="Highlight" parent="." index="1"]
+texture = SubResource("AtlasTexture_hdi3p")
