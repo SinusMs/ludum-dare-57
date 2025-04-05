@@ -15,10 +15,16 @@ region = Rect2(0, 32, 32, 32)
 item_name = "The Holy Bibel"
 description = "some fantasy novel"
 
-[node name="Sprite" parent="." index="0"]
+[node name="Schatten" parent="." index="0"]
+layout_mode = 0
+offset_left = -10.0
+offset_right = 54.0
+scale = Vector2(1.26782, 1.04761)
+
+[node name="Sprite" parent="." index="1"]
 offset_right = 32.0
 offset_bottom = 32.0
 texture = SubResource("AtlasTexture_bmup6")
 
-[node name="Highlight" parent="." index="1"]
+[node name="Highlight" parent="." index="2"]
 texture = SubResource("AtlasTexture_6lnf0")

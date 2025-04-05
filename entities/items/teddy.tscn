@@ -16,8 +16,16 @@ item_name = "Teddy Bear"
 description = "My old Teddy Bear.
 a bit worn out"
 
-[node name="Sprite" parent="." index="0"]
+[node name="Schatten" parent="." index="0"]
+layout_mode = 0
+offset_left = -5.0
+offset_top = 30.0
+offset_right = 59.0
+offset_bottom = 94.0
+scale = Vector2(1.06297, 0.568804)
+
+[node name="Sprite" parent="." index="1"]
 texture = SubResource("AtlasTexture_8bpwd")
 
-[node name="Highlight" parent="." index="1"]
+[node name="Highlight" parent="." index="2"]
 texture = SubResource("AtlasTexture_5rjta")

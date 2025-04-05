@@ -16,8 +16,16 @@ item_name = "Coffin"
 description = "What could be in there?
 could it be.."
 
-[node name="Sprite" parent="." index="0"]
+[node name="Schatten" parent="." index="0"]
+layout_mode = 0
+offset_left = -42.0
+offset_top = 81.0
+offset_right = 22.0
+offset_bottom = 145.0
+scale = Vector2(5.48, 1)
+
+[node name="Sprite" parent="." index="1"]
 texture = SubResource("AtlasTexture_50cmg")
 
-[node name="Highlight" parent="." index="1"]
+[node name="Highlight" parent="." index="2"]
 texture = SubResource("AtlasTexture_hdi3p")

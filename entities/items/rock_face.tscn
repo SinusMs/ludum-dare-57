@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://cykldqjiwycx3"]
+[gd_scene load_steps=5 format=3 uid="uid://b5xauaved37u8"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_7gylb"]
 [ext_resource type="Texture2D" uid="uid://clbfy3kq82vjk" path="res://assets/items/rock_face.png" id="2_cadii"]
@@ -16,8 +16,16 @@ item_name = "Rock that looks like a Face"
 description = "Is it a rock or ist it a face?
 I think its a metaphor!"
 
-[node name="Sprite" parent="." index="0"]
+[node name="Schatten" parent="." index="0"]
+layout_mode = 0
+offset_left = -22.0
+offset_top = 93.0
+offset_right = 42.0
+offset_bottom = 157.0
+scale = Vector2(2.76, 1)
+
+[node name="Sprite" parent="." index="1"]
 texture = SubResource("AtlasTexture_c26lm")
 
-[node name="Highlight" parent="." index="1"]
+[node name="Highlight" parent="." index="2"]
 texture = SubResource("AtlasTexture_ugmkk")

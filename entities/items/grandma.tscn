@@ -17,8 +17,16 @@ description = "-\"Hello Sweety!\"
 -\"beispieltext\"
 "
 
-[node name="Sprite" parent="." index="0"]
+[node name="Schatten" parent="." index="0"]
+layout_mode = 0
+offset_left = -57.0
+offset_top = 72.0
+offset_right = 7.0
+offset_bottom = 136.0
+scale = Vector2(6.04, 1.24)
+
+[node name="Sprite" parent="." index="1"]
 texture = SubResource("AtlasTexture_04dfe")
 
-[node name="Highlight" parent="." index="1"]
+[node name="Highlight" parent="." index="2"]
 texture = SubResource("AtlasTexture_rjd3p")

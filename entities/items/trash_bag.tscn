@@ -15,8 +15,16 @@ region = Rect2(0, 64, 64, 64)
 item_name = "Trashbag"
 description = "uhh stinky"
 
-[node name="Sprite" parent="." index="0"]
+[node name="Schatten" parent="." index="0"]
+layout_mode = 0
+offset_left = -28.0
+offset_top = 73.0
+offset_right = 36.0
+offset_bottom = 137.0
+scale = Vector2(2.92158, 1.09138)
+
+[node name="Sprite" parent="." index="1"]
 texture = SubResource("AtlasTexture_n7hhi")
 
-[node name="Highlight" parent="." index="1"]
+[node name="Highlight" parent="." index="2"]
 texture = SubResource("AtlasTexture_ofdgg")

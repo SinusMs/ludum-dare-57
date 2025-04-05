@@ -15,8 +15,16 @@ region = Rect2(0, 32, 32, 32)
 item_name = "Medical Bills"
 description = "phew...  whoever had to pay these had to spend a fortune"
 
-[node name="Sprite" parent="." index="0"]
+[node name="Schatten" parent="." index="0"]
+layout_mode = 0
+offset_left = -4.0
+offset_top = 11.0
+offset_right = 60.0
+offset_bottom = 75.0
+scale = Vector2(1.17926, 0.90201)
+
+[node name="Sprite" parent="." index="1"]
 texture = SubResource("AtlasTexture_xp6w3")
 
-[node name="Highlight" parent="." index="1"]
+[node name="Highlight" parent="." index="2"]
 texture = SubResource("AtlasTexture_emhq3")
