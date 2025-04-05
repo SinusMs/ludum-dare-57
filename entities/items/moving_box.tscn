@@ -11,12 +11,11 @@ region = Rect2(0, 0, 64, 64)
 atlas = ExtResource("2_tu44o")
 region = Rect2(0, 64, 64, 64)
 
-[node name="ItemBase" instance=ExtResource("1_sx1vg")]
+[node name="MovingBox" instance=ExtResource("1_sx1vg")]
 item_name = "Moving Box"
 description = "an ordanary moving box"
 
 [node name="Schatten" parent="." index="0"]
-layout_mode = 0
 offset_left = -23.0
 offset_top = 61.0
 offset_right = 41.0

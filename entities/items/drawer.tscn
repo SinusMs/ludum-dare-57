@@ -15,9 +15,9 @@ region = Rect2(0, 512, 128, 128)
 item_name = "Drawer"
 description = "My Grandmas old Drawer.
 still looks as good as new..."
+mittelpunkt = Vector2(115, 135)
 
 [node name="Schatten" parent="." index="0"]
-layout_mode = 0
 offset_left = -10.0
 offset_top = 154.0
 offset_right = 54.0
