@@ -1,158 +1,121 @@
-[gd_scene load_steps=8 format=3 uid="uid://cberpn7tbycxf"]
+[gd_scene load_steps=3 format=3 uid="uid://bic166pu8oix7"]
 
 [ext_resource type="Script" uid="uid://bi134igussi2d" path="res://ui/menu.gd" id="1_eya86"]
-[ext_resource type="Texture2D" uid="uid://cc6h65fvb6q1w" path="res://assets/UI/background.png" id="2_sjgy2"]
-[ext_resource type="Texture2D" uid="uid://qfar5fhnqxmb" path="res://assets/UI/button-default.png" id="3_sjgy2"]
-[ext_resource type="Texture2D" uid="uid://sxm2l55w5iq4" path="res://assets/UI/button-pressed.png" id="4_cavdx"]
-[ext_resource type="Texture2D" uid="uid://bdfe1eidufkcb" path="res://assets/UI/button-highlighted.png" id="5_bjurq"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_eya86"]
-font_size = 30
 
 [sub_resource type="LabelSettings" id="LabelSettings_vjyr0"]
 line_spacing = -2.0
+font_size = 32
 
 [node name="Menu" type="Control"]
-z_index = -2
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 10.0
-offset_bottom = 8.0
+offset_right = -720.0
+offset_bottom = 312.0
 grow_horizontal = 2
 grow_vertical = 2
+
+scale = Vector2(1.00293, 1.00146)
 mouse_filter = 2
 script = ExtResource("1_eya86")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-layer = -1
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 432.0
+offset_bottom = 960.0
 
-[node name="Background" type="TextureRect" parent="CanvasLayer"]
-z_index = -2
-texture_filter = 1
-offset_right = 416.0
-offset_bottom = 320.0
-scale = Vector2(2, 2)
-mouse_filter = 2
-texture = ExtResource("2_sjgy2")
-stretch_mode = 4
-
-[node name="Panel" type="Panel" parent="CanvasLayer"]
-self_modulate = Color(1, 1, 1, 0)
-z_index = -2
-offset_left = 555.0
-offset_right = 862.0
-offset_bottom = 643.0
-scale = Vector2(0.93, 1.01)
-mouse_filter = 2
-
-[node name="NameLabel" type="Label" parent="CanvasLayer/Panel"]
+[node name="NameLabel" type="Label" parent="Panel"]
 texture_filter = 1
 custom_minimum_size = Vector2(4, 4)
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -121.5
-offset_top = 23.0
-offset_right = 217.5
-offset_bottom = 111.0
+offset_left = -166.0
+offset_top = 28.0
+offset_right = 173.0
+offset_bottom = 116.0
 grow_horizontal = 2
-scale = Vector2(0.62337, 0.62337)
-label_settings = SubResource("LabelSettings_eya86")
+label_settings = SubResource("LabelSettings_vjyr0")
 autowrap_mode = 2
 
-[node name="ItemTexture" type="TextureRect" parent="CanvasLayer/Panel"]
+[node name="ItemTexture" type="TextureRect" parent="Panel"]
 texture_filter = 1
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -108.0
-offset_top = 70.0
+offset_top = 120.0
 offset_right = 108.0
-offset_bottom = 286.0
+offset_bottom = 336.0
 grow_horizontal = 2
 expand_mode = 5
 stretch_mode = 4
 
+
 [node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer/Panel"]
-clip_contents = false
+custom_minimum_size = Vector2(0, 64)
 layout_mode = 0
 offset_left = 31.0
 offset_top = 297.0
 offset_right = 272.0
-offset_bottom = 392.0
+offset_bottom = 385.0
 
 [node name="DescriptionLabel" type="Label" parent="CanvasLayer/Panel/ScrollContainer"]
 texture_filter = 1
-custom_minimum_size = Vector2(4, 4)
+custom_minimum_size = Vector2(0, 64)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 label_settings = SubResource("LabelSettings_vjyr0")
-horizontal_alignment = 1
-vertical_alignment = 1
 autowrap_mode = 2
-visible_characters_behavior = 1
 
-[node name="StashButton" type="TextureButton" parent="CanvasLayer/Panel"]
-texture_filter = 1
+[node name="StashButton" type="Button" parent="Panel"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -134.5
-offset_top = 93.3515
-offset_right = -10.5
-offset_bottom = 118.352
+offset_left = -103.0
+offset_top = 80.0
+offset_right = 103.0
+offset_bottom = 132.7
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(2, 2)
-texture_normal = ExtResource("3_sjgy2")
-texture_pressed = ExtResource("4_cavdx")
-texture_hover = ExtResource("5_bjurq")
-stretch_mode = 4
+text = "Throw Away"
 
-[node name="AchievementButton" type="TextureButton" parent="CanvasLayer/Panel"]
-texture_filter = 1
+[node name="AchievementButton" type="Button" parent="Panel"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -134.5
-offset_top = 163.352
-offset_right = -10.5
-offset_bottom = 188.352
+offset_left = -103.0
+offset_top = 180.0
+offset_right = 103.0
+offset_bottom = 232.7
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(2, 2)
-texture_normal = ExtResource("3_sjgy2")
-texture_pressed = ExtResource("4_cavdx")
-texture_hover = ExtResource("5_bjurq")
+text = "Achievements
+"
 
-[node name="ExitButton" type="TextureButton" parent="CanvasLayer/Panel"]
-texture_filter = 1
+[node name="ExitButton" type="Button" parent="Panel"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -134.5
-offset_top = 233.352
-offset_right = -10.5
-offset_bottom = 258.352
+offset_left = -103.0
+offset_top = 280.0
+offset_right = 103.0
+offset_bottom = 332.7
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(2, 2)
-texture_normal = ExtResource("3_sjgy2")
-texture_pressed = ExtResource("4_cavdx")
-texture_hover = ExtResource("5_bjurq")
+text = "Exit?"
 
-[connection signal="button_down" from="CanvasLayer/Panel/StashButton" to="." method="_on_stash_button_button_down"]
+[connection signal="button_down" from="Panel/StashButton" to="." method="_on_stash_button_button_down"]
