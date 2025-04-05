@@ -17,6 +17,7 @@ func change_item() -> void:
 func _on_stash_button_button_down() -> void:
 	if Utils.currently_selected_item == null:
 		return
+	Utils.currently_selected_item._spawn_children()
 	Utils.currently_selected_item.queue_free()
 	Utils.currently_selected_item = null
 	SignalBus.item_changed.emit()

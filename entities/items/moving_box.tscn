@@ -15,8 +15,16 @@ region = Rect2(0, 64, 64, 64)
 item_name = "Moving Box"
 description = "an ordanary moving box"
 
-[node name="Sprite" parent="." index="0"]
+[node name="Schatten" parent="." index="0"]
+layout_mode = 0
+offset_left = -23.0
+offset_top = 61.0
+offset_right = 41.0
+offset_bottom = 125.0
+scale = Vector2(2.68541, 0.981197)
+
+[node name="Sprite" parent="." index="1"]
 texture = SubResource("AtlasTexture_rxb8h")
 
-[node name="Highlight" parent="." index="1"]
+[node name="Highlight" parent="." index="2"]
 texture = SubResource("AtlasTexture_uxigy")

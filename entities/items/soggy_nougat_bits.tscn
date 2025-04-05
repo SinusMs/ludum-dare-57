@@ -15,8 +15,16 @@ region = Rect2(0, 32, 32, 32)
 item_name = "Soggy Nougat Bits"
 description = "someone was hungry"
 
-[node name="Sprite" parent="." index="0"]
+[node name="Schatten" parent="." index="0"]
+layout_mode = 0
+offset_left = -4.0
+offset_top = 31.0
+offset_right = 60.0
+offset_bottom = 95.0
+scale = Vector2(1.10636, 0.435461)
+
+[node name="Sprite" parent="." index="1"]
 texture = SubResource("AtlasTexture_5xayh")
 
-[node name="Highlight" parent="." index="1"]
+[node name="Highlight" parent="." index="2"]
 texture = SubResource("AtlasTexture_hyhyn")

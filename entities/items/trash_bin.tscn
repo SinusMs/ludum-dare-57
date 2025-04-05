@@ -15,8 +15,16 @@ region = Rect2(64, 64, 64, 64)
 item_name = "Trash Bin"
 description = "If I leave it here a bit longer, somethig big will hatch"
 
-[node name="Sprite" parent="." index="0"]
+[node name="Schatten" parent="." index="0"]
+layout_mode = 0
+offset_left = -3.0
+offset_top = 66.0
+offset_right = 61.0
+offset_bottom = 130.0
+scale = Vector2(2.10433, 1.03453)
+
+[node name="Sprite" parent="." index="1"]
 texture = SubResource("AtlasTexture_yunh8")
 
-[node name="Highlight" parent="." index="1"]
+[node name="Highlight" parent="." index="2"]
 texture = SubResource("AtlasTexture_mdtug")
