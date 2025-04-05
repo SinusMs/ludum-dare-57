@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://bme76a54qqj0b"]
+
+[ext_resource type="PackedScene" uid="uid://kva23e0islsy" path="res://scene.tscn" id="1_0gpo8"]
+[ext_resource type="Shader" uid="uid://dbwqpg0vlx01" path="res://shader/scene_hans_test.gdshader" id="1_spcxv"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0gpo8"]
+shader = ExtResource("1_spcxv")
+shader_parameter/brightness = 0.4
+shader_parameter/contrast = 0.6
+shader_parameter/saturation = 0.3
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_86uq7"]
+shader = ExtResource("1_spcxv")
+shader_parameter/brightness = 0.5
+shader_parameter/contrast = 1.0
+shader_parameter/saturation = 0.5
+
+[node name="Node2D" type="Node2D"]
+
+[node name="BackBufferCopy2" type="BackBufferCopy" parent="."]
+rect = Rect2(0, 0, 544, 640)
+
+[node name="Node2D2" parent="BackBufferCopy2" instance=ExtResource("1_0gpo8")]
+z_index = -2
+material = SubResource("ShaderMaterial_0gpo8")
+
+[node name="ColorRect" type="ColorRect" parent="BackBufferCopy2"]
+texture_filter = 2
+material = SubResource("ShaderMaterial_86uq7")
+offset_right = 544.0
+offset_bottom = 640.0
+mouse_filter = 2
