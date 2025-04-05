@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://bpemnof78xo1g"]
+
+[ext_resource type="Script" uid="uid://bdqd4ww51i7pc" path="res://entities/item_base.gd" id="1_yh0nf"]
+
+[node name="ItemBase" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+scale = Vector2(0.987105, 0.985692)
+script = ExtResource("1_yh0nf")
+
+[node name="Sprite" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 0
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]
