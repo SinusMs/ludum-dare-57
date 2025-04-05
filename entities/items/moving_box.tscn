@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://odfi2oci1jl6"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_sx1vg"]
+[ext_resource type="Texture2D" uid="uid://dga8rme8217qf" path="res://assets/items/box.png" id="2_tu44o"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rxb8h"]
+atlas = ExtResource("2_tu44o")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uxigy"]
+atlas = ExtResource("2_tu44o")
+region = Rect2(0, 64, 64, 64)
+
+[node name="ItemBase" instance=ExtResource("1_sx1vg")]
+item_name = "Moving Box"
+description = "an ordanary moving box"
+
+[node name="Schatten" parent="." index="0"]
+layout_mode = 0
+offset_left = -23.0
+offset_top = 61.0
+offset_right = 41.0
+offset_bottom = 125.0
+scale = Vector2(2.68541, 0.981197)
+
+[node name="Sprite" parent="." index="1"]
+texture = SubResource("AtlasTexture_rxb8h")
+
+[node name="Highlight" parent="." index="2"]
+texture = SubResource("AtlasTexture_uxigy")

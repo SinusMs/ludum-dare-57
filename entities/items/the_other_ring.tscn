@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://bil8o4rsafejc"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_p0mp5"]
+[ext_resource type="Texture2D" uid="uid://dx4jyympc3che" path="res://assets/items/the_other_ring.png" id="2_pbikd"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e0g2r"]
+atlas = ExtResource("2_pbikd")
+region = Rect2(0, 0, 0, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ry2t"]
+atlas = ExtResource("2_pbikd")
+region = Rect2(0, 32, 0, 32)
+
+[node name="ItemBase" instance=ExtResource("1_p0mp5")]
+item_name = "One Ring"
+description = "Is that my Mom's wedding ring? Why is it here?
+There's an inscription on it:
+\"One Ring to be alone no more, One Ring to tie them;
+One Ring to bring them together and in marriage bind them.\""
+rarity = 4
+
+[node name="Sprite" parent="." index="0"]
+texture = SubResource("AtlasTexture_e0g2r")
+
+[node name="Highlight" parent="." index="1"]
+texture = SubResource("AtlasTexture_7ry2t")

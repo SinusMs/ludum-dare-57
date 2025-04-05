@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://bnguv38n53qo5"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_npwgq"]
+[ext_resource type="Texture2D" uid="uid://cs7diu4gwijwm" path="res://assets/items/medicalbills.png" id="2_7k3qw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xp6w3"]
+atlas = ExtResource("2_7k3qw")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_emhq3"]
+atlas = ExtResource("2_7k3qw")
+region = Rect2(0, 32, 32, 32)
+
+[node name="MedicalBills" instance=ExtResource("1_npwgq")]
+item_name = "Medical Bills"
+description = "phew...  whoever had to pay these had to spend a fortune"
+
+[node name="Schatten" parent="." index="0"]
+layout_mode = 0
+offset_left = -4.0
+offset_top = 11.0
+offset_right = 60.0
+offset_bottom = 75.0
+scale = Vector2(1.17926, 0.90201)
+
+[node name="Sprite" parent="." index="1"]
+texture = SubResource("AtlasTexture_xp6w3")
+
+[node name="Highlight" parent="." index="2"]
+texture = SubResource("AtlasTexture_emhq3")
