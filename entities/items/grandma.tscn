@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://pwtbfuxtuc8m"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_8rxg1"]
+[ext_resource type="Texture2D" uid="uid://bue6v8p2org4f" path="res://assets/items/coffin.png" id="2_7jooy"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_04dfe"]
+atlas = ExtResource("2_7jooy")
+region = Rect2(128, 0, 128, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rjd3p"]
+atlas = ExtResource("2_7jooy")
+region = Rect2(128, 64, 128, 64)
+
+[node name="Grandma" instance=ExtResource("1_8rxg1")]
+item_name = "Grandma"
+description = "-\"Hello Sweety!\"
+-\"beispieltext\"
+"
+
+[node name="Sprite" parent="." index="0"]
+texture = SubResource("AtlasTexture_04dfe")
+
+[node name="Highlight" parent="." index="1"]
+texture = SubResource("AtlasTexture_rjd3p")
