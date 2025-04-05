@@ -15,6 +15,9 @@ offset_right = -720.0
 offset_bottom = 312.0
 grow_horizontal = 2
 grow_vertical = 2
+
+scale = Vector2(1.00293, 1.00146)
+mouse_filter = 2
 script = ExtResource("1_eya86")
 
 [node name="Panel" type="Panel" parent="."]
@@ -51,6 +54,7 @@ grow_horizontal = 2
 expand_mode = 5
 stretch_mode = 4
 
+<<<<<<< Updated upstream
 [node name="DescriptionLabel" type="Label" parent="Panel"]
 texture_filter = 1
 custom_minimum_size = Vector2(4, 4)
@@ -64,6 +68,22 @@ offset_right = 568.0
 offset_bottom = 651.0
 grow_horizontal = 2
 scale = Vector2(0.524665, 0.431174)
+=======
+[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer/Panel"]
+custom_minimum_size = Vector2(0, 64)
+layout_mode = 0
+offset_left = 31.0
+offset_top = 297.0
+offset_right = 272.0
+offset_bottom = 385.0
+
+[node name="DescriptionLabel" type="Label" parent="CanvasLayer/Panel/ScrollContainer"]
+texture_filter = 1
+custom_minimum_size = Vector2(0, 64)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+>>>>>>> Stashed changes
 label_settings = SubResource("LabelSettings_vjyr0")
 autowrap_mode = 2
 

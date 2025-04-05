@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://c2pxqjd3levbk"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_adtaq"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_adtaq"]
+
+[node name="ItemBase2" instance=ExtResource("1_adtaq")]
+item_name = "Sword"
+description = "Big fucking Sword. a very fucking long description in which i dont know how loinig i have to write to test the scrolling feature seems like i need a little bit more what if i write even more, i dont think it works"
+
+[node name="Sprite" parent="." index="0"]
+scale = Vector2(10.8181, 10.8181)
+texture = SubResource("PlaceholderTexture2D_adtaq")
+
+[node name="CollisionPolygon2D" parent="." index="2"]
+polygon = PackedVector2Array(0, 0, 0, 11, 11, 11, 11, 0)

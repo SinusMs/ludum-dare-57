@@ -12,4 +12,10 @@ script = ExtResource("1_yh0nf")
 texture_filter = 1
 layout_mode = 0
 
+[node name="Highlight" type="TextureRect" parent="."]
+texture_filter = 3
+layout_mode = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+
 [connection signal="gui_input" from="." to="." method="_on_gui_input"]
