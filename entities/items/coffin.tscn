@@ -19,7 +19,6 @@ could it be.."
 children = Dictionary[PackedScene, Vector2]({
 ExtResource("2_50cmg"): Vector2(0, 0)
 })
-mittelpunkt = Vector2(147, 72)
 
 [node name="Schatten" parent="." index="0"]
 offset_left = -42.0
@@ -33,3 +32,6 @@ texture = SubResource("AtlasTexture_50cmg")
 
 [node name="Highlight" parent="." index="2"]
 texture = SubResource("AtlasTexture_hdi3p")
+
+[node name="Mittelpunkt" parent="." index="3"]
+position = Vector2(144, 82)

@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Ludum Dare 57"
-run/main_scene="uid://blhf8g7kmpo1g"
+run/main_scene="uid://cx8eljiil0ugl"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -20,6 +20,12 @@ config/icon="res://icon.svg"
 Utils="*res://globals/utils.gd"
 SceneManager="*res://globals/scene_manager.gd"
 SignalBus="*res://globals/signalbus.gd"
+
+[display]
+
+window/size/viewport_width=832
+window/size/viewport_height=640
+window/stretch/mode="viewport"
 
 [dotnet]
 

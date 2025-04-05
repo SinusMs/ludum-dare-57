@@ -17,14 +17,16 @@ description = "an open bag of cereals
 yummy"
 
 [node name="Schatten" parent="." index="0"]
-layout_mode = 0
 offset_left = 1.0
-offset_top = 19.0
+offset_top = 15.0
 offset_right = 65.0
-offset_bottom = 83.0
+offset_bottom = 79.0
 
 [node name="Sprite" parent="." index="1"]
 texture = SubResource("AtlasTexture_007u0")
 
 [node name="Highlight" parent="." index="2"]
 texture = SubResource("AtlasTexture_lifcw")
+
+[node name="Mittelpunkt" parent="." index="3"]
+position = Vector2(30, 34)

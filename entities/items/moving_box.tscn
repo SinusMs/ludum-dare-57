@@ -27,3 +27,6 @@ texture = SubResource("AtlasTexture_rxb8h")
 
 [node name="Highlight" parent="." index="2"]
 texture = SubResource("AtlasTexture_uxigy")
+
+[node name="Mittelpunkt" parent="." index="3"]
+position = Vector2(57, 67)

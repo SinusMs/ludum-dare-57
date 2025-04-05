@@ -16,7 +16,6 @@ item_name = "The Holy Bibel"
 description = "some fantasy novel"
 
 [node name="Schatten" parent="." index="0"]
-layout_mode = 0
 offset_left = -10.0
 offset_right = 54.0
 scale = Vector2(1.26782, 1.04761)
@@ -28,3 +27,6 @@ texture = SubResource("AtlasTexture_bmup6")
 
 [node name="Highlight" parent="." index="2"]
 texture = SubResource("AtlasTexture_6lnf0")
+
+[node name="Mittelpunkt" parent="." index="3"]
+position = Vector2(27, 25)
