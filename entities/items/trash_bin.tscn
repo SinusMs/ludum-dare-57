@@ -16,7 +16,6 @@ item_name = "Trash Bin"
 description = "If I leave it here a bit longer, somethig big will hatch"
 
 [node name="Schatten" parent="." index="0"]
-layout_mode = 0
 offset_left = -3.0
 offset_top = 66.0
 offset_right = 61.0
@@ -28,3 +27,6 @@ texture = SubResource("AtlasTexture_yunh8")
 
 [node name="Highlight" parent="." index="2"]
 texture = SubResource("AtlasTexture_mdtug")
+
+[node name="Mittelpunkt" parent="." index="3"]
+position = Vector2(61, 59)
