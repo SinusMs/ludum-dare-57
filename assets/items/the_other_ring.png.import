@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ditq447bua22f"
-path="res://.godot/imported/nougatbits.png-43079747880cc49918147fae12ca6d59.ctex"
+uid="uid://dx4jyympc3che"
+path="res://.godot/imported/the_other_ring.png-88dd9ff3af8b6bb2ca70dc9bbd011a47.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/items/nougatbits.png"
-dest_files=["res://.godot/imported/nougatbits.png-43079747880cc49918147fae12ca6d59.ctex"]
+source_file="res://assets/items/the_other_ring.png"
+dest_files=["res://.godot/imported/the_other_ring.png-88dd9ff3af8b6bb2ca70dc9bbd011a47.ctex"]
 
 [params]
 

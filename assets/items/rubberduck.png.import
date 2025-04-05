@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bwuts41e43nti"
-path="res://.godot/imported/embryo.png-6ac0e3f41df84fc84de1a7b9006ebedb.ctex"
+uid="uid://cv1dxikp4ottf"
+path="res://.godot/imported/rubberduck.png-078a2e02fc5625db513e7a6a94c1b525.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/items/embryo.png"
-dest_files=["res://.godot/imported/embryo.png-6ac0e3f41df84fc84de1a7b9006ebedb.ctex"]
+source_file="res://assets/items/rubberduck.png"
+dest_files=["res://.godot/imported/rubberduck.png-078a2e02fc5625db513e7a6a94c1b525.ctex"]
 
 [params]
 
