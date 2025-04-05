@@ -54,21 +54,7 @@ grow_horizontal = 2
 expand_mode = 5
 stretch_mode = 4
 
-<<<<<<< Updated upstream
-[node name="DescriptionLabel" type="Label" parent="Panel"]
-texture_filter = 1
-custom_minimum_size = Vector2(4, 4)
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -196.0
-offset_top = 391.0
-offset_right = 568.0
-offset_bottom = 651.0
-grow_horizontal = 2
-scale = Vector2(0.524665, 0.431174)
-=======
+
 [node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer/Panel"]
 custom_minimum_size = Vector2(0, 64)
 layout_mode = 0
@@ -83,7 +69,6 @@ custom_minimum_size = Vector2(0, 64)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
->>>>>>> Stashed changes
 label_settings = SubResource("LabelSettings_vjyr0")
 autowrap_mode = 2
 

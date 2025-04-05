@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://dai3ungis804f"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_lmt8k"]
+[ext_resource type="Texture2D" uid="uid://w3w8whcptj50" path="res://assets/items/teddy.png" id="2_lk04g"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8bpwd"]
+atlas = ExtResource("2_lk04g")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5rjta"]
+atlas = ExtResource("2_lk04g")
+region = Rect2(0, 32, 32, 32)
+
+[node name="Teddy" instance=ExtResource("1_lmt8k")]
+item_name = "Teddy Bear"
+description = "My old Teddy Bear.
+a bit worn out"
+
+[node name="Schatten" parent="." index="0"]
+layout_mode = 0
+offset_left = -5.0
+offset_top = 30.0
+offset_right = 59.0
+offset_bottom = 94.0
+scale = Vector2(1.06297, 0.568804)
+
+[node name="Sprite" parent="." index="1"]
+texture = SubResource("AtlasTexture_8bpwd")
+
+[node name="Highlight" parent="." index="2"]
+texture = SubResource("AtlasTexture_5rjta")

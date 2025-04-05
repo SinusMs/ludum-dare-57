@@ -7,7 +7,9 @@ extends Control
 @export var rarity := Utils.RARITY.COMMON
 var isHighlighted : bool = false
 
-
+@export var children : Dictionary[PackedScene, Vector2]
+var rauchwolke : CPUParticles2D = preload("res://entities/rauchwolke_cpu_particles.tscn").instantiate()
+@export var mittelpunkt : Vector2 = Vector2(0, 0)
 
 func _ready() -> void:
 	$Highlight.hide()
@@ -33,3 +35,17 @@ func _on_gui_input(event:InputEvent) -> void:
 			Utils.currently_selected_item = self
 			SignalBus.item_changed.emit()
 			isHighlighted = true
+      
+func _spawn_children() -> void:
+	if children.size() == 0:
+		return
+	rauchwolke.position = position + mittelpunkt
+	rauchwolke.emitting = true
+	for child : PackedScene in children:
+		var child_scene : ItemBase = child.instantiate()
+		child_scene.position = position + children[child]
+		get_tree().root.add_child(child_scene)
+	get_tree().root.add_child(rauchwolke)
+
+
+

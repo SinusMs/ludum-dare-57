@@ -11,6 +11,7 @@ region = Rect2(6, 6, 16, 22)
 atlas = ExtResource("2_05x4e")
 region = Rect2(6, 38, 16, 22)
 
+
 [node name="ItemBase2" instance=ExtResource("1_cn4nr")]
 item_name = "Sock"
 description = "Why is it stiff?"
@@ -23,3 +24,4 @@ texture = SubResource("AtlasTexture_be4pa")
 
 [node name="CollisionPolygon2D" parent="." index="2"]
 polygon = PackedVector2Array(8, 0, 8, 6, 1, 12, 0, 17, 0, 20, 3, 22, 6, 20, 9, 15, 11, 13, 15, 13, 15, 0)
+

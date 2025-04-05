@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://bxxmcpjys3xw7"]
+
+[sub_resource type="Gradient" id="Gradient_gk2da"]
+offsets = PackedFloat32Array(0, 0.584416, 1)
+colors = PackedColorArray(0.501961, 0.784314, 0.784314, 0.588235, 0.501961, 0.784314, 0.784314, 0.196078, 0.501961, 0.784314, 0.784314, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_mto2k"]
+gradient = SubResource("Gradient_gk2da")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.8, 0.2)
+metadata/_snap_enabled = true
+
+[sub_resource type="Curve" id="Curve_0cjtn"]
+_limits = [-1.0, 1.0, 0.0, 1.0]
+_data = [Vector2(0, -1), 0.0, 0.0, 0, 0, Vector2(1, -0.630435), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[node name="RauchwolkeCpuParticles" type="CPUParticles2D"]
+emitting = false
+amount = 10
+texture = SubResource("GradientTexture2D_mto2k")
+lifetime = 0.2
+one_shot = true
+emission_shape = 1
+emission_sphere_radius = 50.0
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_max = 500.0
+hue_variation_min = -0.1
+hue_variation_curve = SubResource("Curve_0cjtn")

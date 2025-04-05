@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://chxbkar7alcgp"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_fst1a"]
+[ext_resource type="Texture2D" uid="uid://hvvwbovyiw46" path="res://assets/items/h_milch.png" id="2_6cw6f"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3umbl"]
+atlas = ExtResource("2_6cw6f")
+region = Rect2(0, 0, 0, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7rqp0"]
+atlas = ExtResource("2_6cw6f")
+region = Rect2(0, 32, 0, 32)
+
+[node name="ItemBase" instance=ExtResource("1_fst1a")]
+item_name = "Milk"
+description = "Dad actually came back!"
+
+[node name="Sprite" parent="." index="0"]
+texture = SubResource("AtlasTexture_3umbl")
+
+[node name="Highlight" parent="." index="1"]
+texture = SubResource("AtlasTexture_7rqp0")
