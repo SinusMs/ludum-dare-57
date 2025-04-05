@@ -1,3 +1,30 @@
-[gd_scene format=3 uid="uid://kva23e0islsy"]
+[gd_scene load_steps=4 format=3 uid="uid://kva23e0islsy"]
+
+[ext_resource type="PackedScene" uid="uid://c2pxqjd3levbk" path="res://entities/sword.tscn" id="1_ulcgi"]
+[ext_resource type="PackedScene" uid="uid://cikir5d1ouov" path="res://entities/sock.tscn" id="2_nxogm"]
+[ext_resource type="PackedScene" uid="uid://bic166pu8oix7" path="res://ui/Menu.tscn" id="3_3253y"]
 
 [node name="Node2D" type="Node2D"]
+
+[node name="ItemBase" parent="." instance=ExtResource("2_nxogm")]
+z_index = 1
+offset_left = 150.0
+offset_top = 110.0
+offset_right = 150.0
+offset_bottom = 110.0
+
+[node name="ItemBase2" parent="." instance=ExtResource("1_ulcgi")]
+offset_left = 137.0
+offset_top = 327.0
+offset_right = 137.0
+offset_bottom = 327.0
+scale = Vector2(15.4822, 15.46)
+
+[node name="Menu" parent="." instance=ExtResource("3_3253y")]
+z_index = -1
+z_as_relative = false
+offset_left = -150.0
+offset_top = 27.0
+offset_right = -150.0
+offset_bottom = 339.0
+metadata/_edit_lock_ = true
