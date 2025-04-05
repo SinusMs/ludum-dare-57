@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://dkfvx5sngy801"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_khyqt"]
+[ext_resource type="Texture2D" uid="uid://c6o8lfkax1qxq" path="res://assets/items/soggynougatbits.png" id="2_0myk5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5xayh"]
+atlas = ExtResource("2_0myk5")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hyhyn"]
+atlas = ExtResource("2_0myk5")
+region = Rect2(0, 32, 32, 32)
+
+[node name="SoggyNougatBits" instance=ExtResource("1_khyqt")]
+item_name = "Soggy Nougat Bits"
+description = "someone was hungry"
+
+[node name="Sprite" parent="." index="0"]
+texture = SubResource("AtlasTexture_5xayh")
+
+[node name="Highlight" parent="." index="1"]
+texture = SubResource("AtlasTexture_hyhyn")

@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://cw6r7ucbakac0"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_3t00g"]
+[ext_resource type="Texture2D" uid="uid://ch857s4754sju" path="res://assets/items/trashbag.png" id="2_mog1g"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yunh8"]
+atlas = ExtResource("2_mog1g")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mdtug"]
+atlas = ExtResource("2_mog1g")
+region = Rect2(64, 64, 64, 64)
+
+[node name="TrashBin" instance=ExtResource("1_3t00g")]
+item_name = "Trash Bin"
+description = "If I leave it here a bit longer, somethig big will hatch"
+
+[node name="Sprite" parent="." index="0"]
+texture = SubResource("AtlasTexture_yunh8")
+
+[node name="Highlight" parent="." index="1"]
+texture = SubResource("AtlasTexture_mdtug")

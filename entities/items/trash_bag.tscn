@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://c6kak3d8jk82o"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_c3l0l"]
+[ext_resource type="Texture2D" uid="uid://ch857s4754sju" path="res://assets/items/trashbag.png" id="2_kgjq5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n7hhi"]
+atlas = ExtResource("2_kgjq5")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ofdgg"]
+atlas = ExtResource("2_kgjq5")
+region = Rect2(0, 64, 64, 64)
+
+[node name="TrashBag" instance=ExtResource("1_c3l0l")]
+item_name = "Trashbag"
+description = "uhh stinky"
+
+[node name="Sprite" parent="." index="0"]
+texture = SubResource("AtlasTexture_n7hhi")
+
+[node name="Highlight" parent="." index="1"]
+texture = SubResource("AtlasTexture_ofdgg")
