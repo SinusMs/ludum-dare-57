@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsqwxjrg3yu5s"
-path="res://.godot/imported/soggynougatbits.png-c9287f2c1d51e1bdab39c2dbbbfa0321.ctex"
+uid="uid://ch857s4754sju"
+path="res://.godot/imported/trashbag.png-e8ff34c65b199de57a71a94beb7a0713.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/items/soggynougatbits.png"
-dest_files=["res://.godot/imported/soggynougatbits.png-c9287f2c1d51e1bdab39c2dbbbfa0321.ctex"]
+source_file="res://assets/items/trashbag.png"
+dest_files=["res://.godot/imported/trashbag.png-e8ff34c65b199de57a71a94beb7a0713.ctex"]
 
 [params]
 

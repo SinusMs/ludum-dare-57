@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ditq447bua22f"
-path="res://.godot/imported/nougatbits.png-43079747880cc49918147fae12ca6d59.ctex"
+uid="uid://cdgw8oihtc1gk"
+path="res://.godot/imported/drawer.png-d247dfcf5e784860017944f879d23718.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/items/nougatbits.png"
-dest_files=["res://.godot/imported/nougatbits.png-43079747880cc49918147fae12ca6d59.ctex"]
+source_file="res://assets/items/drawer.png"
+dest_files=["res://.godot/imported/drawer.png-d247dfcf5e784860017944f879d23718.ctex"]
 
 [params]
 
