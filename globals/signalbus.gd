@@ -1,4 +1,4 @@
 extends Node
 
-signal item_changed()
+signal item_changed(labelText: String)
 signal item_picked_up()

@@ -160,6 +160,18 @@ texture_pressed = ExtResource("4_cavdx")
 texture_hover = ExtResource("5_bjurq")
 stretch_mode = 4
 
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Panel/StashButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_fonts/normal_font = ExtResource("4_bjurq")
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="AchievementButton" type="TextureButton" parent="CanvasLayer/Panel"]
 texture_filter = 1
 layout_mode = 1
@@ -180,6 +192,19 @@ texture_normal = ExtResource("3_sjgy2")
 texture_pressed = ExtResource("4_cavdx")
 texture_hover = ExtResource("5_bjurq")
 
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Panel/AchievementButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_fonts/normal_font = ExtResource("4_bjurq")
+text = "Discovered"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="ExitButton" type="TextureButton" parent="CanvasLayer/Panel"]
 texture_filter = 1
 layout_mode = 1
@@ -199,6 +224,19 @@ pivot_offset = Vector2(62, 12)
 texture_normal = ExtResource("3_sjgy2")
 texture_pressed = ExtResource("4_cavdx")
 texture_hover = ExtResource("5_bjurq")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Panel/ExitButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_fonts/normal_font = ExtResource("4_bjurq")
+text = "Exit"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="gui_input" from="CanvasLayer/Background" to="." method="_on_background_gui_input"]
 [connection signal="button_down" from="CanvasLayer/Panel/StashButton" to="." method="_on_stash_button_button_down"]
