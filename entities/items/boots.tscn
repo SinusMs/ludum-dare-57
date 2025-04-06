@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://boqowy1i6cub8"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_q840x"]
+[ext_resource type="Texture2D" uid="uid://dfg3dqt3dabvb" path="res://assets/items/boots.png" id="2_4tx6c"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cgw6p"]
+atlas = ExtResource("2_4tx6c")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mqmkk"]
+atlas = ExtResource("2_4tx6c")
+region = Rect2(0, 64, 64, 64)
+
+[node name="Boots" instance=ExtResource("1_q840x")]
+
+[node name="Schatten" parent="." index="0"]
+offset_left = 8.0
+offset_top = 31.0
+offset_right = 141.0
+offset_bottom = 124.0
+
+[node name="Sprite" parent="." index="1"]
+texture = SubResource("AtlasTexture_cgw6p")
+
+[node name="Highlight" parent="." index="2"]
+texture = SubResource("AtlasTexture_mqmkk")
+
+[node name="CollisionPolygon2D" parent="." index="4"]
+polygon = PackedVector2Array(98, 45, 45, 46, 30, 56, 30, 90, 40, 100, 50, 107, 69, 110, 80, 107, 85, 98, 100, 98, 108, 89, 116, 85, 121, 78, 119, 61, 111, 53)
