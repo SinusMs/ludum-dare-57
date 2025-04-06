@@ -31,3 +31,6 @@ texture = SubResource("AtlasTexture_5aqgt")
 
 [node name="Mittelpunkt" parent="." index="3"]
 position = Vector2(21, 17)
+
+[node name="CollisionPolygon2D" parent="." index="4"]
+polygon = PackedVector2Array(15, 7, 15, 17, 5, 25, 5, 29, 9, 33, 23, 33, 27, 29, 27, 27, 31, 23, 31, 19, 35, 15, 35, 6, 29, 1, 21, 1)
