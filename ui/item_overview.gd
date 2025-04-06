@@ -7,6 +7,7 @@ func _ready() -> void:
 	
 
 func _on_exit_overview_button_down() -> void:
+	SignalBus.close_achievements.emit()
 	$".".hide()
 
 func _on_item_picked_up(item: Control) -> void:
