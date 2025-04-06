@@ -29,7 +29,7 @@ func change_item(newLabelText: String) -> void:
 
 func _on_stash_button_button_down() -> void:
 	var picked_up_item : ItemBase
-	if Utils.currently_selected_item == null:
+	if Utils.currently_selected_item == null || Utils.currently_selected_item.type == Utils.TYPE.BOX:
 		return
 	if !level._spawn_children(Utils.currently_selected_item):
 		Utils.found_items+=1
