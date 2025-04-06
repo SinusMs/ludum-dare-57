@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://dgexs3f2uftyh"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_2vavn"]
+[ext_resource type="Texture2D" uid="uid://b2k0l0xuwx3r2" path="res://assets/items/canned_food.png" id="2_7t2w2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ydnb"]
+atlas = ExtResource("2_7t2w2")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2vavn"]
+atlas = ExtResource("2_7t2w2")
+region = Rect2(0, 32, 32, 32)
+
+[node name="Canned_SPAM" instance=ExtResource("1_2vavn")]
+item_name = "SPAM"
+description = "yummy"
+
+[node name="Schatten" parent="." index="0"]
+offset_left = -3.0
+offset_top = 29.0
+offset_right = 61.0
+offset_bottom = 93.0
+scale = Vector2(1.11078, 0.556274)
+
+[node name="Sprite" parent="." index="1"]
+texture = SubResource("AtlasTexture_5ydnb")
+
+[node name="Highlight" parent="." index="2"]
+offset_left = 445.0
+offset_top = -91.0
+offset_right = 446.0
+offset_bottom = -90.0
+texture = SubResource("AtlasTexture_2vavn")
+
+[node name="Mittelpunkt" parent="." index="3"]
+position = Vector2(31, 30)
+
+[node name="CollisionPolygon2D" parent="." index="4"]
+polygon = PackedVector2Array(11, 15, 19, 9, 53, 9, 53, 43, 46, 48, 11, 48)
