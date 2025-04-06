@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_atk2d"]
 [ext_resource type="Texture2D" uid="uid://cv1dxikp4ottf" path="res://assets/items/rubberduck.png" id="2_e3vvp"]
-[ext_resource type="AudioStream" uid="uid://dqvhkvfmkngji" path="res://assets/sfx/raschel.wav" id="2_s24y5"]
+[ext_resource type="AudioStream" uid="uid://d1jjh2cc3fyjn" path="res://assets/sfx/queeck_squash.wav" id="2_s24y5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_s24y5"]
 atlas = ExtResource("2_e3vvp")
