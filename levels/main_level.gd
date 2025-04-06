@@ -12,7 +12,7 @@ func _process(_delta: float) -> void:
 	pass
 
 
-func item_play_sound() -> void:
+func item_play_sound(string : String) -> void:
 	if Utils.currently_selected_item == null:
 		return
 	$AudioStreamPlayer.stream = Utils.currently_selected_item.sound
