@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://22npkcscsiid"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_ljdrh"]
+[ext_resource type="Texture2D" uid="uid://dkhxqqil7lb6t" path="res://assets/items/chessboard.png" id="2_oekyv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_km6vj"]
+atlas = ExtResource("2_oekyv")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_heorq"]
+atlas = ExtResource("2_oekyv")
+region = Rect2(0, 32, 32, 32)
+
+[node name="Chessboard" instance=ExtResource("1_ljdrh")]
+item_name = "Chessboard"
+description = "\"We used to play, he was such a smart child...\""
+
+[node name="Schatten" parent="." index="0"]
+offset_left = -2.0
+offset_top = 13.0
+offset_right = 62.0
+offset_bottom = 77.0
+scale = Vector2(1.09389, 0.704746)
+
+[node name="Sprite" parent="." index="1"]
+texture = SubResource("AtlasTexture_km6vj")
+
+[node name="Highlight" parent="." index="2"]
+texture = SubResource("AtlasTexture_heorq")
+
+[node name="Mittelpunkt" parent="." index="3"]
+position = Vector2(32, 32)
+
+[node name="CollisionPolygon2D" parent="." index="4"]
+polygon = PackedVector2Array(27, 18, 57, 19, 62, 25, 36, 50, 3, 50, 2, 43)

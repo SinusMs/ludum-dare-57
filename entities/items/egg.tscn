@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://clpi5w51dp101"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_6lfo1"]
+[ext_resource type="Texture2D" uid="uid://bfgyhbvd5appq" path="res://assets/items/egg.png" id="2_rv3hv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0edd7"]
+atlas = ExtResource("2_rv3hv")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_faqqd"]
+atlas = ExtResource("2_rv3hv")
+region = Rect2(0, 32, 32, 32)
+
+[node name="Egg" instance=ExtResource("1_6lfo1")]
+item_name = "an Egg"
+description = "\"hmmm, it might hatch soon\""
+
+[node name="Schatten" parent="." index="0"]
+offset_left = -5.0
+offset_top = 38.0
+offset_right = 59.0
+offset_bottom = 102.0
+scale = Vector2(1.12082, 0.731234)
+
+[node name="Sprite" parent="." index="1"]
+texture = SubResource("AtlasTexture_0edd7")
+
+[node name="Highlight" parent="." index="2"]
+texture = SubResource("AtlasTexture_faqqd")
+
+[node name="Mittelpunkt" parent="." index="3"]
+position = Vector2(31, 32)
+
+[node name="CollisionPolygon2D" parent="." index="4"]
+polygon = PackedVector2Array(24, 3, 37, 3, 54, 22, 59, 29, 59, 48, 46, 63, 17, 63, 4, 49, 3, 28)
