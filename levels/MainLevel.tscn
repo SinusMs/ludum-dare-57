@@ -37,7 +37,7 @@
 [ext_resource type="PackedScene" uid="uid://uyycj0ywvwuc" path="res://entities/items/key.tscn" id="35_r0tbs"]
 [ext_resource type="PackedScene" uid="uid://c382y4mxn5ko6" path="res://entities/items/lamp.tscn" id="36_221d2"]
 [ext_resource type="PackedScene" uid="uid://bybmbb5c3ofpa" path="res://entities/items/birth_foto.tscn" id="37_bx1dr"]
-[ext_resource type="PackedScene" uid="uid://c6c15yevw4tdy" path="res://entities/items/letter.tscn" id="38_kmens"]
+[ext_resource type="PackedScene" uid="uid://b7xjkww8xapkx" path="res://entities/items/letter.tscn" id="38_kmens"]
 [ext_resource type="PackedScene" uid="uid://dyimivirc7fkj" path="res://entities/items/holy_grail.tscn" id="39_b6orh"]
 [ext_resource type="PackedScene" uid="uid://c8mkfdw5appi8" path="res://entities/items/ketchup.tscn" id="40_dot45"]
 [ext_resource type="PackedScene" uid="uid://2rf7tawro4db" path="res://shader/shader_scene.tscn" id="40_q27fi"]
@@ -169,6 +169,7 @@ offset_left = 389.0
 offset_top = 383.0
 offset_right = 389.0
 offset_bottom = 383.0
+type = 0
 
 [node name="RubberDuck" parent="ItemContainer" instance=ExtResource("22_io7o4")]
 offset_left = 381.0
@@ -187,6 +188,7 @@ offset_left = 405.0
 offset_top = 167.0
 offset_right = 405.0
 offset_bottom = 167.0
+type = 0
 
 [node name="ToiletPaper" parent="ItemContainer" instance=ExtResource("25_dtwx4")]
 offset_left = 89.0
@@ -211,6 +213,7 @@ offset_left = 377.0
 offset_top = 502.0
 offset_right = 377.0
 offset_bottom = 502.0
+type = 0
 
 [node name="SoundSystem" parent="ItemContainer" instance=ExtResource("29_juar8")]
 offset_left = 281.0
@@ -223,6 +226,7 @@ offset_left = 19.0
 offset_top = 365.0
 offset_right = 19.0
 offset_bottom = 365.0
+type = 0
 
 [node name="Shite" parent="ItemContainer" instance=ExtResource("31_f6v30")]
 offset_left = 263.0

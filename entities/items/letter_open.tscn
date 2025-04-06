@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3 uid="uid://bfseorqjm6gc6"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_m1xl5"]
+[ext_resource type="AudioStream" uid="uid://6vhrcllof1yw" path="res://assets/sfx/single_paper.wav" id="2_clhm5"]
+[ext_resource type="Texture2D" uid="uid://bp6q1putmw45r" path="res://assets/items/letter_opened.png" id="3_yiu00"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aqtnx"]
+atlas = ExtResource("3_yiu00")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_63kym"]
+atlas = ExtResource("3_yiu00")
+region = Rect2(0, 32, 32, 32)
+
+[node name="LetterOpen" instance=ExtResource("1_m1xl5")]
+item_name = "Letter"
+description = "text
+es war einmal ...
+text
+text
+usw"
+type = 1
+sound = ExtResource("2_clhm5")
+
+[node name="Schatten" parent="." index="0"]
+offset_left = -22.0
+offset_top = 9.0
+offset_right = 42.0
+offset_bottom = 73.0
+scale = Vector2(1.65541, 1.06262)
+
+[node name="Sprite" parent="." index="1"]
+texture = SubResource("AtlasTexture_aqtnx")
+
+[node name="Highlight" parent="." index="2"]
+texture = SubResource("AtlasTexture_63kym")
+
+[node name="Mittelpunkt" parent="." index="3"]
+position = Vector2(33, 33)
+
+[node name="CollisionPolygon2D" parent="." index="4"]
+polygon = PackedVector2Array(0, 34, 0, 57, 64, 58, 65, 34, 49, 2, 19, 1)

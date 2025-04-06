@@ -15,7 +15,6 @@ region = Rect2(0, 32, 32, 32)
 [node name="MedicalBills" instance=ExtResource("1_npwgq")]
 item_name = "Medical Bills"
 description = "phew...  whoever had to pay these had to spend a fortune"
-rarity = 1
 sound = ExtResource("2_xp6w3")
 
 [node name="Schatten" parent="." index="0"]
@@ -35,4 +34,4 @@ texture = SubResource("AtlasTexture_emhq3")
 position = Vector2(33, 33)
 
 [node name="CollisionPolygon2D" parent="." index="4"]
-polygon = PackedVector2Array(43, 13, 7, 31, 9, 41, 29, 53, 63, 31, 63, 23)
+polygon = PackedVector2Array(43, 11, 5, 30, 8, 44, 29, 56, 65, 33, 65, 22)
