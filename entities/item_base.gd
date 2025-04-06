@@ -7,21 +7,29 @@ extends Control
 @export var rarity := Utils.RARITY.COMMON
 @export var children : Dictionary[PackedScene, Vector2]
 var mittelpunkt : Vector2
+var isHighlighted : bool = false
 
 func _ready() -> void:
 	$Highlight.hide()
 	mittelpunkt = %Mittelpunkt.position
 
-
-func _on_gui_input(event:InputEvent) -> void:
+func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("left_click"):
-		Utils.currently_selected_item = self
+		isHighlighted = false
+		$Highlight.hide()
+		Utils.currently_selected_item = null
 		SignalBus.item_changed.emit()
 
 
-func _on_mouse_entered() -> void:
-	$Highlight.show()
+func _on_gui_input(event:InputEvent) -> void:
+	if Geometry2D.is_point_in_polygon(event.position, $CollisionPolygon2D.polygon):
+		$Highlight.show()
+	else:
+		if !isHighlighted:
+			$Highlight.hide()
 
-
-func _on_mouse_exited() -> void:
-	$Highlight.hide()
+	if Geometry2D.is_point_in_polygon(event.position, $CollisionPolygon2D.polygon):
+		if event.is_action_pressed("left_click"):
+			Utils.currently_selected_item = self
+			SignalBus.item_changed.emit()
+			isHighlighted = true
