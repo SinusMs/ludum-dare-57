@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://dft3ypa3b8bvs"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_g0xtq"]
+[ext_resource type="Texture2D" uid="uid://b2k0l0xuwx3r2" path="res://assets/items/canned_food.png" id="2_t2m10"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3q7r2"]
+atlas = ExtResource("2_t2m10")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7o46k"]
+atlas = ExtResource("2_t2m10")
+region = Rect2(32, 32, 32, 32)
+
+[node name="Canned_Beans" instance=ExtResource("1_g0xtq")]
+item_name = "Beans"
+description = "\"They still smell pretty good\""
+
+[node name="Schatten" parent="." index="0"]
+offset_left = 1.0
+offset_top = 45.0
+offset_right = 65.0
+offset_bottom = 109.0
+scale = Vector2(1.03037, 0.495044)
+
+[node name="Sprite" parent="." index="1"]
+texture = SubResource("AtlasTexture_3q7r2")
+
+[node name="Highlight" parent="." index="2"]
+texture = SubResource("AtlasTexture_7o46k")
+
+[node name="Mittelpunkt" parent="." index="3"]
+position = Vector2(32, 35)
+
+[node name="CollisionPolygon2D" parent="." index="4"]
+polygon = PackedVector2Array(8, 12, 15, 7, 23, 5, 40, 5, 43, 7, 50, 7, 58, 13, 57, 55, 43, 62, 21, 62, 8, 56)

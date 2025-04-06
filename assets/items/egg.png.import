@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://45aslv72kqpm"
-path="res://.godot/imported/drawer.png-d247dfcf5e784860017944f879d23718.ctex"
+uid="uid://bfgyhbvd5appq"
+path="res://.godot/imported/egg.png-475bb32b76e7e7432a07fcb74b55c14a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/items/drawer.png"
-dest_files=["res://.godot/imported/drawer.png-d247dfcf5e784860017944f879d23718.ctex"]
+source_file="res://assets/items/egg.png"
+dest_files=["res://.godot/imported/egg.png-475bb32b76e7e7432a07fcb74b55c14a.ctex"]
 
 [params]
 

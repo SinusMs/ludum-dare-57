@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://45aslv72kqpm"
-path="res://.godot/imported/drawer.png-d247dfcf5e784860017944f879d23718.ctex"
+uid="uid://b1xp2ms8is6vk"
+path="res://.godot/imported/weird_stone.png-4903fdf5d67a0a95fbda0483705d621c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/items/drawer.png"
-dest_files=["res://.godot/imported/drawer.png-d247dfcf5e784860017944f879d23718.ctex"]
+source_file="res://assets/items/weird_stone.png"
+dest_files=["res://.godot/imported/weird_stone.png-4903fdf5d67a0a95fbda0483705d621c.ctex"]
 
 [params]
 

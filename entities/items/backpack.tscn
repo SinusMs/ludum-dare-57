@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://difqkrb4dklxk"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_0wo01"]
+[ext_resource type="Texture2D" uid="uid://bmhuxgbn733tb" path="res://assets/items/backpack.png" id="2_iku3g"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q37bs"]
+atlas = ExtResource("2_iku3g")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rfqjn"]
+atlas = ExtResource("2_iku3g")
+region = Rect2(0, 64, 64, 64)
+
+[node name="Backpack" instance=ExtResource("1_0wo01")]
+item_name = "Backpack"
+description = "\"What might still be inside?\""
+
+[node name="Schatten" parent="." index="0"]
+offset_left = -10.0
+offset_top = 93.0
+offset_right = 138.0
+offset_bottom = 157.0
+
+[node name="Sprite" parent="." index="1"]
+texture = SubResource("AtlasTexture_q37bs")
+
+[node name="Highlight" parent="." index="2"]
+texture = SubResource("AtlasTexture_rfqjn")
+
+[node name="Mittelpunkt" parent="." index="3"]
+position = Vector2(64, 74)
+
+[node name="CollisionPolygon2D" parent="." index="4"]
+polygon = PackedVector2Array(32, 13, 50, 25, 71, 26, 82, 14, 94, 13, 98, 21, 96, 35, 117, 50, 122, 118, 108, 126, 18, 126, 7, 119, 12, 49, 18, 43, 17, 24)
