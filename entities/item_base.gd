@@ -4,6 +4,7 @@ extends Control
 
 @export var item_name: String = ""
 @export_multiline var description: String = ""
+@export var labelText: String = "Put away"
 @export var rarity := Utils.RARITY.COMMON
 @export var children : Dictionary[PackedScene, Vector2]
 var mittelpunkt : Vector2
@@ -46,5 +47,5 @@ func _on_gui_input(event:InputEvent) -> void:
 				
 			# highlight clicked item
 			Utils.currently_selected_item = self
-			SignalBus.item_changed.emit()
+			SignalBus.item_changed.emit(labelText)
 			isHighlighted = true
