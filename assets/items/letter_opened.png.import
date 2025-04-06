@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://6ax6s7bmxe8o"
-path="res://.godot/imported/family_photo_update.png-1e6a64aeec2affcc1feca5221aab64b6.ctex"
+uid="uid://bp6q1putmw45r"
+path="res://.godot/imported/letter_opened.png-4e22630627687ef65cb2197b93df07c3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://aseprite/family_photo_update.png"
-dest_files=["res://.godot/imported/family_photo_update.png-1e6a64aeec2affcc1feca5221aab64b6.ctex"]
+source_file="res://assets/items/letter_opened.png"
+dest_files=["res://.godot/imported/letter_opened.png-4e22630627687ef65cb2197b93df07c3.ctex"]
 
 [params]
 
