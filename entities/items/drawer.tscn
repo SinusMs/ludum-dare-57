@@ -17,6 +17,10 @@ item_name = "Drawer"
 description = "My Grandmas old Drawer.
 still looks as good as new..."
 labelText = "Open"
+<<<<<<< HEAD
+=======
+rarity = 4
+>>>>>>> main
 sound = ExtResource("2_eqy2f")
 
 [node name="Schatten" parent="." index="0"]

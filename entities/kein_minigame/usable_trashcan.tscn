@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://conosdt7fij7h"]
+
+[ext_resource type="Script" uid="uid://c84lrgiuopg3k" path="res://entities/kein_minigame/usable_trashcan.gd" id="1_kr2ys"]
+[ext_resource type="Texture2D" uid="uid://ch857s4754sju" path="res://assets/items/trashbag.png" id="1_s2eyq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kr2ys"]
+atlas = ExtResource("1_s2eyq")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vemr1"]
+atlas = ExtResource("1_s2eyq")
+region = Rect2(128, 64, 64, 64)
+
+[node name="UsableTrashcan" type="Area2D"]
+texture_filter = 3
+scale = Vector2(2, 2)
+script = ExtResource("1_kr2ys")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture = SubResource("AtlasTexture_kr2ys")
+
+[node name="Highlight" type="Sprite2D" parent="."]
+texture = SubResource("AtlasTexture_vemr1")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-25, -16, -12, 21, 11, 21, 24, -17, 16, -25, -16, -25)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
