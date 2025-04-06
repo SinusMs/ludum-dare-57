@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://opwrguf4otpk"]
+
+[sub_resource type="Gradient" id="Gradient_fjj1p"]
+colors = PackedColorArray(1, 1, 1, 0.501961, 1, 1, 1, 0.501961)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_5m5mo"]
+gradient = SubResource("Gradient_fjj1p")
+width = 544
+height = 640
+
+[node name="ScreenTint" type="TextureRect"]
+offset_right = 544.0
+offset_bottom = 640.0
+texture = SubResource("GradientTexture2D_5m5mo")
