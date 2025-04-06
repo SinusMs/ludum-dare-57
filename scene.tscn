@@ -1,0 +1,81 @@
+[gd_scene load_steps=7 format=3 uid="uid://b0q7brsx1j8rn"]
+
+[ext_resource type="PackedScene" uid="uid://cberpn7tbycxf" path="res://ui/Menu.tscn" id="3_3253y"]
+[ext_resource type="PackedScene" uid="uid://c57mdfkxd8de" path="res://entities/items/drawer.tscn" id="4_u3cyc"]
+[ext_resource type="PackedScene" uid="uid://pwtbfuxtuc8m" path="res://entities/items/grandma.tscn" id="5_m7jmp"]
+[ext_resource type="PackedScene" uid="uid://lqgdo86mwn8r" path="res://entities/items/coffin.tscn" id="6_ni31j"]
+[ext_resource type="PackedScene" uid="uid://c81x0dytqx5yd" path="res://entities/items/nougat_bits.tscn" id="6_y2354"]
+[ext_resource type="PackedScene" uid="uid://odfi2oci1jl6" path="res://entities/items/moving_box.tscn" id="7_ni31j"]
+
+[node name="Level" type="Node2D"]
+
+[node name="ItemContainer" type="Node" parent="."]
+
+[node name="Coffin" parent="ItemContainer" instance=ExtResource("6_ni31j")]
+offset_left = 147.0
+offset_top = 423.0
+offset_right = 147.0
+offset_bottom = 423.0
+
+[node name="Drawer" parent="ItemContainer" instance=ExtResource("4_u3cyc")]
+offset_left = 15.0
+offset_top = 416.0
+offset_right = 15.0
+offset_bottom = 416.0
+children = Dictionary[PackedScene, Vector2]({
+ExtResource("5_m7jmp"): Vector2(0, 0),
+ExtResource("6_y2354"): Vector2(100, 100)
+})
+
+[node name="MovingBox" parent="ItemContainer" instance=ExtResource("7_ni31j")]
+offset_left = 553.0
+offset_top = 534.0
+offset_right = 553.0
+offset_bottom = 534.0
+scale = Vector2(-1, 1)
+
+[node name="MovingBox2" parent="ItemContainer" instance=ExtResource("7_ni31j")]
+offset_left = 488.0
+offset_top = 536.0
+offset_right = 488.0
+offset_bottom = 536.0
+scale = Vector2(-1, 1)
+
+[node name="MovingBox3" parent="ItemContainer" instance=ExtResource("7_ni31j")]
+offset_left = 554.0
+offset_top = 482.0
+offset_right = 554.0
+offset_bottom = 482.0
+scale = Vector2(-1, 1)
+
+[node name="MovingBox4" parent="ItemContainer" instance=ExtResource("7_ni31j")]
+offset_left = 488.0
+offset_top = 482.0
+offset_right = 488.0
+offset_bottom = 482.0
+scale = Vector2(-1, 1)
+
+[node name="MovingBox5" parent="ItemContainer" instance=ExtResource("7_ni31j")]
+offset_left = 552.0
+offset_top = 425.0
+offset_right = 552.0
+offset_bottom = 425.0
+scale = Vector2(-1, 1)
+
+[node name="MovingBox6" parent="ItemContainer" instance=ExtResource("7_ni31j")]
+offset_left = 484.0
+offset_top = 424.0
+offset_right = 484.0
+offset_bottom = 424.0
+scale = Vector2(-1, 1)
+
+[node name="ParticleContainer" type="Node" parent="."]
+
+[node name="Menu" parent="." instance=ExtResource("3_3253y")]
+z_index = -1
+z_as_relative = false
+offset_left = -150.0
+offset_top = 27.0
+offset_right = -150.0
+offset_bottom = 339.0
+metadata/_edit_lock_ = true

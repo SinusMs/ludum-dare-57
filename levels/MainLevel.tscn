@@ -1,10 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://cx8eljiil0ugl"]
+[gd_scene load_steps=8 format=3 uid="uid://c5d08ta7hrvl4"]
 
 [ext_resource type="Script" uid="uid://c3u0uh25n4yiy" path="res://levels/main_level.gd" id="1_3348v"]
 [ext_resource type="PackedScene" uid="uid://cberpn7tbycxf" path="res://ui/Menu.tscn" id="1_mt7cn"]
 [ext_resource type="PackedScene" uid="uid://lqgdo86mwn8r" path="res://entities/items/coffin.tscn" id="2_3348v"]
 [ext_resource type="PackedScene" uid="uid://c57mdfkxd8de" path="res://entities/items/drawer.tscn" id="4_jg0uj"]
-[ext_resource type="PackedScene" uid="uid://wydwtx36e8yl" path="res://entities/items/embryo.tscn" id="5_k0gbw"]
+[ext_resource type="PackedScene" uid="uid://4k2ur0vm0hif" path="res://entities/items/embryo.tscn" id="5_k0gbw"]
 [ext_resource type="PackedScene" uid="uid://bnguv38n53qo5" path="res://entities/items/medical_bills.tscn" id="6_k5fuh"]
 [ext_resource type="PackedScene" uid="uid://cw6r7ucbakac0" path="res://entities/items/trash_bin.tscn" id="7_bb6xo"]
 
