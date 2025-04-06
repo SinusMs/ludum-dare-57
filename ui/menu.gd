@@ -67,4 +67,7 @@ func _on_toggle_achievements() -> void:
 	if $CanvasLayer/Panel/StashButton.visible:
 		$CanvasLayer/Panel/StashButton.hide()
 	else:
+
+		Utils.currently_selected_item = null
+		change_item("")
 		$CanvasLayer/Panel/StashButton.show()
