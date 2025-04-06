@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://c7voyjg5fftpx"]
+[gd_scene load_steps=6 format=3 uid="uid://dfws11p81r6oh"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_7nj72"]
 [ext_resource type="Texture2D" uid="uid://y0winpvtwuyb" path="res://assets/items/dead_cat.png" id="2_nil11"]
@@ -17,6 +17,7 @@ description = "Guppy! There you are!
 Are you alright?
 
 ..."
+rarity = 3
 sound = ExtResource("2_ny5n0")
 
 [node name="Schatten" parent="." index="0"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://yew8y0lxqoq2"
-path="res://.godot/imported/ItemOverviewBox.png-a161b5f0ee3993c825d315dceaf571cb.ctex"
+uid="uid://b6tisnewd8nm4"
+path="res://.godot/imported/cobweb.png-1b3f670776b4beca6051644984abd345.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/UI/ItemOverviewBox.png"
-dest_files=["res://.godot/imported/ItemOverviewBox.png-a161b5f0ee3993c825d315dceaf571cb.ctex"]
+source_file="res://assets/items/cobweb.png"
+dest_files=["res://.godot/imported/cobweb.png-1b3f670776b4beca6051644984abd345.ctex"]
 
 [params]
 

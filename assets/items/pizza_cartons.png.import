@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://yew8y0lxqoq2"
-path="res://.godot/imported/ItemOverviewBox.png-a161b5f0ee3993c825d315dceaf571cb.ctex"
+uid="uid://56qadasx5y2i"
+path="res://.godot/imported/pizza_cartons.png-3014315fa50b9816dd1e1df400460abb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/UI/ItemOverviewBox.png"
-dest_files=["res://.godot/imported/ItemOverviewBox.png-a161b5f0ee3993c825d315dceaf571cb.ctex"]
+source_file="res://assets/items/pizza_cartons.png"
+dest_files=["res://.godot/imported/pizza_cartons.png-3014315fa50b9816dd1e1df400460abb.ctex"]
 
 [params]
 

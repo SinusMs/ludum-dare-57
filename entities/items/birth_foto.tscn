@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://dfqysr6xvygq4"]
+[gd_scene load_steps=6 format=3 uid="uid://bybmbb5c3ofpa"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_ay7jb"]
 [ext_resource type="AudioStream" uid="uid://6vhrcllof1yw" path="res://assets/sfx/single_paper.wav" id="2_hjwa7"]
@@ -15,6 +15,7 @@ region = Rect2(0, 32, 32, 32)
 [node name="BirthFoto" instance=ExtResource("1_ay7jb")]
 item_name = "Birth Foto"
 description = "nen baby halt idfk"
+rarity = 1
 sound = ExtResource("2_hjwa7")
 
 [node name="Schatten" parent="." index="0"]

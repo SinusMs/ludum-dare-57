@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://yew8y0lxqoq2"
-path="res://.godot/imported/ItemOverviewBox.png-a161b5f0ee3993c825d315dceaf571cb.ctex"
+uid="uid://b3tk50qw0u5xb"
+path="res://.godot/imported/bycicle.png-e36a5674cd253ee8d7da58326f6221b2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/UI/ItemOverviewBox.png"
-dest_files=["res://.godot/imported/ItemOverviewBox.png-a161b5f0ee3993c825d315dceaf571cb.ctex"]
+source_file="res://assets/items/bycicle.png"
+dest_files=["res://.godot/imported/bycicle.png-e36a5674cd253ee8d7da58326f6221b2.ctex"]
 
 [params]
 

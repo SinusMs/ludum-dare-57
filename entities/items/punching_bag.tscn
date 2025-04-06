@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://bml3qrimjf6g7"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_8fkem"]
+[ext_resource type="AudioStream" uid="uid://t4iceuciow3b" path="res://assets/sfx/bonk.wav" id="2_c42hn"]
+[ext_resource type="Texture2D" uid="uid://qmec6t4d01cm" path="res://assets/items/punching_bag.png" id="3_yt1up"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bnkk6"]
+atlas = ExtResource("3_yt1up")
+region = Rect2(0, 0, 0, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bppqx"]
+atlas = ExtResource("3_yt1up")
+region = Rect2(0, 128, 0, 128)
+
+[node name="punching_bag" instance=ExtResource("1_8fkem")]
+item_name = "Old Punching Bag"
+description = "\"It was already used when we bought it. A few punches will probably kill it for good\"."
+sound = ExtResource("2_c42hn")
+
+[node name="Schatten" parent="." index="0"]
+offset_left = 18.0
+offset_top = 251.0
+offset_right = 82.0
+offset_bottom = 315.0
+scale = Vector2(1, 0.52)
+
+[node name="Sprite" parent="." index="1"]
+texture = SubResource("AtlasTexture_bnkk6")
+
+[node name="Highlight" parent="." index="2"]
+texture = SubResource("AtlasTexture_bppqx")
+
+[node name="Mittelpunkt" parent="." index="3"]
+position = Vector2(49, 177)
+
+[node name="CollisionPolygon2D" parent="." index="4"]
+polygon = PackedVector2Array(28, 221, 28, 115, 42, 75, 44, -1, 55, 0, 55, 71, 69, 113, 71, 221, 52, 235)

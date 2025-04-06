@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://863q5bvm04an"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_emgyx"]
+[ext_resource type="Texture2D" uid="uid://ckpgn2tpvlcsf" path="res://assets/items/kallax.png" id="2_55k7b"]
+[ext_resource type="AudioStream" uid="uid://flux4p1tccor" path="res://assets/sfx/karton_click.wav" id="2_q6xnh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q6xnh"]
+atlas = ExtResource("2_55k7b")
+region = Rect2(0, 0, 0, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2xgww"]
+atlas = ExtResource("2_55k7b")
+region = Rect2(0, 160, 0, 160)
+
+[node name="Kallax" instance=ExtResource("1_emgyx")]
+item_name = "Shelf"
+description = "\"It was cheap but it's not very pretty...\""
+sound = ExtResource("2_q6xnh")
+
+[node name="Schatten" parent="." index="0"]
+offset_left = -84.0
+offset_top = 278.0
+offset_right = -20.0
+offset_bottom = 342.0
+scale = Vector2(9.96, 1)
+
+[node name="Sprite" parent="." index="1"]
+texture = SubResource("AtlasTexture_q6xnh")
+
+[node name="Highlight" parent="." index="2"]
+texture = SubResource("AtlasTexture_2xgww")
+
+[node name="Mittelpunkt" parent="." index="3"]
+position = Vector2(225, 155)
+
+[node name="CollisionPolygon2D" parent="." index="4"]
+polygon = PackedVector2Array(450, 0, 447, 321, 1, 319, -1, 0)

@@ -16,7 +16,15 @@ func change_item(newLabelText: String) -> void:
 		$"CanvasLayer/Panel/DescriptionFrame/ScrollContainer/DescriptionLabel".text = Utils.currently_selected_item.description
 		$"CanvasLayer/Panel/ItemFrame/ItemTexture".texture = Utils.currently_selected_item.get_node("Sprite").texture
 		$"CanvasLayer/Panel/StashButton/RichTextLabel".text = newLabelText
-	
+
+		
+		# set item frame texture beased on enuim TYPE
+		if Utils.currently_selected_item.type == Utils.TYPE.STORY:
+			$CanvasLayer/Panel/ItemFrame.texture = load("res://assets/UI/frame-story.png")
+		elif Utils.currently_selected_item.type == Utils.TYPE.EGG:
+			$CanvasLayer/Panel/ItemFrame.texture = load("res://assets/UI/frame-secret.png")
+		else:
+			$CanvasLayer/Panel/ItemFrame.texture = load("res://assets/UI/frame-default.png")
 
 
 func _on_stash_button_button_down() -> void:

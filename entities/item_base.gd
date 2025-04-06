@@ -5,7 +5,7 @@ extends Control
 @export var item_name: String = ""
 @export_multiline var description: String = ""
 @export var labelText: String = "Put away"
-@export var rarity := Utils.RARITY.COMMON
+@export var type := Utils.TYPE.FILLER
 @export var children : Dictionary[PackedScene, Vector2]
 @export var sound : AudioStream
 @export var dependencies: Array[ItemBase]

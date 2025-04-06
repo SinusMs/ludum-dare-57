@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://yew8y0lxqoq2"
-path="res://.godot/imported/ItemOverviewBox.png-a161b5f0ee3993c825d315dceaf571cb.ctex"
+uid="uid://ds0vna43csycn"
+path="res://.godot/imported/degree.png-e1557c65d2f211ca7e774ac30eb185a4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/UI/ItemOverviewBox.png"
-dest_files=["res://.godot/imported/ItemOverviewBox.png-a161b5f0ee3993c825d315dceaf571cb.ctex"]
+source_file="res://assets/items/degree.png"
+dest_files=["res://.godot/imported/degree.png-e1557c65d2f211ca7e774ac30eb185a4.ctex"]
 
 [params]
 
