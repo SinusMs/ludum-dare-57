@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://dh2wt7xd32mfl"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_juiyo"]
+[ext_resource type="AudioStream" uid="uid://8nfxh4ufk2ru" path="res://assets/sfx/door_open_q.wav" id="2_yxter"]
+[ext_resource type="Texture2D" uid="uid://fs200i6pdpu2" path="res://assets/items/door.png" id="3_xdkir"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ixt8i"]
+atlas = ExtResource("3_xdkir")
+region = Rect2(0, 0, 0, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a17xs"]
+atlas = ExtResource("3_xdkir")
+region = Rect2(0, 320, 0, 320)
+
+[node name="door" instance=ExtResource("1_juiyo")]
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 1.0
+offset_bottom = 1.0
+item_name = "Room Door"
+description = "\"Let's finally clean this room.\""
+sound = ExtResource("2_yxter")
+
+[node name="Sprite" parent="." index="1"]
+texture = SubResource("AtlasTexture_ixt8i")
+
+[node name="Highlight" parent="." index="2"]
+texture = SubResource("AtlasTexture_a17xs")
+
+[node name="Mittelpunkt" parent="." index="3"]
+position = Vector2(282, 303)
+
+[node name="CollisionPolygon2D" parent="." index="4"]
+position = Vector2(229, 156)
+polygon = PackedVector2Array(-68, -61, -53, 376, 140, 377, 155, -62)
