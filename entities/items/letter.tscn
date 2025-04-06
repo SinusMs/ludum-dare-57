@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://c6c15yevw4tdy"]
+[gd_scene load_steps=7 format=3 uid="uid://b7xjkww8xapkx"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_kdwnk"]
+[ext_resource type="PackedScene" uid="uid://bfseorqjm6gc6" path="res://entities/items/letter_open.tscn" id="2_o5m2n"]
 [ext_resource type="AudioStream" uid="uid://6vhrcllof1yw" path="res://assets/sfx/single_paper.wav" id="2_tnjuc"]
 [ext_resource type="Texture2D" uid="uid://cmyeb4662smpm" path="res://assets/items/letter.png" id="3_o5m2n"]
 
@@ -15,7 +16,11 @@ region = Rect2(0, 32, 32, 32)
 [node name="Letter" instance=ExtResource("1_kdwnk")]
 item_name = "Letter"
 description = "What might be written in there????"
-rarity = 1
+labelText = "Open"
+type = 4
+children = Dictionary[PackedScene, Vector2]({
+ExtResource("2_o5m2n"): Vector2(0, 0)
+})
 sound = ExtResource("2_tnjuc")
 
 [node name="Schatten" parent="." index="0"]
