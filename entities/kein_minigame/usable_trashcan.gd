@@ -15,5 +15,4 @@ func _on_mouse_exited() -> void:
 
 
 func _on_body_entered(body: Node2D) -> void:
-	print(body)
 	SignalBus.trash_removed.emit(body)

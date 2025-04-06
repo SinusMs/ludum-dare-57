@@ -16,20 +16,21 @@ func change_item(newLabelText: String) -> void:
 		$"CanvasLayer/Panel/DescriptionFrame/ScrollContainer/DescriptionLabel".text = Utils.currently_selected_item.description
 		$"CanvasLayer/Panel/ItemFrame/ItemTexture".texture = Utils.currently_selected_item.get_node("Sprite").texture
 		$"CanvasLayer/Panel/StashButton/RichTextLabel".text = newLabelText
+	
 
 
 func _on_stash_button_button_down() -> void:
+	var picked_up_item : ItemBase
 	if Utils.currently_selected_item == null:
 		return
 	if !level._spawn_children(Utils.currently_selected_item):
 		Utils.found_items+=1
-		SignalBus.item_picked_up.emit(Utils.currently_selected_item.duplicate())
-		
-	
+		picked_up_item = Utils.currently_selected_item.duplicate()
 	level._spawn_particles(Utils.currently_selected_item)
 	Utils.currently_selected_item.queue_free()
 	Utils.currently_selected_item = null
 	SignalBus.item_changed.emit("")
+	SignalBus.item_picked_up.emit(picked_up_item)
 
 
 func _on_background_gui_input(event:InputEvent) -> void:

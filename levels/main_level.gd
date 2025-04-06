@@ -4,7 +4,8 @@ var rauchwolke_scene : PackedScene = preload("res://entities/rauchwolke_cpu_part
 var screen_tint_scene : PackedScene = preload("res://entities/kein_minigame/screen_tint.tscn")
 var trash_scene : PackedScene = preload("res://entities/kein_minigame/draggable_object.tscn")
 var usable_trash_can_scene : PackedScene = preload("res://entities/kein_minigame/usable_trashcan.tscn")
-var items_bis_km : int = 2
+var item_description : ItemBase = preload("res://entities/kein_minigame/description_item.tscn").instantiate()
+var items_bis_km : int = 5
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -43,16 +44,18 @@ func _spawn_particles(item : ItemBase) -> void:
 	%ParticleContainer.add_child(rauchwolke)
 
 var trash_amount : int = 0
-func spawn_trash() -> void:
+func spawn_trash(item : ItemBase) -> void:
 	items_bis_km -= 1
 	if items_bis_km != 0:
 		return
 	trash_amount = 8
+	Utils.currently_selected_item = item_description
+	$Menu.change_item("")
 	var screen_tint : TextureRect = screen_tint_scene.instantiate()
 	%KeinMinigameContainer.add_child(screen_tint)
 	var usable_trash_can : Area2D = usable_trash_can_scene.instantiate()
 	%KeinMinigameContainer.add_child(usable_trash_can)
-	usable_trash_can.position = Vector2(64, 600)
+	usable_trash_can.position = Vector2(60, 590)
 	for i : int in trash_amount:
 		var trash : CharacterBody2D = trash_scene.instantiate()
 		%KeinMinigameContainer.add_child(trash)
@@ -74,3 +77,5 @@ func cleanup() -> void:
 	for child in %KeinMinigameContainer.get_children():
 		child.queue_free()
 	items_bis_km = 2
+	Utils.currently_selected_item = null
+	$Menu.change_item("")
