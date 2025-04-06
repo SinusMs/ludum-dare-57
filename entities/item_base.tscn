@@ -15,6 +15,7 @@ metadata/_snap_enabled = true
 [node name="ItemBase" type="Control"]
 layout_mode = 3
 anchors_preset = 0
+mouse_filter = 1
 script = ExtResource("1_yh0nf")
 
 [node name="Schatten" type="TextureRect" parent="."]

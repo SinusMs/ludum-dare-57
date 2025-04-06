@@ -19,15 +19,17 @@ func showHighlight(_show: bool) -> void:
 	else:
 		$Highlight.hide()
 
-	
-
-
 func _on_gui_input(event:InputEvent) -> void:
 	if Geometry2D.is_point_in_polygon(event.position, $CollisionPolygon2D.polygon):
+		if Utils.currently_hovered_item != null && Utils.currently_hovered_item != self && Utils.currently_hovered_item != Utils.currently_selected_item:
+			Utils.currently_hovered_item.call_deferred("showHighlight", false)
+		Utils.currently_hovered_item = self
 		showHighlight(true)
 	else:
 		if !isHighlighted:
-			showHighlight(false)
+			if Utils.currently_hovered_item != null && Utils.currently_hovered_item != Utils.currently_selected_item:
+				Utils.currently_hovered_item.showHighlight(false)
+				Utils.currently_hovered_item = null
 
 	if Geometry2D.is_point_in_polygon(event.position, $CollisionPolygon2D.polygon):
 		if event.is_action_pressed("left_click"):
@@ -35,6 +37,5 @@ func _on_gui_input(event:InputEvent) -> void:
 				Utils.currently_selected_item.call_deferred("showHighlight", false)
 				Utils.currently_selected_item.isHighlighted = false
 			Utils.currently_selected_item = self
-			print(Utils.currently_selected_item.item_name)
 			SignalBus.item_changed.emit()
 			isHighlighted = true
