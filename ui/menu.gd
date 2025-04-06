@@ -19,7 +19,9 @@ func change_item() -> void:
 func _on_stash_button_button_down() -> void:
 	if Utils.currently_selected_item == null:
 		return
-	level._spawn_children(Utils.currently_selected_item)
+	if !level._spawn_children(Utils.currently_selected_item):
+		Utils.found_items+=1
+		SignalBus.item_picked_up.emit()
 	level._spawn_particles(Utils.currently_selected_item)
 	Utils.currently_selected_item.queue_free()
 	Utils.currently_selected_item = null

@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cberpn7tbycxf" path="res://ui/Menu.tscn" id="1_mt7cn"]
 [ext_resource type="PackedScene" uid="uid://lqgdo86mwn8r" path="res://entities/items/coffin.tscn" id="2_3348v"]
 [ext_resource type="PackedScene" uid="uid://c57mdfkxd8de" path="res://entities/items/drawer.tscn" id="4_jg0uj"]
-[ext_resource type="PackedScene" uid="uid://4k2ur0vm0hif" path="res://entities/items/embryo.tscn" id="5_k0gbw"]
+[ext_resource type="PackedScene" uid="uid://wydwtx36e8yl" path="res://entities/items/embryo.tscn" id="5_k0gbw"]
 [ext_resource type="PackedScene" uid="uid://bnguv38n53qo5" path="res://entities/items/medical_bills.tscn" id="6_k5fuh"]
 [ext_resource type="PackedScene" uid="uid://cw6r7ucbakac0" path="res://entities/items/trash_bin.tscn" id="7_bb6xo"]
 
@@ -22,35 +22,30 @@ offset_left = 145.0
 offset_top = 399.0
 offset_right = 145.0
 offset_bottom = 399.0
-mouse_filter = 0
 
 [node name="Drawer" parent="ItemContainer" instance=ExtResource("4_jg0uj")]
 offset_left = 137.0
 offset_top = 83.0
 offset_right = 137.0
 offset_bottom = 83.0
-mouse_filter = 0
 
 [node name="ItemBase" parent="ItemContainer" instance=ExtResource("5_k0gbw")]
 offset_left = 128.0
 offset_top = 355.0
 offset_right = 128.0
 offset_bottom = 355.0
-mouse_filter = 0
 
 [node name="MedicalBills" parent="ItemContainer" instance=ExtResource("6_k5fuh")]
 offset_left = 430.0
 offset_top = 240.0
 offset_right = 430.0
 offset_bottom = 240.0
-mouse_filter = 0
 
 [node name="TrashBin" parent="ItemContainer" instance=ExtResource("7_bb6xo")]
 offset_left = 80.0
 offset_top = 482.0
 offset_right = 80.0
 offset_bottom = 482.0
-mouse_filter = 0
 
 [node name="ParticleContainer" type="Node" parent="."]
 unique_name_in_owner = true

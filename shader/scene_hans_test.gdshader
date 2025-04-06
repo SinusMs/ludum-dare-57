@@ -5,7 +5,7 @@ uniform sampler2D screen_texture: hint_screen_texture, repeat_disable, filter_ne
 
 uniform sampler2D noise;
 
-uniform float found_items = 30.0;
+uniform float found_items;
 
 void fragment() {
     vec4 screen_color = textureLod(screen_texture, SCREEN_UV, 0.0);
