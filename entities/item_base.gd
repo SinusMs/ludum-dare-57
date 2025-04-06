@@ -15,6 +15,9 @@ var isHighlighted : bool = false
 func _ready() -> void:
 	$Highlight.hide()
 	mittelpunkt = %Mittelpunkt.position
+	
+	#ausdehnung der parent control node setzen für scrollcontainer
+	$".".custom_minimum_size = 2*Vector2($Sprite.texture.get_width(), $Sprite.texture.get_height())
 
 func showHighlight(_show: bool) -> void:
 	if _show:
