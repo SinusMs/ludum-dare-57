@@ -37,7 +37,7 @@
 [ext_resource type="PackedScene" uid="uid://uyycj0ywvwuc" path="res://entities/items/key.tscn" id="35_r0tbs"]
 [ext_resource type="PackedScene" uid="uid://c382y4mxn5ko6" path="res://entities/items/lamp.tscn" id="36_221d2"]
 [ext_resource type="PackedScene" uid="uid://bybmbb5c3ofpa" path="res://entities/items/birth_foto.tscn" id="37_bx1dr"]
-[ext_resource type="PackedScene" uid="uid://c6c15yevw4tdy" path="res://entities/items/letter.tscn" id="38_kmens"]
+[ext_resource type="PackedScene" uid="uid://b7xjkww8xapkx" path="res://entities/items/letter.tscn" id="38_kmens"]
 [ext_resource type="PackedScene" uid="uid://dyimivirc7fkj" path="res://entities/items/holy_grail.tscn" id="39_b6orh"]
 [ext_resource type="PackedScene" uid="uid://c8mkfdw5appi8" path="res://entities/items/ketchup.tscn" id="40_dot45"]
 [ext_resource type="PackedScene" uid="uid://2rf7tawro4db" path="res://shader/shader_scene.tscn" id="40_q27fi"]
