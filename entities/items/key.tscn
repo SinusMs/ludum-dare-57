@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://qkgfo3is2gvc"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_qncxq"]
+[ext_resource type="AudioStream" uid="uid://bms0gea4l08rx" path="res://assets/sfx/klirr_lang.wav" id="2_kmxvu"]
+[ext_resource type="Texture2D" uid="uid://d3ry1ibwyycvv" path="res://assets/items/key.png" id="2_nk4hd"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kmxvu"]
+atlas = ExtResource("2_nk4hd")
+region = Rect2(0, 0, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v4w4n"]
+atlas = ExtResource("2_nk4hd")
+region = Rect2(0, 16, 32, 16)
+
+[node name="Key" instance=ExtResource("1_qncxq")]
+item_name = "Key to your moms room"
+description = "why is it common???"
+sound = ExtResource("2_kmxvu")
+
+[node name="Schatten" parent="." index="0"]
+offset_left = -2.0
+offset_top = 10.0
+offset_right = 62.0
+offset_bottom = 74.0
+scale = Vector2(1.03226, 0.413291)
+
+[node name="Sprite" parent="." index="1"]
+texture = SubResource("AtlasTexture_kmxvu")
+
+[node name="Highlight" parent="." index="2"]
+texture = SubResource("AtlasTexture_v4w4n")
+
+[node name="Mittelpunkt" parent="." index="3"]
+position = Vector2(30, 18)
+
+[node name="CollisionPolygon2D" parent="." index="4"]
+polygon = PackedVector2Array(2, 26, 62, 26, 62, 1, 2, 1)

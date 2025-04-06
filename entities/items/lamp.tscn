@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://e6duuc5ffy2x"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_xef6r"]
+[ext_resource type="AudioStream" uid="uid://t4iceuciow3b" path="res://assets/sfx/bonk.wav" id="2_ibix0"]
+[ext_resource type="Texture2D" uid="uid://j86tfaroviye" path="res://assets/items/lamp.png" id="3_0b2q3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kgmt2"]
+atlas = ExtResource("3_0b2q3")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t3leo"]
+atlas = ExtResource("3_0b2q3")
+region = Rect2(0, 32, 32, 32)
+
+[node name="Lamp" instance=ExtResource("1_xef6r")]
+item_name = "Lamp"
+description = "just a normal lamp"
+sound = ExtResource("2_ibix0")
+
+[node name="Schatten" parent="." index="0"]
+offset_left = 6.0
+offset_top = 42.0
+offset_right = 70.0
+offset_bottom = 106.0
+scale = Vector2(0.813006, 0.429255)
+
+[node name="Sprite" parent="." index="1"]
+texture = SubResource("AtlasTexture_kgmt2")
+
+[node name="Highlight" parent="." index="2"]
+texture = SubResource("AtlasTexture_t3leo")
+
+[node name="Mittelpunkt" parent="." index="3"]
+position = Vector2(32, 51)
+
+[node name="CollisionPolygon2D" parent="." index="4"]
+polygon = PackedVector2Array(18, 62, 46, 62, 46, 28, 56, 28, 56, 14, 18, 14)

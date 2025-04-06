@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://4sn67460htmh"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_jvjbm"]
+[ext_resource type="AudioStream" uid="uid://d1jjh2cc3fyjn" path="res://assets/sfx/queeck_squash.wav" id="2_hfo1h"]
+[ext_resource type="Texture2D" uid="uid://4hhw5h8l3o6x" path="res://assets/items/shite.png" id="3_25oqy"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eku4v"]
+atlas = ExtResource("3_25oqy")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kv55v"]
+atlas = ExtResource("3_25oqy")
+region = Rect2(0, 32, 32, 32)
+
+[node name="Shite" instance=ExtResource("1_jvjbm")]
+item_name = "Shit"
+description = "Uh Stinky"
+sound = ExtResource("2_hfo1h")
+
+[node name="Schatten" parent="." index="0"]
+offset_left = -1.0
+offset_top = 29.0
+offset_right = 63.0
+offset_bottom = 93.0
+scale = Vector2(0.986241, 0.444356)
+
+[node name="Sprite" parent="." index="1"]
+texture = SubResource("AtlasTexture_eku4v")
+
+[node name="Highlight" parent="." index="2"]
+texture = SubResource("AtlasTexture_kv55v")
+
+[node name="Mittelpunkt" parent="." index="3"]
+position = Vector2(31, 32)
+
+[node name="CollisionPolygon2D" parent="." index="4"]
+polygon = PackedVector2Array(10, 49, 51, 49, 41, 11, 21, 11)
