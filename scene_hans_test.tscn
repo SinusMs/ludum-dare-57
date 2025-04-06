@@ -1,32 +1,35 @@
-[gd_scene load_steps=5 format=3 uid="uid://bme76a54qqj0b"]
+[gd_scene load_steps=6 format=3 uid="uid://c036pxoullefe"]
 
-[ext_resource type="PackedScene" uid="uid://kva23e0islsy" path="res://scene.tscn" id="1_0gpo8"]
+[ext_resource type="PackedScene" uid="uid://c5d08ta7hrvl4" path="res://levels/MainLevel.tscn" id="1_0gpo8"]
 [ext_resource type="Shader" uid="uid://dbwqpg0vlx01" path="res://shader/scene_hans_test.gdshader" id="1_spcxv"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_0gpo8"]
-shader = ExtResource("1_spcxv")
-shader_parameter/brightness = 0.4
-shader_parameter/contrast = 0.6
-shader_parameter/saturation = 0.3
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_0gpo8"]
+noise_type = 0
+frequency = 0.0026
+offset = Vector3(-77.32, -19.38, 0)
+fractal_weighted_strength = 0.18
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_86uq7"]
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_eede3"]
+width = 544
+height = 640
+noise = SubResource("FastNoiseLite_0gpo8")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_eede3"]
 shader = ExtResource("1_spcxv")
-shader_parameter/brightness = 0.5
-shader_parameter/contrast = 1.0
-shader_parameter/saturation = 0.5
+shader_parameter/noise = SubResource("NoiseTexture2D_eede3")
+shader_parameter/found_items = 0.0
 
 [node name="Node2D" type="Node2D"]
 
-[node name="BackBufferCopy2" type="BackBufferCopy" parent="."]
-rect = Rect2(0, 0, 544, 640)
+[node name="MainLevel" parent="." instance=ExtResource("1_0gpo8")]
 
-[node name="Node2D2" parent="BackBufferCopy2" instance=ExtResource("1_0gpo8")]
-z_index = -2
-material = SubResource("ShaderMaterial_0gpo8")
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="ColorRect" type="ColorRect" parent="BackBufferCopy2"]
-texture_filter = 2
-material = SubResource("ShaderMaterial_86uq7")
-offset_right = 544.0
-offset_bottom = 640.0
-mouse_filter = 2
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+material = SubResource("ShaderMaterial_eede3")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -288.0
+grow_horizontal = 2
+grow_vertical = 2

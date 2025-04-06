@@ -1,18 +1,15 @@
 shader_type canvas_item;
 
-uniform sampler2D screen_texture : hint_screen_texture, repeat_disable, filter_nearest;
+// mipmap is neaded for textureLod
+uniform sampler2D screen_texture: hint_screen_texture, repeat_disable, filter_nearest_mipmap;
 
+uniform sampler2D noise;
 
-
-uniform float brightness : hint_range(0.0, 1.0, 0.1) = 1.0 ;
-uniform float contrast : hint_range(0.0, 1.0, 0.1) = 1.0;
-uniform float saturation : hint_range(0.0, 1.0, 0.1) = 1.0;
+uniform float found_items = 30.0;
 
 void fragment() {
-    vec3 c = textureLod(screen_texture, SCREEN_UV, 0.0).rgb;
-
-    c.rgb = mix(vec3(0.0), c.rgb, brightness);
-    c.rgb = mix(vec3(0.5), c.rgb, contrast);
-    c.rgb = mix(vec3(dot(vec3(1.0), c.rgb) * 0.33333), c.rgb, saturation);
-    COLOR.rgb = c.rgb;
+    vec4 screen_color = textureLod(screen_texture, SCREEN_UV, 0.0);
+	vec4 dark_texture = vec4(0,0,0, 1);
+	COLOR =  mix(screen_color, dark_texture, 0.01*found_items);
+	//COLOR = screen_color + noise_color;
 }
