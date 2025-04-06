@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://nyt07ovjnjwb"]
+[gd_scene load_steps=6 format=3 uid="uid://nyt07ovjnjwb"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_up4j5"]
+[ext_resource type="AudioStream" uid="uid://bnpb8e5pnttun" path="res://assets/sfx/paper_stack.wav" id="2_6lnf0"]
 [ext_resource type="Texture2D" uid="uid://1i272imiwci1" path="res://assets/items/bibel.png" id="2_bmup6"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bmup6"]
@@ -14,6 +15,7 @@ region = Rect2(0, 32, 32, 32)
 [node name="Bibel" instance=ExtResource("1_up4j5")]
 item_name = "The Holy Bibel"
 description = "some fantasy novel"
+sound = ExtResource("2_6lnf0")
 
 [node name="Schatten" parent="." index="0"]
 offset_left = -10.0

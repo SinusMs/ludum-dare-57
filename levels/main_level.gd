@@ -4,12 +4,19 @@ var rauchwolke_scene : PackedScene = preload("res://entities/rauchwolke_cpu_part
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	SignalBus.item_changed.connect(item_play_sound)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
 	pass
+
+
+func item_play_sound(string : String) -> void:
+	if Utils.currently_selected_item == null:
+		return
+	$AudioStreamPlayer.stream = Utils.currently_selected_item.sound
+	$AudioStreamPlayer.play()
 
 
 func _spawn_children(item : ItemBase) -> bool:

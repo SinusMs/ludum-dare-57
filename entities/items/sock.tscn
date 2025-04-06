@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://cikir5d1ouov"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_cn4nr"]
+[ext_resource type="Texture2D" uid="uid://brekpfdmgf8ji" path="res://assets/items/sock.png" id="2_05x4e"]
+[ext_resource type="AudioStream" uid="uid://dqvhkvfmkngji" path="res://assets/sfx/raschel.wav" id="2_be4pa"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_slugw"]
+atlas = ExtResource("2_05x4e")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8hdyy"]
+atlas = ExtResource("2_05x4e")
+region = Rect2(0, 32, 32, 32)
+
+[node name="Sock" instance=ExtResource("1_cn4nr")]
+mouse_filter = 0
+item_name = "Sock"
+description = "Why is it stiff?"
+sound = ExtResource("2_be4pa")
+
+[node name="Schatten" parent="." index="0"]
+offset_left = 2.0
+offset_top = 57.0
+offset_right = 66.0
+offset_bottom = 121.0
+rotation = -0.758246
+scale = Vector2(0.865276, 0.316289)
+
+[node name="Sprite" parent="." index="1"]
+texture = SubResource("AtlasTexture_slugw")
+
+[node name="Highlight" parent="." index="2"]
+texture = SubResource("AtlasTexture_8hdyy")
+
+[node name="CollisionPolygon2D" parent="." index="4"]
+polygon = PackedVector2Array(27, 11, 26, 24, 13, 36, 11, 56, 22, 55, 45, 39, 44, 10)

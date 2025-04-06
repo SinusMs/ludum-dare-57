@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://bi6udjbgxvs28"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_arbv4"]
+[ext_resource type="AudioStream" uid="uid://bfba4lenrabdi" path="res://assets/sfx/water_splash.wav" id="2_8sn5y"]
+[ext_resource type="Texture2D" uid="uid://dei0y5he2jarg" path="res://assets/items/moms_tears.png" id="3_yio64"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tkwvi"]
+atlas = ExtResource("3_yio64")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_anh85"]
+atlas = ExtResource("3_yio64")
+region = Rect2(0, 32, 32, 32)
+
+[node name="MomsTears" instance=ExtResource("1_arbv4")]
+item_name = "Moms Tears"
+description = "idk, never played isaac"
+sound = ExtResource("2_8sn5y")
+
+[node name="Schatten" parent="." index="0"]
+offset_left = -8.0
+offset_top = 17.0
+offset_right = 56.0
+offset_bottom = 81.0
+scale = Vector2(1.26598, 1.02568)
+
+[node name="Sprite" parent="." index="1"]
+texture = SubResource("AtlasTexture_tkwvi")
+
+[node name="Highlight" parent="." index="2"]
+texture = SubResource("AtlasTexture_anh85")
+
+[node name="Mittelpunkt" parent="." index="3"]
+position = Vector2(32, 45)
+
+[node name="CollisionPolygon2D" parent="." index="4"]
+polygon = PackedVector2Array(10, 63, 55, 64, 55, 38, 42, 27, 42, -1, 22, -1, 22, 26, 9, 37)

@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://c437qjyeai8h7"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_ic0uq"]
+[ext_resource type="AudioStream" uid="uid://rclatapr1dbn" path="res://assets/sfx/stone_bonk.wav" id="2_gs3oc"]
+[ext_resource type="Texture2D" uid="uid://b1xp2ms8is6vk" path="res://assets/items/weird_stone.png" id="3_gxvlf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fq8co"]
+atlas = ExtResource("3_gxvlf")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bslbe"]
+atlas = ExtResource("3_gxvlf")
+region = Rect2(0, 32, 32, 32)
+
+[node name="WeirdStone" instance=ExtResource("1_ic0uq")]
+item_name = "Weird Stone"
+description = "are there coming noises out of it??"
+sound = ExtResource("2_gs3oc")
+
+[node name="Schatten" parent="." index="0"]
+offset_left = -20.0
+offset_top = 19.0
+offset_right = 44.0
+offset_bottom = 83.0
+scale = Vector2(1.54488, 0.921393)
+
+[node name="Sprite" parent="." index="1"]
+texture = SubResource("AtlasTexture_fq8co")
+
+[node name="Highlight" parent="." index="2"]
+texture = SubResource("AtlasTexture_bslbe")
+
+[node name="Mittelpunkt" parent="." index="3"]
+position = Vector2(29, 36)
+
+[node name="CollisionPolygon2D" parent="." index="4"]
+polygon = PackedVector2Array(-2, 61, 63, 59, 55, 2, 8, 3)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://c5d08ta7hrvl4"]
+[gd_scene load_steps=42 format=3 uid="uid://cx8eljiil0ugl"]
 
 [ext_resource type="Script" uid="uid://c3u0uh25n4yiy" path="res://levels/main_level.gd" id="1_3348v"]
 [ext_resource type="PackedScene" uid="uid://cberpn7tbycxf" path="res://ui/Menu.tscn" id="1_mt7cn"]
@@ -7,9 +7,46 @@
 [ext_resource type="PackedScene" uid="uid://wydwtx36e8yl" path="res://entities/items/embryo.tscn" id="5_k0gbw"]
 [ext_resource type="PackedScene" uid="uid://bnguv38n53qo5" path="res://entities/items/medical_bills.tscn" id="6_k5fuh"]
 [ext_resource type="PackedScene" uid="uid://cw6r7ucbakac0" path="res://entities/items/trash_bin.tscn" id="7_bb6xo"]
+[ext_resource type="PackedScene" uid="uid://nyt07ovjnjwb" path="res://entities/items/bibel.tscn" id="8_k5fuh"]
+[ext_resource type="PackedScene" uid="uid://yvo3ewrb65e0" path="res://entities/items/backpack.tscn" id="9_bb6xo"]
+[ext_resource type="PackedScene" uid="uid://b3mnajtkq6oyu" path="res://entities/items/cactus.tscn" id="10_41fje"]
+[ext_resource type="PackedScene" uid="uid://dft3ypa3b8bvs" path="res://entities/items/canned_beans.tscn" id="11_q7j5t"]
+[ext_resource type="PackedScene" uid="uid://dgexs3f2uftyh" path="res://entities/items/canned_spam.tscn" id="12_4oiuq"]
+[ext_resource type="PackedScene" uid="uid://22npkcscsiid" path="res://entities/items/chessboard.tscn" id="13_0plji"]
+[ext_resource type="PackedScene" uid="uid://c7voyjg5fftpx" path="res://entities/items/dead_cat.tscn" id="14_ff2ql"]
+[ext_resource type="PackedScene" uid="uid://pq5ooqubkbjs" path="res://entities/items/demon_circle.tscn" id="15_28a0o"]
+[ext_resource type="PackedScene" uid="uid://clpi5w51dp101" path="res://entities/items/egg.tscn" id="16_gsvjw"]
+[ext_resource type="PackedScene" uid="uid://d1trfs4ihtjer" path="res://entities/items/family_foto.tscn" id="17_lcqv6"]
+[ext_resource type="PackedScene" uid="uid://cv7vh7kufm0ol" path="res://entities/items/milk.tscn" id="18_8pwpk"]
+[ext_resource type="PackedScene" uid="uid://odfi2oci1jl6" path="res://entities/items/moving_box.tscn" id="19_xqi5s"]
+[ext_resource type="PackedScene" uid="uid://c81x0dytqx5yd" path="res://entities/items/nougat_bits.tscn" id="20_l2mna"]
+[ext_resource type="PackedScene" uid="uid://b5xauaved37u8" path="res://entities/items/rock_face.tscn" id="21_56rdf"]
+[ext_resource type="PackedScene" uid="uid://bnnf1oqujxk22" path="res://entities/items/rubber_duck.tscn" id="22_io7o4"]
+[ext_resource type="PackedScene" uid="uid://dkfvx5sngy801" path="res://entities/items/soggy_nougat_bits.tscn" id="23_ihpsd"]
+[ext_resource type="PackedScene" uid="uid://c1b20a4oewvpa" path="res://entities/items/the_other_ring.tscn" id="24_x2uw4"]
+[ext_resource type="PackedScene" uid="uid://d4koovgas2smy" path="res://entities/items/toilet_paper.tscn" id="25_dtwx4"]
+[ext_resource type="PackedScene" uid="uid://c6kak3d8jk82o" path="res://entities/items/trash_bag.tscn" id="26_2pw5b"]
+[ext_resource type="PackedScene" uid="uid://cikir5d1ouov" path="res://entities/items/sock.tscn" id="27_50hyn"]
+[ext_resource type="PackedScene" uid="uid://cdjliiy1d7ay" path="res://entities/items/bong.tscn" id="28_u3t4o"]
+[ext_resource type="PackedScene" uid="uid://dviiu2yqikp2u" path="res://entities/items/sound_system.tscn" id="29_juar8"]
+[ext_resource type="PackedScene" uid="uid://c437qjyeai8h7" path="res://entities/items/weird_stone.tscn" id="30_pct36"]
+[ext_resource type="PackedScene" uid="uid://4sn67460htmh" path="res://entities/items/shite.tscn" id="31_f6v30"]
+[ext_resource type="PackedScene" uid="uid://b51oblxre2fy" path="res://entities/items/rope.tscn" id="32_7xlt5"]
+[ext_resource type="PackedScene" uid="uid://dsq0k5aet4184" path="res://entities/items/moldy_bread.tscn" id="33_ysprp"]
+[ext_resource type="PackedScene" uid="uid://bi6udjbgxvs28" path="res://entities/items/moms_tears.tscn" id="34_bk0vb"]
+[ext_resource type="PackedScene" uid="uid://qkgfo3is2gvc" path="res://entities/items/key.tscn" id="35_r0tbs"]
+[ext_resource type="PackedScene" uid="uid://e6duuc5ffy2x" path="res://entities/items/lamp.tscn" id="36_221d2"]
+[ext_resource type="PackedScene" uid="uid://dfqysr6xvygq4" path="res://entities/items/birth_foto.tscn" id="37_bx1dr"]
+[ext_resource type="PackedScene" uid="uid://b7xjkww8xapkx" path="res://entities/items/letter.tscn" id="38_kmens"]
+[ext_resource type="PackedScene" uid="uid://cmr1qblyyfa7w" path="res://entities/items/holy_grail.tscn" id="39_b6orh"]
+[ext_resource type="PackedScene" uid="uid://c5b7sh3jhii1o" path="res://entities/items/ketchup.tscn" id="40_dot45"]
+[ext_resource type="PackedScene" uid="uid://2rf7tawro4db" path="res://shader/shader_scene.tscn" id="40_q27fi"]
 
 [node name="MainLevel" type="Node2D"]
 script = ExtResource("1_3348v")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+max_polyphony = 10
 
 [node name="Menu" parent="." node_paths=PackedStringArray("level") instance=ExtResource("1_mt7cn")]
 level = NodePath("..")
@@ -18,10 +55,10 @@ level = NodePath("..")
 unique_name_in_owner = true
 
 [node name="Coffin" parent="ItemContainer" instance=ExtResource("2_3348v")]
-offset_left = 145.0
-offset_top = 399.0
-offset_right = 145.0
-offset_bottom = 399.0
+offset_left = 56.0
+offset_top = 448.0
+offset_right = 56.0
+offset_bottom = 448.0
 
 [node name="Drawer" parent="ItemContainer" instance=ExtResource("4_jg0uj")]
 offset_left = 137.0
@@ -34,6 +71,7 @@ offset_left = 128.0
 offset_top = 355.0
 offset_right = 128.0
 offset_bottom = 355.0
+labelText = "eat"
 
 [node name="MedicalBills" parent="ItemContainer" instance=ExtResource("6_k5fuh")]
 offset_left = 430.0
@@ -47,5 +85,215 @@ offset_top = 482.0
 offset_right = 80.0
 offset_bottom = 482.0
 
+[node name="Bibel" parent="ItemContainer" instance=ExtResource("8_k5fuh")]
+offset_left = 290.0
+offset_top = 345.0
+offset_right = 290.0
+offset_bottom = 345.0
+
+[node name="Backpack" parent="ItemContainer" instance=ExtResource("9_bb6xo")]
+offset_left = 421.0
+offset_top = 8.0
+offset_right = 421.0
+offset_bottom = 8.0
+
+[node name="Cactus" parent="ItemContainer" instance=ExtResource("10_41fje")]
+offset_left = 464.0
+offset_top = 331.0
+offset_right = 464.0
+offset_bottom = 331.0
+
+[node name="Canned_Beans" parent="ItemContainer" instance=ExtResource("11_q7j5t")]
+offset_left = 286.0
+offset_top = 111.0
+offset_right = 286.0
+offset_bottom = 111.0
+
+[node name="Canned_SPAM" parent="ItemContainer" instance=ExtResource("12_4oiuq")]
+offset_left = 189.0
+offset_top = 119.0
+offset_right = 189.0
+offset_bottom = 119.0
+
+[node name="Chessboard" parent="ItemContainer" instance=ExtResource("13_0plji")]
+offset_left = 21.0
+offset_top = 217.0
+offset_right = 21.0
+offset_bottom = 217.0
+
+[node name="ItemBase2" parent="ItemContainer" instance=ExtResource("14_ff2ql")]
+offset_left = 11.0
+offset_top = 307.0
+offset_right = 11.0
+offset_bottom = 307.0
+
+[node name="DemonCircle" parent="ItemContainer" instance=ExtResource("15_28a0o")]
+offset_left = 55.0
+offset_top = 71.0
+offset_right = 55.0
+offset_bottom = 71.0
+
+[node name="Egg" parent="ItemContainer" instance=ExtResource("16_gsvjw")]
+offset_left = 452.0
+offset_top = 534.0
+offset_right = 452.0
+offset_bottom = 534.0
+
+[node name="ItemBase3" parent="ItemContainer" instance=ExtResource("17_lcqv6")]
+offset_left = 214.0
+offset_top = 310.0
+offset_right = 214.0
+offset_bottom = 310.0
+
+[node name="ItemBase4" parent="ItemContainer" instance=ExtResource("18_8pwpk")]
+offset_left = 300.0
+offset_top = 549.0
+offset_right = 300.0
+offset_bottom = 549.0
+
+[node name="MovingBox" parent="ItemContainer" instance=ExtResource("19_xqi5s")]
+offset_left = 4.0
+offset_top = 530.0
+offset_right = 4.0
+offset_bottom = 530.0
+
+[node name="NougatBits" parent="ItemContainer" instance=ExtResource("20_l2mna")]
+offset_left = 236.0
+offset_top = 110.0
+offset_right = 236.0
+offset_bottom = 110.0
+
+[node name="ItemBase5" parent="ItemContainer" instance=ExtResource("21_56rdf")]
+offset_left = 389.0
+offset_top = 383.0
+offset_right = 389.0
+offset_bottom = 383.0
+
+[node name="RubberDuck" parent="ItemContainer" instance=ExtResource("22_io7o4")]
+offset_left = 381.0
+offset_top = 299.0
+offset_right = 381.0
+offset_bottom = 299.0
+
+[node name="SoggyNougatBits" parent="ItemContainer" instance=ExtResource("23_ihpsd")]
+offset_left = 187.0
+offset_top = 381.0
+offset_right = 187.0
+offset_bottom = 381.0
+
+[node name="TheOtherRing" parent="ItemContainer" instance=ExtResource("24_x2uw4")]
+offset_left = 405.0
+offset_top = 167.0
+offset_right = 405.0
+offset_bottom = 167.0
+
+[node name="ToiletPaper" parent="ItemContainer" instance=ExtResource("25_dtwx4")]
+offset_left = 34.0
+offset_top = 523.0
+offset_right = 34.0
+offset_bottom = 523.0
+
+[node name="TrashBag" parent="ItemContainer" instance=ExtResource("26_2pw5b")]
+offset_left = 148.0
+offset_top = 519.0
+offset_right = 148.0
+offset_bottom = 519.0
+
+[node name="Sock" parent="ItemContainer" instance=ExtResource("27_50hyn")]
+offset_left = 98.0
+offset_top = 171.0
+offset_right = 98.0
+offset_bottom = 171.0
+
+[node name="Bong" parent="ItemContainer" instance=ExtResource("28_u3t4o")]
+offset_left = 377.0
+offset_top = 502.0
+offset_right = 377.0
+offset_bottom = 502.0
+
+[node name="SoundSystem" parent="ItemContainer" instance=ExtResource("29_juar8")]
+offset_left = 281.0
+offset_top = 1.0
+offset_right = 281.0
+offset_bottom = 1.0
+
+[node name="WeirdStone" parent="ItemContainer" instance=ExtResource("30_pct36")]
+offset_left = 14.0
+offset_top = 447.0
+offset_right = 14.0
+offset_bottom = 447.0
+
+[node name="Shite" parent="ItemContainer" instance=ExtResource("31_f6v30")]
+offset_left = 263.0
+offset_top = 392.0
+offset_right = 263.0
+offset_bottom = 392.0
+
+[node name="Rope" parent="ItemContainer" instance=ExtResource("32_7xlt5")]
+offset_left = 83.0
+offset_top = 249.0
+offset_right = 83.0
+offset_bottom = 249.0
+
+[node name="MoldyBread" parent="ItemContainer" instance=ExtResource("33_ysprp")]
+offset_left = 474.0
+offset_top = 173.0
+offset_right = 474.0
+offset_bottom = 173.0
+
+[node name="MomsTears" parent="ItemContainer" instance=ExtResource("34_bk0vb")]
+offset_left = 328.0
+offset_top = 289.0
+offset_right = 328.0
+offset_bottom = 289.0
+
+[node name="Key" parent="ItemContainer" instance=ExtResource("35_r0tbs")]
+offset_left = 98.0
+offset_top = 432.0
+offset_right = 98.0
+offset_bottom = 432.0
+
+[node name="Lamp" parent="ItemContainer" instance=ExtResource("36_221d2")]
+offset_top = 143.0
+offset_bottom = 143.0
+
+[node name="BirthFoto" parent="ItemContainer" instance=ExtResource("37_bx1dr")]
+offset_left = 173.0
+offset_top = 54.0
+offset_right = 173.0
+offset_bottom = 54.0
+
+[node name="Letter" parent="ItemContainer" instance=ExtResource("38_kmens")]
+offset_left = 327.0
+offset_top = 399.0
+offset_right = 327.0
+offset_bottom = 399.0
+
+[node name="HolyGrail" parent="ItemContainer" instance=ExtResource("39_b6orh")]
+offset_left = 111.0
+offset_top = 96.0
+offset_right = 111.0
+offset_bottom = 96.0
+
+[node name="Ketchup" parent="ItemContainer" instance=ExtResource("40_dot45")]
+offset_left = 488.0
+offset_top = 253.0
+offset_right = 488.0
+offset_bottom = 253.0
+
 [node name="ParticleContainer" type="Node" parent="."]
 unique_name_in_owner = true
+
+[node name="Beer Crate" parent="." instance=ExtResource("8_k5fuh")]
+offset_left = 337.0
+offset_top = 485.0
+offset_right = 337.0
+offset_bottom = 485.0
+
+[node name="Beer Crate2" parent="." instance=ExtResource("8_k5fuh")]
+offset_left = 337.0
+offset_top = 435.0
+offset_right = 337.0
+offset_bottom = 435.0
+
+[node name="CanvasLayer" parent="." instance=ExtResource("40_q27fi")]

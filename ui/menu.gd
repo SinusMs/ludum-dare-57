@@ -42,6 +42,5 @@ func _on_background_gui_input(event:InputEvent) -> void:
 		Utils.currently_selected_item = null
 		SignalBus.item_changed.emit("")
 
-
-func _on_achievement_button_button_down() -> void:
-	SignalBus.show_achievements.emit()
+		if Utils.currently_hovered_item != null:
+			Utils.currently_hovered_item.set_deferred("isHighlighted", false)

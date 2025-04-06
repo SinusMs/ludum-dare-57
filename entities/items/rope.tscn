@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://b51oblxre2fy"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_0nr22"]
+[ext_resource type="AudioStream" uid="uid://dqvhkvfmkngji" path="res://assets/sfx/raschel.wav" id="2_662da"]
+[ext_resource type="Texture2D" uid="uid://durnyo68nsf2c" path="res://assets/items/rope.png" id="3_5gxxo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6rc6g"]
+atlas = ExtResource("3_5gxxo")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l0luf"]
+atlas = ExtResource("3_5gxxo")
+region = Rect2(0, 64, 64, 64)
+
+[node name="Rope" instance=ExtResource("1_0nr22")]
+item_name = "Rope"
+description = "What could it been used for??"
+sound = ExtResource("2_662da")
+
+[node name="Schatten" parent="." index="0"]
+offset_left = -8.0
+offset_top = 39.0
+offset_right = 56.0
+offset_bottom = 103.0
+scale = Vector2(2.25315, 1.03837)
+
+[node name="Sprite" parent="." index="1"]
+texture = SubResource("AtlasTexture_6rc6g")
+
+[node name="Highlight" parent="." index="2"]
+texture = SubResource("AtlasTexture_l0luf")
+
+[node name="Mittelpunkt" parent="." index="3"]
+position = Vector2(63, 66)
+
+[node name="CollisionPolygon2D" parent="." index="4"]
+polygon = PackedVector2Array(11, 68, 23, 95, 104, 87, 104, 41, 51, 44)

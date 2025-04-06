@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://c7voyjg5fftpx"]
+[gd_scene load_steps=6 format=3 uid="uid://c7voyjg5fftpx"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_7nj72"]
 [ext_resource type="Texture2D" uid="uid://y0winpvtwuyb" path="res://assets/items/dead_cat.png" id="2_nil11"]
+[ext_resource type="AudioStream" uid="uid://cu47cnyn5qf1s" path="res://assets/sfx/raschel_ablegen.wav" id="2_ny5n0"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_icf0d"]
 atlas = ExtResource("2_nil11")
@@ -11,11 +12,12 @@ region = Rect2(0, 0, 0, 48)
 atlas = ExtResource("2_nil11")
 region = Rect2(0, 48, 48, 48)
 
-[node name="ItemBase" instance=ExtResource("1_7nj72")]
+[node name="DeadCat" instance=ExtResource("1_7nj72")]
 description = "Guppy! There you are! 
 Are you alright?
 
 ..."
+sound = ExtResource("2_ny5n0")
 
 [node name="Schatten" parent="." index="0"]
 offset_left = -5.0

@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bnguv38n53qo5"]
+[gd_scene load_steps=6 format=3 uid="uid://bnguv38n53qo5"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_npwgq"]
 [ext_resource type="Texture2D" uid="uid://cs7diu4gwijwm" path="res://assets/items/medicalbills.png" id="2_7k3qw"]
+[ext_resource type="AudioStream" uid="uid://bnpb8e5pnttun" path="res://assets/sfx/paper_stack.wav" id="2_xp6w3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xp6w3"]
 atlas = ExtResource("2_7k3qw")
@@ -14,6 +15,7 @@ region = Rect2(0, 32, 32, 32)
 [node name="MedicalBills" instance=ExtResource("1_npwgq")]
 item_name = "Medical Bills"
 description = "phew...  whoever had to pay these had to spend a fortune"
+sound = ExtResource("2_xp6w3")
 
 [node name="Schatten" parent="." index="0"]
 offset_left = -4.0

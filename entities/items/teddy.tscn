@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://dai3ungis804f"]
+[gd_scene load_steps=6 format=3 uid="uid://dai3ungis804f"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_lmt8k"]
+[ext_resource type="AudioStream" uid="uid://dqvhkvfmkngji" path="res://assets/sfx/raschel.wav" id="2_8bpwd"]
 [ext_resource type="Texture2D" uid="uid://w3w8whcptj50" path="res://assets/items/teddy.png" id="2_lk04g"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8bpwd"]
@@ -15,6 +16,7 @@ region = Rect2(0, 32, 32, 32)
 item_name = "Teddy Bear"
 description = "My old Teddy Bear.
 a bit worn out"
+sound = ExtResource("2_8bpwd")
 
 [node name="Schatten" parent="." index="0"]
 offset_left = -5.0
