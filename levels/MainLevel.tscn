@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3 uid="uid://cx8eljiil0ugl"]
+[gd_scene load_steps=42 format=3 uid="uid://cx8eljiil0ugl"]
 
 [ext_resource type="Script" uid="uid://c3u0uh25n4yiy" path="res://levels/main_level.gd" id="1_3348v"]
 [ext_resource type="PackedScene" uid="uid://cberpn7tbycxf" path="res://ui/Menu.tscn" id="1_mt7cn"]
@@ -39,6 +39,8 @@
 [ext_resource type="PackedScene" uid="uid://dfqysr6xvygq4" path="res://entities/items/birth_foto.tscn" id="37_bx1dr"]
 [ext_resource type="PackedScene" uid="uid://b7xjkww8xapkx" path="res://entities/items/letter.tscn" id="38_kmens"]
 [ext_resource type="PackedScene" uid="uid://cmr1qblyyfa7w" path="res://entities/items/holy_grail.tscn" id="39_b6orh"]
+[ext_resource type="PackedScene" uid="uid://c5b7sh3jhii1o" path="res://entities/items/ketchup.tscn" id="40_dot45"]
+[ext_resource type="PackedScene" uid="uid://2rf7tawro4db" path="res://shader/shader_scene.tscn" id="40_q27fi"]
 
 [node name="MainLevel" type="Node2D"]
 script = ExtResource("1_3348v")
@@ -64,13 +66,12 @@ offset_top = 83.0
 offset_right = 137.0
 offset_bottom = 83.0
 
-[node name="ItemBase" parent="ItemContainer" node_paths=PackedStringArray("dependencies") instance=ExtResource("5_k0gbw")]
+[node name="ItemBase" parent="ItemContainer" instance=ExtResource("5_k0gbw")]
 offset_left = 128.0
 offset_top = 355.0
 offset_right = 128.0
 offset_bottom = 355.0
 labelText = "eat"
-dependencies = [NodePath("../Coffin"), NodePath("../MedicalBills"), null, null]
 
 [node name="MedicalBills" parent="ItemContainer" instance=ExtResource("6_k5fuh")]
 offset_left = 430.0
@@ -78,12 +79,11 @@ offset_top = 240.0
 offset_right = 430.0
 offset_bottom = 240.0
 
-[node name="TrashBin" parent="ItemContainer" node_paths=PackedStringArray("dependencies") instance=ExtResource("7_bb6xo")]
+[node name="TrashBin" parent="ItemContainer" instance=ExtResource("7_bb6xo")]
 offset_left = 80.0
 offset_top = 482.0
 offset_right = 80.0
 offset_bottom = 482.0
-dependencies = [NodePath("../Drawer")]
 
 [node name="Bibel" parent="ItemContainer" instance=ExtResource("8_k5fuh")]
 offset_left = 290.0
@@ -275,6 +275,12 @@ offset_top = 96.0
 offset_right = 111.0
 offset_bottom = 96.0
 
+[node name="Ketchup" parent="ItemContainer" instance=ExtResource("40_dot45")]
+offset_left = 488.0
+offset_top = 253.0
+offset_right = 488.0
+offset_bottom = 253.0
+
 [node name="ParticleContainer" type="Node" parent="."]
 unique_name_in_owner = true
 
@@ -289,3 +295,5 @@ offset_left = 337.0
 offset_top = 435.0
 offset_right = 337.0
 offset_bottom = 435.0
+
+[node name="CanvasLayer" parent="." instance=ExtResource("40_q27fi")]
