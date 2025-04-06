@@ -24,7 +24,6 @@ func _on_stash_button_button_down() -> void:
 	if !level._spawn_children(Utils.currently_selected_item):
 		Utils.found_items+=1
 		SignalBus.item_picked_up.emit(Utils.currently_selected_item.duplicate())
-		Utils.item_list.append(Utils.currently_selected_item) #wir schauen mal was passiert
 		
 	
 	level._spawn_particles(Utils.currently_selected_item)
@@ -44,3 +43,9 @@ func _on_background_gui_input(event:InputEvent) -> void:
 
 		if Utils.currently_hovered_item != null:
 			Utils.currently_hovered_item.set_deferred("isHighlighted", false)
+
+
+
+
+func _on_achievement_button_button_down() -> void:
+	SignalBus.show_achievements.emit()
