@@ -9,7 +9,7 @@ func _ready() -> void:
 func _on_exit_overview_button_down() -> void:
 	$".".hide()
 
-func _on_item_picked_up(item: Control) -> void:
+func _on_item_picked_up(item: ItemBase) -> void:
 	item.position = Vector2(0,0)
 	$TextureRect/ScrollContainer/GridContainer.add_child(item)
 

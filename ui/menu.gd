@@ -4,7 +4,7 @@ extends Control
 
 func _ready() -> void:
 	SignalBus.item_changed.connect(change_item)
-
+	SignalBus.close_achievements.connect(_on_close_achievements)
 func change_item(newLabelText: String) -> void:
 	if Utils.currently_selected_item == null:
 		$"CanvasLayer/Panel/NameFrame/NameLabel".text = ""
@@ -58,3 +58,8 @@ func _on_background_gui_input(event:InputEvent) -> void:
 
 func _on_achievement_button_button_down() -> void:
 	SignalBus.show_achievements.emit()
+	$CanvasLayer/Panel/StashButton.hide()
+	$CanvasLayer/Panel/AchievementButton.hide()
+func _on_close_achievements() -> void:
+	$CanvasLayer/Panel/StashButton.show()
+	$CanvasLayer/Panel/AchievementButton.show()
