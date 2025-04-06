@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://22npkcscsiid"]
+[gd_scene load_steps=6 format=3 uid="uid://22npkcscsiid"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_ljdrh"]
+[ext_resource type="AudioStream" uid="uid://t4iceuciow3b" path="res://assets/sfx/bonk.wav" id="2_km6vj"]
 [ext_resource type="Texture2D" uid="uid://dkhxqqil7lb6t" path="res://assets/items/chessboard.png" id="2_oekyv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_km6vj"]
@@ -14,6 +15,7 @@ region = Rect2(0, 32, 32, 32)
 [node name="Chessboard" instance=ExtResource("1_ljdrh")]
 item_name = "Chessboard"
 description = "\"We used to play, he was such a smart child...\""
+sound = ExtResource("2_km6vj")
 
 [node name="Schatten" parent="." index="0"]
 offset_left = -2.0

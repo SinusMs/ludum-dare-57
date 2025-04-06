@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://cw6r7ucbakac0"]
+[gd_scene load_steps=6 format=3 uid="uid://cw6r7ucbakac0"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_3t00g"]
 [ext_resource type="Texture2D" uid="uid://ch857s4754sju" path="res://assets/items/trashbag.png" id="2_mog1g"]
+[ext_resource type="AudioStream" uid="uid://dqnuf4lqt1pd2" path="res://assets/sfx/fly_summing.wav" id="2_yunh8"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yunh8"]
 atlas = ExtResource("2_mog1g")
@@ -14,6 +15,7 @@ region = Rect2(64, 64, 64, 64)
 [node name="TrashBin" instance=ExtResource("1_3t00g")]
 item_name = "Trash Bin"
 description = "If I leave it here a bit longer, somethig big will hatch"
+sound = ExtResource("2_yunh8")
 
 [node name="Schatten" parent="." index="0"]
 offset_left = -3.0

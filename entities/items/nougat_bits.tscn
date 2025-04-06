@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://c81x0dytqx5yd"]
+[gd_scene load_steps=6 format=3 uid="uid://c81x0dytqx5yd"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_2b4j3"]
+[ext_resource type="AudioStream" uid="uid://flux4p1tccor" path="res://assets/sfx/karton_click.wav" id="2_007u0"]
 [ext_resource type="Texture2D" uid="uid://58g17dff6gh6" path="res://assets/items/nougatbits.png" id="2_mj035"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_007u0"]
@@ -15,6 +16,7 @@ region = Rect2(0, 32, 32, 32)
 item_name = "Nougat Bits"
 description = "an open bag of cereals
 yummy"
+sound = ExtResource("2_007u0")
 
 [node name="Schatten" parent="." index="0"]
 offset_left = 1.0

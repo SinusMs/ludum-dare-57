@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://c6kak3d8jk82o"]
+[gd_scene load_steps=6 format=3 uid="uid://c6kak3d8jk82o"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_c3l0l"]
 [ext_resource type="Texture2D" uid="uid://ch857s4754sju" path="res://assets/items/trashbag.png" id="2_kgjq5"]
+[ext_resource type="AudioStream" uid="uid://cu47cnyn5qf1s" path="res://assets/sfx/raschel_ablegen.wav" id="2_n7hhi"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_n7hhi"]
 atlas = ExtResource("2_kgjq5")
@@ -14,6 +15,7 @@ region = Rect2(0, 64, 64, 64)
 [node name="TrashBag" instance=ExtResource("1_c3l0l")]
 item_name = "Trashbag"
 description = "uhh stinky"
+sound = ExtResource("2_n7hhi")
 
 [node name="Schatten" parent="." index="0"]
 offset_left = -28.0

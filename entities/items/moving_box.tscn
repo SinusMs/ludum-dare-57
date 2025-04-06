@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://odfi2oci1jl6"]
+[gd_scene load_steps=6 format=3 uid="uid://odfi2oci1jl6"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_sx1vg"]
-[ext_resource type="Texture2D" uid="uid://dga8rme8217qf" path="res://assets/items/box.png" id="2_tu44o"]
+[ext_resource type="AudioStream" uid="uid://flux4p1tccor" path="res://assets/sfx/karton_click.wav" id="2_rxb8h"]
+[ext_resource type="Texture2D" uid="uid://cvj6d27b3lhwr" path="res://assets/items/box.png" id="2_tu44o"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rxb8h"]
 atlas = ExtResource("2_tu44o")
@@ -14,6 +15,7 @@ region = Rect2(0, 64, 64, 64)
 [node name="MovingBox" instance=ExtResource("1_sx1vg")]
 item_name = "Moving Box"
 description = "an ordanary moving box"
+sound = ExtResource("2_rxb8h")
 
 [node name="Schatten" parent="." index="0"]
 offset_left = -23.0

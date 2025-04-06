@@ -6,6 +6,7 @@ extends Control
 @export_multiline var description: String = ""
 @export var rarity := Utils.RARITY.COMMON
 @export var children : Dictionary[PackedScene, Vector2]
+@export var sound : AudioStream
 var mittelpunkt : Vector2
 var isHighlighted : bool = false
 

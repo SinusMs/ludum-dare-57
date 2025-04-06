@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://cv7vh7kufm0ol"]
+[gd_scene load_steps=6 format=3 uid="uid://cv7vh7kufm0ol"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_fst1a"]
 [ext_resource type="Texture2D" uid="uid://hvvwbovyiw46" path="res://assets/items/h_milch.png" id="2_6cw6f"]
+[ext_resource type="AudioStream" uid="uid://bfba4lenrabdi" path="res://assets/sfx/water_splash.wav" id="2_mvl21"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3umbl"]
 atlas = ExtResource("2_6cw6f")
@@ -11,9 +12,10 @@ region = Rect2(0, 0, 0, 32)
 atlas = ExtResource("2_6cw6f")
 region = Rect2(0, 32, 0, 32)
 
-[node name="ItemBase" instance=ExtResource("1_fst1a")]
+[node name="Milk" instance=ExtResource("1_fst1a")]
 item_name = "Milk"
 description = "Dad actually came back!"
+sound = ExtResource("2_mvl21")
 
 [node name="Schatten" parent="." index="0"]
 offset_left = 1.0

@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://b3mnajtkq6oyu"]
+[gd_scene load_steps=6 format=3 uid="uid://b3mnajtkq6oyu"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_47k0x"]
 [ext_resource type="Texture2D" uid="uid://dymgmm7ofvw8j" path="res://assets/items/cactus.png" id="2_0lcvn"]
+[ext_resource type="AudioStream" uid="uid://rclatapr1dbn" path="res://assets/sfx/stone_bonk.wav" id="2_ag68o"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ag68o"]
 atlas = ExtResource("2_0lcvn")
@@ -14,6 +15,7 @@ region = Rect2(0, 32, 32, 32)
 [node name="Cactus" instance=ExtResource("1_47k0x")]
 item_name = "Cactus"
 description = "spikey"
+sound = ExtResource("2_ag68o")
 
 [node name="Schatten" parent="." index="0"]
 offset_left = 4.0
