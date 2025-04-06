@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://2rf7tawro4db"]
+
+[ext_resource type="Script" uid="uid://bcg7urn71vjcg" path="res://shader/shader_scene.gd" id="1_bgsvf"]
+[ext_resource type="Shader" uid="uid://dbwqpg0vlx01" path="res://shader/scene_hans_test.gdshader" id="1_eeowb"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_0gpo8"]
+noise_type = 0
+frequency = 0.0026
+offset = Vector3(-77.32, -19.38, 0)
+fractal_weighted_strength = 0.18
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_eede3"]
+width = 544
+height = 640
+noise = SubResource("FastNoiseLite_0gpo8")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_eede3"]
+shader = ExtResource("1_eeowb")
+shader_parameter/noise = SubResource("NoiseTexture2D_eede3")
+shader_parameter/found_items = 0.0
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_bgsvf")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_eede3")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -288.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2

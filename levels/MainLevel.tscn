@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://cx8eljiil0ugl"]
+[gd_scene load_steps=8 format=3 uid="uid://c5d08ta7hrvl4"]
 
 [ext_resource type="Script" uid="uid://c3u0uh25n4yiy" path="res://levels/main_level.gd" id="1_3348v"]
 [ext_resource type="PackedScene" uid="uid://cberpn7tbycxf" path="res://ui/Menu.tscn" id="1_mt7cn"]
@@ -22,35 +22,30 @@ offset_left = 145.0
 offset_top = 399.0
 offset_right = 145.0
 offset_bottom = 399.0
-mouse_filter = 0
 
 [node name="Drawer" parent="ItemContainer" instance=ExtResource("4_jg0uj")]
 offset_left = 137.0
 offset_top = 83.0
 offset_right = 137.0
 offset_bottom = 83.0
-mouse_filter = 0
 
 [node name="ItemBase" parent="ItemContainer" instance=ExtResource("5_k0gbw")]
 offset_left = 128.0
 offset_top = 355.0
 offset_right = 128.0
 offset_bottom = 355.0
-mouse_filter = 0
 
 [node name="MedicalBills" parent="ItemContainer" instance=ExtResource("6_k5fuh")]
 offset_left = 430.0
 offset_top = 240.0
 offset_right = 430.0
 offset_bottom = 240.0
-mouse_filter = 0
 
 [node name="TrashBin" parent="ItemContainer" instance=ExtResource("7_bb6xo")]
 offset_left = 80.0
 offset_top = 482.0
 offset_right = 80.0
 offset_bottom = 482.0
-mouse_filter = 0
 
 [node name="ParticleContainer" type="Node" parent="."]
 unique_name_in_owner = true
