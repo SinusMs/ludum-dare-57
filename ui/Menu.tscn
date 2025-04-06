@@ -240,3 +240,4 @@ vertical_alignment = 1
 
 [connection signal="gui_input" from="CanvasLayer/Background" to="." method="_on_background_gui_input"]
 [connection signal="button_down" from="CanvasLayer/Panel/StashButton" to="." method="_on_stash_button_button_down"]
+[connection signal="button_down" from="CanvasLayer/Panel/AchievementButton" to="." method="_on_achievement_button_button_down"]

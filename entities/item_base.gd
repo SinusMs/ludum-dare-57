@@ -5,7 +5,7 @@ extends Control
 @export var item_name: String = ""
 @export_multiline var description: String = ""
 @export var labelText: String = "Put away"
-@export var rarity := Utils.RARITY.COMMON
+@export var type := Utils.TYPE.FILLER
 @export var children : Dictionary[PackedScene, Vector2]
 @export var sound : AudioStream
 @export var dependencies: Array[ItemBase]
@@ -15,6 +15,9 @@ var isHighlighted : bool = false
 func _ready() -> void:
 	$Highlight.hide()
 	mittelpunkt = %Mittelpunkt.position
+	
+	#ausdehnung der parent control node setzen für scrollcontainer
+	$".".custom_minimum_size = 2*Vector2($Sprite.texture.get_width(), $Sprite.texture.get_height())
 
 func showHighlight(_show: bool) -> void:
 	if _show:

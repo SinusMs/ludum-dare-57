@@ -17,17 +17,28 @@ func change_item(newLabelText: String) -> void:
 		$"CanvasLayer/Panel/ItemFrame/ItemTexture".texture = Utils.currently_selected_item.get_node("Sprite").texture
 		$"CanvasLayer/Panel/StashButton/RichTextLabel".text = newLabelText
 
+		
+		# set item frame texture beased on enuim TYPE
+		if Utils.currently_selected_item.type == Utils.TYPE.STORY:
+			$CanvasLayer/Panel/ItemFrame.texture = load("res://assets/UI/frame-story.png")
+		elif Utils.currently_selected_item.type == Utils.TYPE.EGG:
+			$CanvasLayer/Panel/ItemFrame.texture = load("res://assets/UI/frame-secret.png")
+		else:
+			$CanvasLayer/Panel/ItemFrame.texture = load("res://assets/UI/frame-default.png")
+
 
 func _on_stash_button_button_down() -> void:
+	var picked_up_item : ItemBase
 	if Utils.currently_selected_item == null:
 		return
 	if !level._spawn_children(Utils.currently_selected_item):
 		Utils.found_items+=1
-		SignalBus.item_picked_up.emit()
+		picked_up_item = Utils.currently_selected_item.duplicate()
 	level._spawn_particles(Utils.currently_selected_item)
 	Utils.currently_selected_item.queue_free()
 	Utils.currently_selected_item = null
 	SignalBus.item_changed.emit("")
+	SignalBus.item_picked_up.emit(picked_up_item)
 
 
 func _on_background_gui_input(event:InputEvent) -> void:
@@ -41,3 +52,9 @@ func _on_background_gui_input(event:InputEvent) -> void:
 
 		if Utils.currently_hovered_item != null:
 			Utils.currently_hovered_item.set_deferred("isHighlighted", false)
+
+
+
+
+func _on_achievement_button_button_down() -> void:
+	SignalBus.show_achievements.emit()

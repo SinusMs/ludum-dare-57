@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://dviiu2yqikp2u"]
+[gd_scene load_steps=6 format=3 uid="uid://dxwrwleevtcji"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_kwqwx"]
 [ext_resource type="AudioStream" uid="uid://t4iceuciow3b" path="res://assets/sfx/bonk.wav" id="2_6bs2d"]
@@ -15,6 +15,7 @@ region = Rect2(0, 64, 64, 64)
 [node name="SoundSystem" instance=ExtResource("1_kwqwx")]
 item_name = "Sound System"
 description = "quite the collection of speakers"
+rarity = 3
 sound = ExtResource("2_6bs2d")
 
 [node name="Schatten" parent="." index="0"]

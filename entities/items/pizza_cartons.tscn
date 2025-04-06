@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://bsdo1etebyq8m"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_127pp"]
+[ext_resource type="Texture2D" uid="uid://56qadasx5y2i" path="res://assets/items/pizza_cartons.png" id="2_51mvw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lhvbw"]
+atlas = ExtResource("2_51mvw")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d6beo"]
+atlas = ExtResource("2_51mvw")
+region = Rect2(0, 32, 32, 32)
+
+[node name="PizzaCartons" instance=ExtResource("1_127pp")]
+
+[node name="Schatten" parent="." index="0"]
+offset_top = 8.0
+offset_bottom = 72.0
+
+[node name="Sprite" parent="." index="1"]
+texture = SubResource("AtlasTexture_lhvbw")
+
+[node name="Highlight" parent="." index="2"]
+texture = SubResource("AtlasTexture_d6beo")
+
+[node name="CollisionPolygon2D" parent="." index="4"]
+polygon = PackedVector2Array(32, 7, 2, 22, -1, 32, -1, 39, 4, 50, 33, 65, 65, 49, 63, 23)

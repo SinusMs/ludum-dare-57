@@ -17,6 +17,7 @@ _data = [Vector2(0, -1), 0.0, 0.0, 0, 0, Vector2(1, -0.630435), 0.0, 0.0, 0, 0]
 point_count = 2
 
 [node name="RauchwolkeCpuParticles" type="CPUParticles2D"]
+texture_filter = 3
 emitting = false
 amount = 10
 texture = SubResource("GradientTexture2D_mto2k")
