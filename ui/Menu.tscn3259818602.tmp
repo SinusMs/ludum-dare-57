@@ -10,7 +10,7 @@
 script/source = "extends TextureRect
 
 
-func _gui_input(event: InputEvent) -> void:
+func _gui_input(event: InputEvent) -> void:void:
 	if Utils.currently_selected_item == null:
 		return
 	

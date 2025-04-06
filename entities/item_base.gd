@@ -13,12 +13,7 @@ func _ready() -> void:
 	$Highlight.hide()
 	mittelpunkt = %Mittelpunkt.position
 
-func _input(event: InputEvent) -> void:
-	if event.is_action_pressed("left_click"):
-		isHighlighted = false
-		$Highlight.hide()
-		Utils.currently_selected_item = null
-		SignalBus.item_changed.emit()
+	
 
 
 func _on_gui_input(event:InputEvent) -> void:
@@ -31,5 +26,6 @@ func _on_gui_input(event:InputEvent) -> void:
 	if Geometry2D.is_point_in_polygon(event.position, $CollisionPolygon2D.polygon):
 		if event.is_action_pressed("left_click"):
 			Utils.currently_selected_item = self
+			print(Utils.currently_selected_item.item_name)
 			SignalBus.item_changed.emit()
 			isHighlighted = true
