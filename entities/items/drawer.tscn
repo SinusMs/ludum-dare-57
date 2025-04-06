@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_0a1gh"]
 [ext_resource type="AudioStream" uid="uid://t4iceuciow3b" path="res://assets/sfx/bonk.wav" id="2_eqy2f"]
+
 [ext_resource type="Texture2D" uid="uid://45aslv72kqpm" path="res://assets/items/drawer.png" id="2_saxie"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_eqy2f"]

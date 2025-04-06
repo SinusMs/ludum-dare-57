@@ -38,3 +38,6 @@ func _on_background_gui_input(event:InputEvent) -> void:
 		Utils.currently_selected_item.call_deferred("showHighlight", false)
 		Utils.currently_selected_item = null
 		SignalBus.item_changed.emit("")
+
+		if Utils.currently_hovered_item != null:
+			Utils.currently_hovered_item.set_deferred("isHighlighted", false)

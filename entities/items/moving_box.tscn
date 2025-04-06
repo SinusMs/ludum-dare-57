@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_sx1vg"]
 [ext_resource type="AudioStream" uid="uid://flux4p1tccor" path="res://assets/sfx/karton_click.wav" id="2_rxb8h"]
+
 [ext_resource type="Texture2D" uid="uid://cvj6d27b3lhwr" path="res://assets/items/box.png" id="2_tu44o"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rxb8h"]
@@ -18,11 +19,12 @@ description = "an ordanary moving box"
 sound = ExtResource("2_rxb8h")
 
 [node name="Schatten" parent="." index="0"]
-offset_left = -23.0
-offset_top = 61.0
-offset_right = 41.0
-offset_bottom = 125.0
-scale = Vector2(2.68541, 0.981197)
+offset_left = -2.0
+offset_top = 74.0
+offset_right = 62.0
+offset_bottom = 138.0
+rotation = -0.175632
+scale = Vector2(1.77872, 0.778787)
 
 [node name="Sprite" parent="." index="1"]
 texture = SubResource("AtlasTexture_rxb8h")

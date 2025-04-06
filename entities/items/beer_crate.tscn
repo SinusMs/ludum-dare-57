@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://duhlka5vj7lmi"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_wjqs1"]
+[ext_resource type="Texture2D" uid="uid://47f2qqy5wt7j" path="res://assets/items/crate_of_beer.png" id="2_wnp7x"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ombp"]
+atlas = ExtResource("2_wnp7x")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qbuix"]
+atlas = ExtResource("2_wnp7x")
+region = Rect2(0, 64, 64, 64)
+
+[node name="Beer Crate" instance=ExtResource("1_wjqs1")]
+
+[node name="Schatten" parent="." index="0"]
+offset_left = -11.0
+offset_top = 60.0
+offset_right = 53.0
+offset_bottom = 124.0
+scale = Vector2(2.13416, 1.22166)
+
+[node name="Sprite" parent="." index="1"]
+texture = SubResource("AtlasTexture_2ombp")
+
+[node name="Highlight" parent="." index="2"]
+offset_right = 64.0
+offset_bottom = 64.0
+texture = SubResource("AtlasTexture_qbuix")
+
+[node name="Mittelpunkt" parent="." index="3"]
+position = Vector2(58, 86)
+
+[node name="CollisionPolygon2D" parent="." index="4"]
+polygon = PackedVector2Array(3, 73, 3, 123, 71, 123, 120, 85, 122, 34, 59, 33)
