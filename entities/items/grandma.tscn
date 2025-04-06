@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://pwtbfuxtuc8m"]
+[gd_scene load_steps=6 format=3 uid="uid://pwtbfuxtuc8m"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_8rxg1"]
+[ext_resource type="AudioStream" uid="uid://cmbhhyu17fw4a" path="res://assets/sfx/zip.wav" id="2_04dfe"]
 [ext_resource type="Texture2D" uid="uid://bue6v8p2org4f" path="res://assets/items/coffin.png" id="2_7jooy"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_04dfe"]
@@ -16,6 +17,7 @@ item_name = "Grandma"
 description = "-\"Hello Sweety!\"
 -\"beispieltext\"
 "
+sound = ExtResource("2_04dfe")
 
 [node name="Schatten" parent="." index="0"]
 offset_left = -57.0

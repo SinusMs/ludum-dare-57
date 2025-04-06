@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://cdjliiy1d7ay"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_c2ll3"]
+[ext_resource type="AudioStream" uid="uid://bfba4lenrabdi" path="res://assets/sfx/water_splash.wav" id="2_2up70"]
+[ext_resource type="Texture2D" uid="uid://us78qineg6fb" path="res://assets/items/bong.png" id="3_u1dnk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8jnhd"]
+atlas = ExtResource("3_u1dnk")
+region = Rect2(0, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ungri"]
+atlas = ExtResource("3_u1dnk")
+region = Rect2(0, 64, 32, 64)
+
+[node name="Bong" instance=ExtResource("1_c2ll3")]
+item_name = "Bong"
+description = "420 yeehaaw"
+sound = ExtResource("2_2up70")
+
+[node name="Schatten" parent="." index="0"]
+offset_left = -9.0
+offset_top = 89.0
+offset_right = 55.0
+offset_bottom = 153.0
+scale = Vector2(1.3146, 0.873105)
+
+[node name="Sprite" parent="." index="1"]
+texture = SubResource("AtlasTexture_8jnhd")
+
+[node name="Highlight" parent="." index="2"]
+texture = SubResource("AtlasTexture_ungri")
+
+[node name="Mittelpunkt" parent="." index="3"]
+position = Vector2(31, 102)
+
+[node name="CollisionPolygon2D" parent="." index="4"]
+polygon = PackedVector2Array(22, 16, 22, 92, 7, 95, 8, 124, 55, 124, 55, 93, 41, 92, 42, 15)

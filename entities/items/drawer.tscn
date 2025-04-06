@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://c57mdfkxd8de"]
+[gd_scene load_steps=6 format=3 uid="uid://c57mdfkxd8de"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_0a1gh"]
-[ext_resource type="Texture2D" uid="uid://cdgw8oihtc1gk" path="res://assets/items/drawer.png" id="2_saxie"]
+[ext_resource type="AudioStream" uid="uid://t4iceuciow3b" path="res://assets/sfx/bonk.wav" id="2_eqy2f"]
+[ext_resource type="Texture2D" uid="uid://45aslv72kqpm" path="res://assets/items/drawer.png" id="2_saxie"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_eqy2f"]
 atlas = ExtResource("2_saxie")
@@ -15,6 +16,7 @@ region = Rect2(0, 512, 128, 128)
 item_name = "Drawer"
 description = "My Grandmas old Drawer.
 still looks as good as new..."
+sound = ExtResource("2_eqy2f")
 
 [node name="Schatten" parent="." index="0"]
 offset_left = -10.0

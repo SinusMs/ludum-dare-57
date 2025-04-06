@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://dkfvx5sngy801"]
+[gd_scene load_steps=6 format=3 uid="uid://dkfvx5sngy801"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_khyqt"]
 [ext_resource type="Texture2D" uid="uid://c6o8lfkax1qxq" path="res://assets/items/soggynougatbits.png" id="2_0myk5"]
+[ext_resource type="AudioStream" uid="uid://bfba4lenrabdi" path="res://assets/sfx/water_splash.wav" id="2_5xayh"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5xayh"]
 atlas = ExtResource("2_0myk5")
@@ -14,6 +15,7 @@ region = Rect2(0, 32, 32, 32)
 [node name="SoggyNougatBits" instance=ExtResource("1_khyqt")]
 item_name = "Soggy Nougat Bits"
 description = "someone was hungry"
+sound = ExtResource("2_5xayh")
 
 [node name="Schatten" parent="." index="0"]
 offset_left = -4.0

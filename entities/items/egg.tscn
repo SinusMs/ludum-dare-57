@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://clpi5w51dp101"]
+[gd_scene load_steps=6 format=3 uid="uid://clpi5w51dp101"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_6lfo1"]
+[ext_resource type="AudioStream" uid="uid://rclatapr1dbn" path="res://assets/sfx/stone_bonk.wav" id="2_0edd7"]
 [ext_resource type="Texture2D" uid="uid://bfgyhbvd5appq" path="res://assets/items/egg.png" id="2_rv3hv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0edd7"]
@@ -14,6 +15,7 @@ region = Rect2(0, 32, 32, 32)
 [node name="Egg" instance=ExtResource("1_6lfo1")]
 item_name = "an Egg"
 description = "\"hmmm, it might hatch soon\""
+sound = ExtResource("2_0edd7")
 
 [node name="Schatten" parent="." index="0"]
 offset_left = -5.0

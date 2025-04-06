@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://lqgdo86mwn8r"]
+[gd_scene load_steps=7 format=3 uid="uid://lqgdo86mwn8r"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_tiabs"]
 [ext_resource type="PackedScene" uid="uid://pwtbfuxtuc8m" path="res://entities/items/grandma.tscn" id="2_50cmg"]
 [ext_resource type="Texture2D" uid="uid://bue6v8p2org4f" path="res://assets/items/coffin.png" id="2_gmntn"]
+[ext_resource type="AudioStream" uid="uid://t4iceuciow3b" path="res://assets/sfx/bonk.wav" id="3_hdi3p"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_50cmg"]
 atlas = ExtResource("2_gmntn")
@@ -19,6 +20,7 @@ could it be.."
 children = Dictionary[PackedScene, Vector2]({
 ExtResource("2_50cmg"): Vector2(0, 0)
 })
+sound = ExtResource("3_hdi3p")
 
 [node name="Schatten" parent="." index="0"]
 offset_left = -42.0

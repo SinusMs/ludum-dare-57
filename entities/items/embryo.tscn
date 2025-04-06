@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://wydwtx36e8yl"]
+[gd_scene load_steps=6 format=3 uid="uid://wydwtx36e8yl"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_cf6b8"]
+[ext_resource type="AudioStream" uid="uid://cfykc4qgxrinm" path="res://assets/sfx/pop.wav" id="2_671wh"]
 [ext_resource type="Texture2D" uid="uid://cvxi74p65hvh6" path="res://assets/items/embryo.png" id="2_afso0"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_g22rj"]
@@ -11,10 +12,11 @@ region = Rect2(0, 0, 0, 17)
 atlas = ExtResource("2_afso0")
 region = Rect2(0, 17, 0, 17)
 
-[node name="ItemBase" instance=ExtResource("1_cf6b8")]
+[node name="Embryo" instance=ExtResource("1_cf6b8")]
 item_name = "Embryo"
 description = "I miss you little bro..."
 rarity = 2
+sound = ExtResource("2_671wh")
 
 [node name="Schatten" parent="." index="0"]
 offset_left = -3.0
