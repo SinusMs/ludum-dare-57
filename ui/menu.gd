@@ -7,13 +7,13 @@ func _ready() -> void:
 
 func change_item() -> void:
 	if Utils.currently_selected_item == null:
-		$"CanvasLayer/Panel/NameLabel".text = ""
-		$"CanvasLayer/Panel/ScrollContainer/DescriptionLabel".text = ""
-		$"CanvasLayer/Panel/ItemTexture".texture = null
+		$"CanvasLayer/Panel/NameFrame/NameLabel".text = ""
+		$"CanvasLayer/Panel/DescriptionFrame/ScrollContainer/DescriptionLabel".text = ""
+		$"CanvasLayer/Panel/ItemFrame/ItemTexture".texture = null
 	else:
-		$"CanvasLayer/Panel/NameLabel".text = Utils.currently_selected_item.item_name
-		$"CanvasLayer/Panel/ScrollContainer/DescriptionLabel".text = Utils.currently_selected_item.description
-		$"CanvasLayer/Panel/ItemTexture".texture = Utils.currently_selected_item.get_node("Sprite").texture
+		$"CanvasLayer/Panel/NameFrame/NameLabel".text = Utils.currently_selected_item.item_name
+		$"CanvasLayer/Panel/DescriptionFrame/ScrollContainer/DescriptionLabel".text = Utils.currently_selected_item.description
+		$"CanvasLayer/Panel/ItemFrame/ItemTexture".texture = Utils.currently_selected_item.get_node("Sprite").texture
 
 
 func _on_stash_button_button_down() -> void:
