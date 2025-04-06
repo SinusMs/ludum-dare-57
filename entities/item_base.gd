@@ -8,6 +8,7 @@ extends Control
 @export var rarity := Utils.RARITY.COMMON
 @export var children : Dictionary[PackedScene, Vector2]
 @export var sound : AudioStream
+@export var dependencies: Array[ItemBase]
 var mittelpunkt : Vector2
 var isHighlighted : bool = false
 
@@ -21,7 +22,17 @@ func showHighlight(_show: bool) -> void:
 	else:
 		$Highlight.hide()
 
+func isAllNull(list: Array[ItemBase]) -> bool:
+	for item: ItemBase in list:
+		if item != null:
+			return false
+	return true
+
 func _on_gui_input(event:InputEvent) -> void:
+	# Deactivate input check if dependencies are still alive
+	if !isAllNull(dependencies):
+		return
+
 	# Logic to change item highlighted by hover
 	if Geometry2D.is_point_in_polygon(event.position, $CollisionPolygon2D.polygon):
 		# Unhighlight last hovered item
@@ -44,7 +55,7 @@ func _on_gui_input(event:InputEvent) -> void:
 			# Unhighlight last clicked item
 			if Utils.currently_selected_item != null:
 				Utils.currently_selected_item.call_deferred("showHighlight", false)
-				Utils.currently_selected_item.isHighlighted = false
+				Utils.currently_selected_item.set.call_deferred("isHighlighted", false)
 				
 			# highlight clicked item
 			Utils.currently_selected_item = self

@@ -43,10 +43,10 @@ level = NodePath("..")
 unique_name_in_owner = true
 
 [node name="Coffin" parent="ItemContainer" instance=ExtResource("2_3348v")]
-offset_left = 145.0
-offset_top = 399.0
-offset_right = 145.0
-offset_bottom = 399.0
+offset_left = 56.0
+offset_top = 448.0
+offset_right = 56.0
+offset_bottom = 448.0
 
 [node name="Drawer" parent="ItemContainer" instance=ExtResource("4_jg0uj")]
 offset_left = 137.0
@@ -54,11 +54,13 @@ offset_top = 83.0
 offset_right = 137.0
 offset_bottom = 83.0
 
-[node name="ItemBase" parent="ItemContainer" instance=ExtResource("5_k0gbw")]
+[node name="ItemBase" parent="ItemContainer" node_paths=PackedStringArray("dependencies") instance=ExtResource("5_k0gbw")]
 offset_left = 128.0
 offset_top = 355.0
 offset_right = 128.0
 offset_bottom = 355.0
+labelText = "eat"
+dependencies = [NodePath("../Coffin"), NodePath("../MedicalBills"), null, null]
 
 [node name="MedicalBills" parent="ItemContainer" instance=ExtResource("6_k5fuh")]
 offset_left = 430.0
@@ -66,11 +68,12 @@ offset_top = 240.0
 offset_right = 430.0
 offset_bottom = 240.0
 
-[node name="TrashBin" parent="ItemContainer" instance=ExtResource("7_bb6xo")]
+[node name="TrashBin" parent="ItemContainer" node_paths=PackedStringArray("dependencies") instance=ExtResource("7_bb6xo")]
 offset_left = 80.0
 offset_top = 482.0
 offset_right = 80.0
 offset_bottom = 482.0
+dependencies = [NodePath("../Drawer")]
 
 [node name="Bibel" parent="ItemContainer" instance=ExtResource("8_k5fuh")]
 offset_left = 290.0
@@ -206,3 +209,15 @@ offset_bottom = 1.0
 
 [node name="ParticleContainer" type="Node" parent="."]
 unique_name_in_owner = true
+
+[node name="Beer Crate" parent="." instance=ExtResource("8_k5fuh")]
+offset_left = 337.0
+offset_top = 485.0
+offset_right = 337.0
+offset_bottom = 485.0
+
+[node name="Beer Crate2" parent="." instance=ExtResource("8_k5fuh")]
+offset_left = 337.0
+offset_top = 435.0
+offset_right = 337.0
+offset_bottom = 435.0
