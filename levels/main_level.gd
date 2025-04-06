@@ -76,6 +76,6 @@ func remove_trash(trash : CharacterBody2D) -> void:
 func cleanup() -> void:
 	for child in %KeinMinigameContainer.get_children():
 		child.queue_free()
-	items_bis_km = 2
+	items_bis_km = 5
 	Utils.currently_selected_item = null
 	$Menu.change_item("")

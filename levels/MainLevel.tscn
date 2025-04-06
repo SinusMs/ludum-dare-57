@@ -169,6 +169,7 @@ offset_left = 389.0
 offset_top = 383.0
 offset_right = 389.0
 offset_bottom = 383.0
+type = 0
 
 [node name="RubberDuck" parent="ItemContainer" instance=ExtResource("22_io7o4")]
 offset_left = 381.0
@@ -187,6 +188,7 @@ offset_left = 405.0
 offset_top = 167.0
 offset_right = 405.0
 offset_bottom = 167.0
+type = 0
 
 [node name="ToiletPaper" parent="ItemContainer" instance=ExtResource("25_dtwx4")]
 offset_left = 89.0
@@ -211,6 +213,7 @@ offset_left = 377.0
 offset_top = 502.0
 offset_right = 377.0
 offset_bottom = 502.0
+type = 0
 
 [node name="SoundSystem" parent="ItemContainer" instance=ExtResource("29_juar8")]
 offset_left = 281.0
@@ -223,6 +226,7 @@ offset_left = 19.0
 offset_top = 365.0
 offset_right = 19.0
 offset_bottom = 365.0
+type = 0
 
 [node name="Shite" parent="ItemContainer" instance=ExtResource("31_f6v30")]
 offset_left = 263.0

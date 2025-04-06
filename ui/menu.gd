@@ -31,14 +31,16 @@ func _on_stash_button_button_down() -> void:
 	var picked_up_item : ItemBase
 	if Utils.currently_selected_item == null:
 		return
-	if !level._spawn_children(Utils.currently_selected_item):
+	var has_children : bool = level._spawn_children(Utils.currently_selected_item)
+	if !has_children:
 		Utils.found_items+=1
 		picked_up_item = Utils.currently_selected_item.duplicate()
 	level._spawn_particles(Utils.currently_selected_item)
 	Utils.currently_selected_item.queue_free()
 	Utils.currently_selected_item = null
 	SignalBus.item_changed.emit("")
-	SignalBus.item_picked_up.emit(picked_up_item)
+	if !has_children:
+		SignalBus.item_picked_up.emit(picked_up_item)
 
 
 func _on_background_gui_input(event:InputEvent) -> void:
