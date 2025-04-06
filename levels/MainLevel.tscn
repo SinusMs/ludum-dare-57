@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://cx8eljiil0ugl"]
+[gd_scene load_steps=30 format=3 uid="uid://cx8eljiil0ugl"]
 
 [ext_resource type="Script" uid="uid://c3u0uh25n4yiy" path="res://levels/main_level.gd" id="1_3348v"]
 [ext_resource type="PackedScene" uid="uid://cberpn7tbycxf" path="res://ui/Menu.tscn" id="1_mt7cn"]
@@ -28,6 +28,7 @@
 [ext_resource type="PackedScene" uid="uid://c6kak3d8jk82o" path="res://entities/items/trash_bag.tscn" id="26_2pw5b"]
 [ext_resource type="PackedScene" uid="uid://cikir5d1ouov" path="res://entities/items/sock.tscn" id="27_50hyn"]
 [ext_resource type="PackedScene" uid="uid://cdjliiy1d7ay" path="res://entities/items/bong.tscn" id="28_u3t4o"]
+[ext_resource type="PackedScene" uid="uid://dviiu2yqikp2u" path="res://entities/items/sound_system.tscn" id="29_juar8"]
 
 [node name="MainLevel" type="Node2D"]
 script = ExtResource("1_3348v")
@@ -196,6 +197,12 @@ offset_left = 377.0
 offset_top = 502.0
 offset_right = 377.0
 offset_bottom = 502.0
+
+[node name="SoundSystem" parent="ItemContainer" instance=ExtResource("29_juar8")]
+offset_left = 281.0
+offset_top = 1.0
+offset_right = 281.0
+offset_bottom = 1.0
 
 [node name="ParticleContainer" type="Node" parent="."]
 unique_name_in_owner = true
