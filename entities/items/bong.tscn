@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://cdjliiy1d7ay"]
+[gd_scene load_steps=6 format=3 uid="uid://dcve5ttw3q2x6"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_c2ll3"]
 [ext_resource type="AudioStream" uid="uid://bfba4lenrabdi" path="res://assets/sfx/water_splash.wav" id="2_2up70"]
@@ -15,6 +15,7 @@ region = Rect2(0, 64, 32, 64)
 [node name="Bong" instance=ExtResource("1_c2ll3")]
 item_name = "Bong"
 description = "420 yeehaaw"
+type = 1
 sound = ExtResource("2_2up70")
 
 [node name="Schatten" parent="." index="0"]

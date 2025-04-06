@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://cmr1qblyyfa7w"]
+[gd_scene load_steps=6 format=3 uid="uid://dyimivirc7fkj"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_i3bav"]
 [ext_resource type="AudioStream" uid="uid://bfba4lenrabdi" path="res://assets/sfx/water_splash.wav" id="2_1eju3"]
@@ -16,6 +16,7 @@ region = Rect2(0, 32, 32, 32)
 item_name = "Holy Grail"
 description = "there even is some kind of liquid in there
 i have the strong urge to taste it"
+rarity = 3
 sound = ExtResource("2_1eju3")
 
 [node name="Schatten" parent="." index="0"]

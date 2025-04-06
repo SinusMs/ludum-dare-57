@@ -7,10 +7,10 @@ var currently_hovered_item: ItemBase
 var found_items: float = 0
 
 # Enums
-enum RARITY {
-	COMMON,
-	UNCOMMON,
-	RARE,
-	EPIC,
-	LEGENDARY,
+enum TYPE {
+	FILLER,
+	STORY,
+	EGG,
+	FUNNY,
+	BOX
 }

@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://d1trfs4ihtjer"]
+[gd_scene load_steps=6 format=3 uid="uid://c7loegb673ddf"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_v64y5"]
 [ext_resource type="Texture2D" uid="uid://8asvffkdgp78" path="res://assets/items/family_photo_update.png" id="2_2j1y2"]
@@ -15,6 +15,7 @@ region = Rect2(0, 32, 0, 32)
 [node name="FamilyFoto" instance=ExtResource("1_v64y5")]
 item_name = "Old Foto"
 description = "That's my dad and me. I don't know the lady next to me though. But she is so pretty!"
+rarity = 1
 sound = ExtResource("2_7n3t7")
 
 [node name="Schatten" parent="." index="0"]

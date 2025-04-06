@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://cikir5d1ouov"]
+[gd_scene load_steps=6 format=3 uid="uid://jyei8m6qdfar"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_cn4nr"]
 [ext_resource type="Texture2D" uid="uid://brekpfdmgf8ji" path="res://assets/items/sock.png" id="2_05x4e"]
@@ -16,6 +16,7 @@ region = Rect2(0, 32, 32, 32)
 mouse_filter = 0
 item_name = "Sock"
 description = "Why is it stiff?"
+rarity = 3
 sound = ExtResource("2_be4pa")
 
 [node name="Schatten" parent="." index="0"]

@@ -15,7 +15,8 @@ region = Rect2(0, 17, 0, 17)
 [node name="Embryo" instance=ExtResource("1_cf6b8")]
 item_name = "Embryo"
 description = "I miss you little bro..."
-rarity = 2
+labelText = "Sell"
+rarity = 1
 sound = ExtResource("2_671wh")
 
 [node name="Schatten" parent="." index="0"]

@@ -16,6 +16,7 @@ region = Rect2(0, 32, 32, 32)
 item_name = "Nougat Bits"
 description = "an open bag of cereals
 yummy"
+rarity = 3
 sound = ExtResource("2_007u0")
 
 [node name="Schatten" parent="." index="0"]

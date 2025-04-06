@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://c437qjyeai8h7"]
+[gd_scene load_steps=6 format=3 uid="uid://dh0ur564yhykq"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_ic0uq"]
 [ext_resource type="AudioStream" uid="uid://rclatapr1dbn" path="res://assets/sfx/stone_bonk.wav" id="2_gs3oc"]
@@ -15,6 +15,7 @@ region = Rect2(0, 32, 32, 32)
 [node name="WeirdStone" instance=ExtResource("1_ic0uq")]
 item_name = "Weird Stone"
 description = "are there coming noises out of it??"
+type = 2
 sound = ExtResource("2_gs3oc")
 
 [node name="Schatten" parent="." index="0"]
