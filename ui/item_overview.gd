@@ -3,12 +3,11 @@ var next_pos: Vector2 = Vector2(0,0)
 
 func _ready() -> void:
 	SignalBus.item_picked_up.connect(_on_item_picked_up)
-	SignalBus.show_achievements.connect(_on_show_achievements)
+	SignalBus.toggle_achievements.connect(_on_toggle_achievements)
 	
 
 func _on_exit_overview_button_down() -> void:
-	$".".hide()
-	SignalBus.close_achievements.emit()
+	SignalBus.toggle_achievements.emit()
 
 func _on_item_picked_up(item: ItemBase) -> void:
 	item.position = Vector2(0,0)
@@ -16,5 +15,8 @@ func _on_item_picked_up(item: ItemBase) -> void:
 
 	
 	
-func _on_show_achievements() -> void:
-	$".".show()
+func _on_toggle_achievements() -> void:
+	if $".".visible:
+		$".".hide()
+	else:
+		$".".show()
