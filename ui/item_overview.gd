@@ -8,6 +8,7 @@ func _ready() -> void:
 
 func _on_exit_overview_button_down() -> void:
 	$".".hide()
+	SignalBus.close_achievements.emit()
 
 func _on_item_picked_up(item: ItemBase) -> void:
 	item.position = Vector2(0,0)
