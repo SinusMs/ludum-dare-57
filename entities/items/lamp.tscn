@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://e6duuc5ffy2x"]
+[gd_scene load_steps=6 format=3 uid="uid://c382y4mxn5ko6"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_xef6r"]
 [ext_resource type="AudioStream" uid="uid://t4iceuciow3b" path="res://assets/sfx/bonk.wav" id="2_ibix0"]

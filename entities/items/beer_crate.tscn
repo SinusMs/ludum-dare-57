@@ -1,7 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://duhlka5vj7lmi"]
+[gd_scene load_steps=5 format=3 uid="uid://qm6gtb8mgovs"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_wjqs1"]
-[ext_resource type="Texture2D" uid="uid://47f2qqy5wt7j" path="res://assets/items/crate_of_beer.png" id="2_wnp7x"]
+[ext_resource type="Texture2D" uid="uid://dwql67jqs784o" path="res://assets/items/crate_of_beer.png" id="2_wnp7x"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2ombp"]
 atlas = ExtResource("2_wnp7x")
@@ -12,6 +12,7 @@ atlas = ExtResource("2_wnp7x")
 region = Rect2(0, 64, 64, 64)
 
 [node name="Beer Crate" instance=ExtResource("1_wjqs1")]
+rarity = 3
 
 [node name="Schatten" parent="." index="0"]
 offset_left = -11.0

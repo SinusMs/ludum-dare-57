@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://dsq0k5aet4184"]
+[gd_scene load_steps=6 format=3 uid="uid://cjuwah2ysylo"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_s5kqg"]
 [ext_resource type="AudioStream" uid="uid://dqvhkvfmkngji" path="res://assets/sfx/raschel.wav" id="2_1b51i"]
@@ -15,6 +15,7 @@ region = Rect2(0, 32, 32, 32)
 [node name="MoldyBread" instance=ExtResource("1_s5kqg")]
 item_name = "Moldy Bread"
 description = "ngl I had difficulties identifying that"
+labelText = "Eat"
 sound = ExtResource("2_1b51i")
 
 [node name="Schatten" parent="." index="0"]

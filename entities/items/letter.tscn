@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://b7xjkww8xapkx"]
+[gd_scene load_steps=6 format=3 uid="uid://c6c15yevw4tdy"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_kdwnk"]
 [ext_resource type="AudioStream" uid="uid://6vhrcllof1yw" path="res://assets/sfx/single_paper.wav" id="2_tnjuc"]
@@ -15,6 +15,7 @@ region = Rect2(0, 32, 32, 32)
 [node name="Letter" instance=ExtResource("1_kdwnk")]
 item_name = "Letter"
 description = "What might be written in there????"
+rarity = 1
 sound = ExtResource("2_tnjuc")
 
 [node name="Schatten" parent="." index="0"]

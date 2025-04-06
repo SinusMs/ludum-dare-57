@@ -15,6 +15,7 @@ region = Rect2(0, 32, 32, 32)
 [node name="Cactus" instance=ExtResource("1_47k0x")]
 item_name = "Cactus"
 description = "spikey"
+rarity = 3
 sound = ExtResource("2_ag68o")
 
 [node name="Schatten" parent="." index="0"]
