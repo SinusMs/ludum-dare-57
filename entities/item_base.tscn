@@ -18,6 +18,7 @@ anchors_preset = 0
 script = ExtResource("1_yh0nf")
 
 [node name="Schatten" type="TextureRect" parent="."]
+layout_mode = 0
 offset_right = 64.0
 offset_bottom = 64.0
 texture = SubResource("GradientTexture2D_gk2da")
@@ -31,6 +32,9 @@ scale = Vector2(2, 2)
 texture_filter = 3
 layout_mode = 0
 scale = Vector2(2, 2)
+
+[node name="Mittelpunkt" type="Marker2D" parent="."]
+unique_name_in_owner = true
 
 [connection signal="gui_input" from="." to="." method="_on_gui_input"]
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]

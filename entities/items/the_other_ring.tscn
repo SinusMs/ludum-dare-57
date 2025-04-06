@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://bil8o4rsafejc"]
+[gd_scene load_steps=5 format=3 uid="uid://c1b20a4oewvpa"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_p0mp5"]
 [ext_resource type="Texture2D" uid="uid://dx4jyympc3che" path="res://assets/items/the_other_ring.png" id="2_pbikd"]
@@ -19,8 +19,18 @@ There's an inscription on it:
 One Ring to bring them together and in marriage bind them.\""
 rarity = 4
 
-[node name="Sprite" parent="." index="0"]
+[node name="Schatten" parent="." index="0"]
+offset_left = -11.0
+offset_top = 46.0
+offset_right = 53.0
+offset_bottom = 110.0
+scale = Vector2(1.34946, 0.464839)
+
+[node name="Sprite" parent="." index="1"]
 texture = SubResource("AtlasTexture_e0g2r")
 
-[node name="Highlight" parent="." index="1"]
+[node name="Highlight" parent="." index="2"]
 texture = SubResource("AtlasTexture_7ry2t")
+
+[node name="Mittelpunkt" parent="." index="3"]
+position = Vector2(32, 31)

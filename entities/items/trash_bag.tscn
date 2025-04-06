@@ -16,7 +16,6 @@ item_name = "Trashbag"
 description = "uhh stinky"
 
 [node name="Schatten" parent="." index="0"]
-layout_mode = 0
 offset_left = -28.0
 offset_top = 73.0
 offset_right = 36.0
@@ -28,3 +27,6 @@ texture = SubResource("AtlasTexture_n7hhi")
 
 [node name="Highlight" parent="." index="2"]
 texture = SubResource("AtlasTexture_ofdgg")
+
+[node name="Mittelpunkt" parent="." index="3"]
+position = Vector2(64, 92)

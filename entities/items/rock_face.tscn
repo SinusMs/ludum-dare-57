@@ -17,7 +17,6 @@ description = "Is it a rock or ist it a face?
 I think its a metaphor!"
 
 [node name="Schatten" parent="." index="0"]
-layout_mode = 0
 offset_left = -22.0
 offset_top = 93.0
 offset_right = 42.0
@@ -29,3 +28,6 @@ texture = SubResource("AtlasTexture_c26lm")
 
 [node name="Highlight" parent="." index="2"]
 texture = SubResource("AtlasTexture_ugmkk")
+
+[node name="Mittelpunkt" parent="." index="3"]
+position = Vector2(59, 71)

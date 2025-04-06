@@ -16,7 +16,6 @@ item_name = "Rubber Duck"
 description = "\"Quack\""
 
 [node name="Schatten" parent="." index="0"]
-layout_mode = 0
 offset_left = -1.0
 offset_top = 27.0
 offset_right = 63.0
@@ -28,3 +27,6 @@ texture = SubResource("AtlasTexture_s24y5")
 
 [node name="Highlight" parent="." index="2"]
 texture = SubResource("AtlasTexture_bm8cr")
+
+[node name="Mittelpunkt" parent="." index="3"]
+position = Vector2(29, 35)

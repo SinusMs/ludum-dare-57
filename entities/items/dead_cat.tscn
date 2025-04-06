@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://dfws11p81r6oh"]
+[gd_scene load_steps=5 format=3 uid="uid://c7voyjg5fftpx"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_7nj72"]
 [ext_resource type="Texture2D" uid="uid://y0winpvtwuyb" path="res://assets/items/dead_cat.png" id="2_nil11"]
@@ -17,8 +17,18 @@ Are you alright?
 
 ..."
 
-[node name="Sprite" parent="." index="0"]
+[node name="Schatten" parent="." index="0"]
+offset_left = -5.0
+offset_top = 54.0
+offset_right = 59.0
+offset_bottom = 118.0
+scale = Vector2(1.62063, 0.647599)
+
+[node name="Sprite" parent="." index="1"]
 texture = SubResource("AtlasTexture_icf0d")
 
-[node name="Highlight" parent="." index="1"]
+[node name="Highlight" parent="." index="2"]
 texture = SubResource("AtlasTexture_s05pb")
+
+[node name="Mittelpunkt" parent="." index="3"]
+position = Vector2(45, 62)

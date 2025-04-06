@@ -16,7 +16,6 @@ item_name = "Medical Bills"
 description = "phew...  whoever had to pay these had to spend a fortune"
 
 [node name="Schatten" parent="." index="0"]
-layout_mode = 0
 offset_left = -4.0
 offset_top = 11.0
 offset_right = 60.0
@@ -28,3 +27,6 @@ texture = SubResource("AtlasTexture_xp6w3")
 
 [node name="Highlight" parent="." index="2"]
 texture = SubResource("AtlasTexture_emhq3")
+
+[node name="Mittelpunkt" parent="." index="3"]
+position = Vector2(33, 33)
