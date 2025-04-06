@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://q5powng1vrvp"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_pxuw1"]
+[ext_resource type="Texture2D" uid="uid://b3tk50qw0u5xb" path="res://assets/items/bycicle.png" id="2_po7yn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_urvkd"]
+atlas = ExtResource("2_po7yn")
+region = Rect2(0, 0, 64, 35)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_evk4k"]
+atlas = ExtResource("2_po7yn")
+region = Rect2(0, 35, 64, 35)
+
+[node name="Bicycle" instance=ExtResource("1_pxuw1")]
+
+[node name="Schatten" parent="." index="0"]
+offset_left = -11.0
+offset_top = -4.0
+offset_right = 142.0
+offset_bottom = 75.0
+
+[node name="Sprite" parent="." index="1"]
+texture = SubResource("AtlasTexture_urvkd")
+
+[node name="Highlight" parent="." index="2"]
+texture = SubResource("AtlasTexture_evk4k")
+
+[node name="CollisionPolygon2D" parent="." index="4"]
+polygon = PackedVector2Array(91, 0, 35, 0, 25, 19, 11, 25, 4, 37, 4, 51, 10, 65, 26, 71, 43, 67, 75, 53, 81, 65, 93, 71, 106, 71, 119, 63, 125, 53, 125, 38, 118, 28, 106, 19)

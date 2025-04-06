@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://w08vs12jji03"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_2u7ks"]
+[ext_resource type="Texture2D" uid="uid://cx8ohya5ppmqq" path="res://assets/items/cobweb_bakery.png" id="2_raw5l"]
+[ext_resource type="AudioStream" uid="uid://dqvhkvfmkngji" path="res://assets/sfx/raschel.wav" id="2_s8ni1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s8ni1"]
+atlas = ExtResource("2_raw5l")
+region = Rect2(0, 0, 0, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t2gak"]
+atlas = ExtResource("2_raw5l")
+region = Rect2(0, 48, 0, 48)
+
+[node name="cobweb_bakery" instance=ExtResource("1_2u7ks")]
+description = "\"Did spiders bake these? I should leave them some money for taking these away. Unfortunately I don't have any on me.\""
+sound = ExtResource("2_s8ni1")
+
+[node name="Schatten" parent="." index="0"]
+offset_left = -23.0
+offset_top = -21.0
+offset_right = 41.0
+offset_bottom = 43.0
+scale = Vector2(1.96, 1.74062)
+
+[node name="Sprite" parent="." index="1"]
+texture = SubResource("AtlasTexture_s8ni1")
+
+[node name="Highlight" parent="." index="2"]
+texture = SubResource("AtlasTexture_t2gak")
+
+[node name="Mittelpunkt" parent="." index="3"]
+position = Vector2(33, 34)
+
+[node name="CollisionPolygon2D" parent="." index="4"]
+polygon = PackedVector2Array(4, -1, 97, -2, 53, 73, -1, 80, -3, 47)

@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://drxcapsmo5tnj"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_nv7c3"]
+[ext_resource type="AudioStream" uid="uid://6vhrcllof1yw" path="res://assets/sfx/single_paper.wav" id="2_0o22r"]
+[ext_resource type="Texture2D" uid="uid://b4rppyhjeh0rf" path="res://assets/items/gameboy.png" id="3_e1rst"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kpogr"]
+atlas = ExtResource("3_e1rst")
+region = Rect2(0, 0, 0, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o12e5"]
+atlas = ExtResource("3_e1rst")
+region = Rect2(0, 32, 0, 32)
+
+[node name="Gameboy" instance=ExtResource("1_nv7c3")]
+item_name = "Old Console"
+description = "\"I don't get why he wasted so much time with this thing!\""
+sound = ExtResource("2_0o22r")
+
+[node name="Schatten" parent="." index="0"]
+offset_left = -6.0
+offset_top = 7.0
+offset_right = 58.0
+offset_bottom = 71.0
+scale = Vector2(1, 0.914383)
+
+[node name="Sprite" parent="." index="1"]
+texture = SubResource("AtlasTexture_kpogr")
+
+[node name="Highlight" parent="." index="2"]
+texture = SubResource("AtlasTexture_o12e5")
+
+[node name="Mittelpunkt" parent="." index="3"]
+position = Vector2(24, 31)
+
+[node name="CollisionPolygon2D" parent="." index="4"]
+position = Vector2(9, 21)
+polygon = PackedVector2Array(-11, -9, -1, 37, 53, 30, 48, 3, 17, -16)
