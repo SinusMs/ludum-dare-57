@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://usmkhexfqbbi"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_wp77e"]
+[ext_resource type="Texture2D" uid="uid://2fdk4ehskyfu" path="res://assets/items/sword.png" id="2_6yp1d"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gtidd"]
+atlas = ExtResource("2_6yp1d")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sro7e"]
+atlas = ExtResource("2_6yp1d")
+region = Rect2(0, 32, 32, 32)
+
+[node name="ItemBase" instance=ExtResource("1_wp77e")]
+
+[node name="Schatten" parent="." index="0"]
+offset_top = 34.0
+offset_bottom = 98.0
+scale = Vector2(1.0822, 0.497416)
+
+[node name="Sprite" parent="." index="1"]
+texture = SubResource("AtlasTexture_gtidd")
+
+[node name="Highlight" parent="." index="2"]
+texture = SubResource("AtlasTexture_sro7e")
+
+[node name="Mittelpunkt" parent="." index="3"]
+position = Vector2(33, 34)
+
+[node name="CollisionPolygon2D" parent="." index="4"]
+polygon = PackedVector2Array(22, 14, 33, 26, 1, 52, 1, 60, 7, 60, 43, 36, 53, 46, 60, 41, 51, 29, 63, 14, 63, 7, 57, 7, 42, 19, 28, 9)
