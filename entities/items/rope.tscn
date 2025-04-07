@@ -15,7 +15,7 @@ region = Rect2(0, 64, 64, 64)
 [node name="Rope" instance=ExtResource("1_0nr22")]
 item_name = "Rope"
 description = "What could it be used for??"
-rarity = 3
+type = 3
 sound = ExtResource("2_662da")
 
 [node name="Schatten" parent="." index="0"]

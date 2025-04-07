@@ -15,7 +15,7 @@ region = Rect2(0, 32, 32, 32)
 [node name="DemonCircle" instance=ExtResource("1_hgr3c")]
 item_name = "Summoning Circle"
 description = "???"
-rarity = 3
+type = 3
 sound = ExtResource("2_nauvn")
 
 [node name="Schatten" parent="." index="0"]

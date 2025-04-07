@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://c2fbn47i4vk03"]
+[gd_scene load_steps=5 format=3 uid="uid://c08shw21cmao6"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_1ho2u"]
 [ext_resource type="Texture2D" uid="uid://iqfyglyikj08" path="res://assets/items/diary.png" id="2_lgdp0"]
@@ -12,6 +12,7 @@ atlas = ExtResource("2_lgdp0")
 region = Rect2(0, 32, 32, 32)
 
 [node name="Diary" instance=ExtResource("1_1ho2u")]
+type = 1
 
 [node name="Schatten" parent="." index="0"]
 offset_top = 3.0

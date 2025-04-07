@@ -15,7 +15,7 @@ region = Rect2(0, 32, 0, 32)
 [node name="FamilyFoto" instance=ExtResource("1_v64y5")]
 item_name = "Old Foto"
 description = "That's my dad and me. I don't know the lady next to me though. But she is so pretty!"
-rarity = 1
+type = 1
 sound = ExtResource("2_7n3t7")
 
 [node name="Schatten" parent="." index="0"]

@@ -16,7 +16,7 @@ region = Rect2(0, 64, 64, 64)
 item_name = "Moving Box"
 description = "an ordanary moving box"
 labelText = "Open"
-rarity = 4
+type = 4
 sound = ExtResource("2_rxb8h")
 
 [node name="Schatten" parent="." index="0"]

@@ -15,7 +15,7 @@ region = Rect2(0, 32, 32, 32)
 [node name="Canned_SPAM" instance=ExtResource("1_2vavn")]
 item_name = "SPAM"
 description = "yummy"
-rarity = 3
+type = 3
 sound = ExtResource("2_5ydnb")
 
 [node name="Schatten" parent="." index="0"]

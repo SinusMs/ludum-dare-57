@@ -16,7 +16,8 @@ region = Rect2(0, 32, 32, 32)
 item_name = "Holy Grail"
 description = "there even is some kind of liquid in there
 i have the strong urge to taste it"
-rarity = 3
+labelText = "Drink"
+type = 2
 sound = ExtResource("2_1eju3")
 
 [node name="Schatten" parent="." index="0"]

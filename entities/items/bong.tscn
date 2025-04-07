@@ -15,6 +15,7 @@ region = Rect2(0, 64, 32, 64)
 [node name="Bong" instance=ExtResource("1_c2ll3")]
 item_name = "Bong"
 description = "420 yeehaaw"
+labelText = "Drink"
 type = 1
 sound = ExtResource("2_2up70")
 

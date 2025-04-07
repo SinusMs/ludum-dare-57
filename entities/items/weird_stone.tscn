@@ -13,8 +13,8 @@ atlas = ExtResource("3_gxvlf")
 region = Rect2(0, 32, 32, 32)
 
 [node name="WeirdStone" instance=ExtResource("1_ic0uq")]
-item_name = "Weird Stone"
-description = "are there coming noises out of it??"
+item_name = "Odd Stone"
+description = "Are there coming noises out of it??"
 type = 2
 sound = ExtResource("2_gs3oc")
 

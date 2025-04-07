@@ -61,5 +61,3 @@ weird_stone.tscn
 Box
 backpack.tscn
 drawer.tscn
-
-

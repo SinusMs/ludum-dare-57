@@ -15,7 +15,7 @@ region = Rect2(0, 32, 0, 32)
 [node name="Milk" instance=ExtResource("1_fst1a")]
 item_name = "Milk"
 description = "Dad actually came back!"
-rarity = 3
+type = 3
 sound = ExtResource("2_mvl21")
 
 [node name="Schatten" parent="." index="0"]

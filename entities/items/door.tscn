@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://dh2wt7xd32mfl"]
+[gd_scene load_steps=6 format=3 uid="uid://m4pbtmfja7gx"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_juiyo"]
 [ext_resource type="AudioStream" uid="uid://8nfxh4ufk2ru" path="res://assets/sfx/door_open_q.wav" id="2_yxter"]
@@ -19,6 +19,7 @@ offset_right = 1.0
 offset_bottom = 1.0
 item_name = "Room Door"
 description = "\"Let's finally clean this room.\""
+labelText = "Open"
 sound = ExtResource("2_yxter")
 
 [node name="Sprite" parent="." index="1"]
