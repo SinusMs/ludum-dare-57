@@ -5,11 +5,10 @@ var screen_tint_scene : PackedScene = preload("res://entities/kein_minigame/scre
 var trash_scene : PackedScene = preload("res://entities/kein_minigame/draggable_object.tscn")
 var usable_trash_can_scene : PackedScene = preload("res://entities/kein_minigame/usable_trashcan.tscn")
 var item_description : ItemBase = preload("res://entities/kein_minigame/description_item.tscn").instantiate()
-var items_bis_km : int = 5
+var items_bis_km : int = 10
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	SignalBus.item_changed.connect(item_play_sound)
 	SignalBus.trash_removed.connect(remove_trash)
 	SignalBus.item_picked_up.connect(spawn_trash)
 
@@ -77,6 +76,6 @@ func remove_trash(trash : CharacterBody2D) -> void:
 func cleanup() -> void:
 	for child in %KeinMinigameContainer.get_children():
 		child.queue_free()
-	items_bis_km = 5
+	items_bis_km = 10
 	Utils.currently_selected_item = null
 	$Menu.change_item("")

@@ -13,8 +13,8 @@ atlas = ExtResource("2_2j1y2")
 region = Rect2(0, 32, 0, 32)
 
 [node name="FamilyFoto" instance=ExtResource("1_v64y5")]
-item_name = "Old Foto"
-description = "That's my dad and me. I don't know the lady next to me though. But she is so pretty!"
+item_name = "Old Family Foto"
+description = "\"We were happy that day.\""
 type = 1
 sound = ExtResource("2_7n3t7")
 

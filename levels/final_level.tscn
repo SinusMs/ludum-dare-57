@@ -1,14 +1,68 @@
-[gd_scene load_steps=8 format=3 uid="uid://us5slrlb7ias"]
+[gd_scene load_steps=62 format=3 uid="uid://by8k1o6ihfun"]
 
 [ext_resource type="Script" uid="uid://c3u0uh25n4yiy" path="res://levels/main_level.gd" id="1_a6mss"]
-[ext_resource type="PackedScene" uid="uid://b0o5camwh1t1j" path="res://levels/audio_stream_player.tscn" id="1_bpo0i"]
+[ext_resource type="PackedScene" path="res://levels/audio_stream_player.tscn" id="1_bpo0i"]
 [ext_resource type="PackedScene" uid="uid://cberpn7tbycxf" path="res://ui/Menu.tscn" id="2_h1ypa"]
 [ext_resource type="PackedScene" uid="uid://2rf7tawro4db" path="res://shader/shader_scene.tscn" id="3_a6mss"]
-[ext_resource type="PackedScene" uid="uid://m4pbtmfja7gx" path="res://entities/items/door.tscn" id="3_h1ypa"]
+[ext_resource type="PackedScene" uid="uid://dh2wt7xd32mfl" path="res://entities/items/door.tscn" id="3_h1ypa"]
+[ext_resource type="PackedScene" uid="uid://bypmaqoei1yo5" path="res://entities/items/cobweb.tscn" id="4_1p3r4"]
+[ext_resource type="PackedScene" path="res://entities/items/bicycle.tscn" id="4_bbv1t"]
+[ext_resource type="PackedScene" uid="uid://c53c4im2wdt25" path="res://entities/items/credits.tscn" id="4_f6wv6"]
 [ext_resource type="PackedScene" path="res://ui/item_overview.tscn" id="4_h87kb"]
-[ext_resource type="PackedScene" uid="uid://4sn67460htmh" path="res://entities/items/shite.tscn" id="5_h87kb"]
+[ext_resource type="PackedScene" uid="uid://863q5bvm04an" path="res://entities/items/kallax.tscn" id="4_vieql"]
+[ext_resource type="PackedScene" uid="uid://lqgdo86mwn8r" path="res://entities/items/coffin.tscn" id="4_whbkv"]
+[ext_resource type="PackedScene" uid="uid://drxcapsmo5tnj" path="res://entities/items/gameboy.tscn" id="5_7q5cu"]
+[ext_resource type="PackedScene" path="res://entities/items/diary.tscn" id="5_7wjex"]
+[ext_resource type="PackedScene" uid="uid://dviiu2yqikp2u" path="res://entities/items/sound_system.tscn" id="5_bwg4l"]
+[ext_resource type="PackedScene" uid="uid://vbbvimmv2tq2" path="res://entities/items/phone.tscn" id="5_l10gb"]
+[ext_resource type="PackedScene" uid="uid://dccd44t85ia7a" path="res://entities/items/degree.tscn" id="5_whbkv"]
+[ext_resource type="PackedScene" uid="uid://capj1tcbdqip8" path="res://entities/items/cobweb_bakery.tscn" id="6_bwg4l"]
+[ext_resource type="PackedScene" path="res://entities/items/birth_foto.tscn" id="6_f6wv6"]
+[ext_resource type="PackedScene" uid="uid://pwtbfuxtuc8m" path="res://entities/items/grandma.tscn" id="6_rhe6t"]
+[ext_resource type="PackedScene" uid="uid://c57mdfkxd8de" path="res://entities/items/drawer.tscn" id="6_yi5jj"]
+[ext_resource type="PackedScene" uid="uid://odfi2oci1jl6" path="res://entities/items/moving_box.tscn" id="7_7wjex"]
+[ext_resource type="PackedScene" uid="uid://cikir5d1ouov" path="res://entities/items/sock.tscn" id="7_oea3u"]
+[ext_resource type="PackedScene" path="res://entities/items/letter.tscn" id="7_shs6v"]
+[ext_resource type="PackedScene" path="res://entities/items/pizza_cartons.tscn" id="8_bbv1t"]
+[ext_resource type="PackedScene" uid="uid://dcve5ttw3q2x6" path="res://entities/items/bong.tscn" id="8_l10gb"]
+[ext_resource type="PackedScene" uid="uid://iowbw61fvbsu" path="res://entities/items/moms_tears.tscn" id="10_ashli"]
+[ext_resource type="PackedScene" uid="uid://nyt07ovjnjwb" path="res://entities/items/bibel.tscn" id="11_ybg82"]
+[ext_resource type="PackedScene" uid="uid://d7uouv5ndvb4" path="res://entities/items/boots.tscn" id="12_ybg82"]
+[ext_resource type="PackedScene" uid="uid://4k2ur0vm0hif" path="res://entities/items/embryo.tscn" id="16_bcbgc"]
+[ext_resource type="PackedScene" uid="uid://chxbkar7alcgp" path="res://entities/items/milk.tscn" id="17_5vinw"]
+[ext_resource type="PackedScene" uid="uid://yvo3ewrb65e0" path="res://entities/items/backpack.tscn" id="17_u6n1r"]
+[ext_resource type="PackedScene" path="res://entities/items/moldy_bread.tscn" id="18_k7umn"]
+[ext_resource type="PackedScene" uid="uid://d1trfs4ihtjer" path="res://entities/items/family_foto.tscn" id="19_rmjp0"]
+[ext_resource type="PackedScene" uid="uid://ltjcs0etachc" path="res://entities/items/lamp.tscn" id="21_1woaw"]
+[ext_resource type="PackedScene" uid="uid://c81x0dytqx5yd" path="res://entities/items/nougat_bits.tscn" id="22_0m0gl"]
+[ext_resource type="PackedScene" uid="uid://5henor46r6mc" path="res://entities/items/rock_face.tscn" id="22_71s5n"]
+[ext_resource type="PackedScene" uid="uid://22npkcscsiid" path="res://entities/items/chessboard.tscn" id="22_eir4w"]
+[ext_resource type="PackedScene" uid="uid://c7v0ubwgn5mrg" path="res://entities/items/holy_grail.tscn" id="22_noxsi"]
+[ext_resource type="PackedScene" uid="uid://dfws11p81r6oh" path="res://entities/items/dead_cat.tscn" id="23_ck7ih"]
+[ext_resource type="PackedScene" uid="uid://pq5ooqubkbjs" path="res://entities/items/demon_circle.tscn" id="24_6ri1y"]
+[ext_resource type="PackedScene" uid="uid://dgexs3f2uftyh" path="res://entities/items/canned_spam.tscn" id="25_7tdvr"]
+[ext_resource type="PackedScene" uid="uid://clpi5w51dp101" path="res://entities/items/egg.tscn" id="26_a8m5x"]
+[ext_resource type="PackedScene" uid="uid://bu5yi7ajcrhi0" path="res://entities/items/beer_crate.tscn" id="27_n4lax"]
+[ext_resource type="PackedScene" uid="uid://bml3qrimjf6g7" path="res://entities/items/punching_bag.tscn" id="28_3uxpt"]
+[ext_resource type="PackedScene" uid="uid://b0crx0k4fb5rf" path="res://entities/items/shite.tscn" id="29_3s6e2"]
+[ext_resource type="PackedScene" uid="uid://d3p7ky3gu36d0" path="res://entities/items/rope.tscn" id="29_3uxpt"]
+[ext_resource type="PackedScene" uid="uid://c6kak3d8jk82o" path="res://entities/items/trash_bag.tscn" id="29_dgof3"]
+[ext_resource type="PackedScene" uid="uid://cw6r7ucbakac0" path="res://entities/items/trash_bin.tscn" id="30_u6n1r"]
+[ext_resource type="PackedScene" uid="uid://b5fl65y0cldvl" path="res://entities/items/key.tscn" id="31_3llmr"]
+[ext_resource type="PackedScene" uid="uid://dkfvx5sngy801" path="res://entities/items/soggy_nougat_bits.tscn" id="31_7tdvr"]
+[ext_resource type="PackedScene" uid="uid://bil8o4rsafejc" path="res://entities/items/the_other_ring.tscn" id="33_i3165"]
+[ext_resource type="PackedScene" uid="uid://bnguv38n53qo5" path="res://entities/items/medical_bills.tscn" id="34_ashli"]
+[ext_resource type="PackedScene" uid="uid://b3mnajtkq6oyu" path="res://entities/items/cactus.tscn" id="35_eir4w"]
+[ext_resource type="PackedScene" uid="uid://dft3ypa3b8bvs" path="res://entities/items/canned_beans.tscn" id="36_ck7ih"]
+[ext_resource type="PackedScene" uid="uid://cip8uu525vmsg" path="res://entities/items/ketchup.tscn" id="40_qlkdb"]
+[ext_resource type="PackedScene" uid="uid://d4koovgas2smy" path="res://entities/items/toilet_paper.tscn" id="46_m3gmr"]
+[ext_resource type="PackedScene" uid="uid://bnnf1oqujxk22" path="res://entities/items/rubber_duck.tscn" id="51_lcupl"]
+[ext_resource type="PackedScene" path="res://entities/items/sword.tscn" id="53_x11v0"]
+[ext_resource type="PackedScene" uid="uid://dai3ungis804f" path="res://entities/items/teddy.tscn" id="54_i3165"]
+[ext_resource type="PackedScene" path="res://entities/items/weird_stone.tscn" id="57_auat2"]
+[ext_resource type="AudioStream" uid="uid://b7oktpihh82b0" path="res://assets/music/soundtrack.mp3" id="61_auat2"]
 
-[node name="FinalLevel" type="Node2D"]
+[node name="FinalLevel2" type="Node2D"]
 script = ExtResource("1_a6mss")
 
 [node name="AudioStreamPlayer" parent="." instance=ExtResource("1_bpo0i")]
@@ -19,13 +73,385 @@ level = NodePath("..")
 [node name="ItemContainer" type="Node" parent="."]
 unique_name_in_owner = true
 
-[node name="Node2" type="Node" parent="ItemContainer"]
+[node name="Credits" parent="ItemContainer" instance=ExtResource("4_f6wv6")]
+offset_left = 247.0
+offset_top = 455.0
+offset_right = 247.0
+offset_bottom = 455.0
+description = "<Toby´s Room>
+Made for Ludum Dare
+by:
+Zaubergurke
+Lipski
+Göndyr
+SinusMs
+MysteriousJuice
+Thank you for Playing <3"
+labelText = "End Game"
 
-[node name="Shite" parent="ItemContainer/Node2" instance=ExtResource("5_h87kb")]
+[node name="FinalLayer" type="Control" parent="ItemContainer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
 
-[node name="Foreground" type="Node" parent="ItemContainer"]
+[node name="Coffin" parent="ItemContainer/FinalLayer" node_paths=PackedStringArray("dependencies") instance=ExtResource("4_whbkv")]
+offset_left = 146.0
+offset_top = 409.0
+offset_right = 146.0
+offset_bottom = 409.0
+children = Dictionary[PackedScene, Vector2]({
+ExtResource("6_rhe6t"): Vector2(0, 0),
+ExtResource("7_oea3u"): Vector2(50, 60)
+})
+dependencies = [NodePath("../BirthFoto"), NodePath("../Bicycle"), NodePath("../MomsTears"), NodePath("../punching_bag")]
+
+[node name="BirthFoto" parent="ItemContainer/FinalLayer" instance=ExtResource("6_f6wv6")]
+offset_left = 163.0
+offset_top = 421.0
+offset_right = 163.0
+offset_bottom = 421.0
+
+[node name="Bicycle" parent="ItemContainer/FinalLayer" instance=ExtResource("4_bbv1t")]
+offset_left = 168.0
+offset_top = 468.0
+offset_right = 168.0
+offset_bottom = 468.0
+rotation = 0.129587
+
+[node name="MomsTears" parent="ItemContainer/FinalLayer" instance=ExtResource("10_ashli")]
+offset_left = 327.0
+offset_top = 415.0
+offset_right = 327.0
+offset_bottom = 415.0
+
+[node name="punching_bag" parent="ItemContainer/FinalLayer" node_paths=PackedStringArray("dependencies") instance=ExtResource("28_3uxpt")]
+offset_left = 231.0
+offset_top = 252.0
+offset_right = 231.0
+offset_bottom = 252.0
+dependencies = [NodePath("../../CobwebLayer/Cobweb")]
+
+[node name="CobwebLayer" type="Control" parent="ItemContainer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Cobweb" parent="ItemContainer/CobwebLayer" node_paths=PackedStringArray("dependencies") instance=ExtResource("4_1p3r4")]
+offset_left = 140.0
+offset_top = 233.0
+offset_right = 140.0
+offset_bottom = 233.0
+type = 4
+dependencies = [NodePath("../Drawer"), NodePath("../Milk"), NodePath("../Backpack")]
+
+[node name="Drawer" parent="ItemContainer/CobwebLayer" node_paths=PackedStringArray("dependencies") instance=ExtResource("6_yi5jj")]
+offset_left = 194.0
+offset_top = 370.0
+offset_right = 194.0
+offset_bottom = 370.0
+children = Dictionary[PackedScene, Vector2]({
+ExtResource("11_ybg82"): Vector2(64, 165),
+ExtResource("7_shs6v"): Vector2(128, 155)
+})
+dependencies = [NodePath("../Degree"), NodePath("../PizzaCartons"), NodePath("../Lamp")]
+
+[node name="Degree" parent="ItemContainer/CobwebLayer" instance=ExtResource("5_whbkv")]
+offset_left = 253.0
+offset_top = 416.0
+offset_right = 253.0
+offset_bottom = 416.0
+
+[node name="PizzaCartons" parent="ItemContainer/CobwebLayer" node_paths=PackedStringArray("dependencies") instance=ExtResource("8_bbv1t")]
+offset_left = 301.0
+offset_top = 403.0
+offset_right = 301.0
+offset_bottom = 403.0
+dependencies = [NodePath("../../MovingBoxLayer/MovingBox6")]
+
+[node name="Boots" parent="ItemContainer/CobwebLayer" instance=ExtResource("12_ybg82")]
+offset_left = 95.0
+offset_top = 451.0
+offset_right = 95.0
+offset_bottom = 451.0
+
+[node name="Milk" parent="ItemContainer/CobwebLayer" instance=ExtResource("17_5vinw")]
+offset_left = 85.0
+offset_top = 501.0
+offset_right = 85.0
+offset_bottom = 501.0
+
+[node name="Backpack" parent="ItemContainer/CobwebLayer" instance=ExtResource("17_u6n1r")]
+offset_left = 154.0
+offset_top = 444.0
+offset_right = 154.0
+offset_bottom = 444.0
+children = Dictionary[PackedScene, Vector2]({
+ExtResource("18_k7umn"): Vector2(50, 70),
+ExtResource("19_rmjp0"): Vector2(-10, 80)
+})
+
+[node name="Lamp" parent="ItemContainer/CobwebLayer" instance=ExtResource("21_1woaw")]
+offset_left = 355.0
+offset_top = 403.0
+offset_right = 355.0
+offset_bottom = 403.0
+
+[node name="MovingBoxLayer" type="Control" parent="ItemContainer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MovingBox" parent="ItemContainer/MovingBoxLayer" node_paths=PackedStringArray("dependencies") instance=ExtResource("7_7wjex")]
+offset_left = 61.0
+offset_top = 470.0
+offset_right = 61.0
+offset_bottom = 470.0
+children = Dictionary[PackedScene, Vector2]({
+ExtResource("16_bcbgc"): Vector2(44, 74)
+})
+dependencies = [NodePath("../MovingBox4")]
+
+[node name="MovingBox2" parent="ItemContainer/MovingBoxLayer" node_paths=PackedStringArray("dependencies") instance=ExtResource("7_7wjex")]
+offset_left = 136.0
+offset_top = 468.0
+offset_right = 136.0
+offset_bottom = 468.0
+children = Dictionary[PackedScene, Vector2]({
+ExtResource("22_noxsi"): Vector2(0, 60)
+})
+dependencies = [NodePath("../MovingBox5")]
+
+[node name="MovingBox3" parent="ItemContainer/MovingBoxLayer" node_paths=PackedStringArray("dependencies") instance=ExtResource("7_7wjex")]
+offset_left = 220.0
+offset_top = 467.0
+offset_right = 220.0
+offset_bottom = 467.0
+children = Dictionary[PackedScene, Vector2]({
+ExtResource("5_7q5cu"): Vector2(-30, 80),
+ExtResource("22_eir4w"): Vector2(30, 50)
+})
+dependencies = [NodePath("../MovingBox6")]
+
+[node name="MovingBox10" parent="ItemContainer/MovingBoxLayer" node_paths=PackedStringArray("dependencies") instance=ExtResource("7_7wjex")]
+offset_left = 345.0
+offset_top = 501.0
+offset_right = 345.0
+offset_bottom = 501.0
+children = Dictionary[PackedScene, Vector2]({
+ExtResource("29_3s6e2"): Vector2(20, 40)
+})
+dependencies = [NodePath("../MedicalBills")]
+
+[node name="MovingBox4" parent="ItemContainer/MovingBoxLayer" node_paths=PackedStringArray("dependencies") instance=ExtResource("7_7wjex")]
+offset_left = 72.0
+offset_top = 413.0
+offset_right = 72.0
+offset_bottom = 413.0
+children = Dictionary[PackedScene, Vector2]({
+ExtResource("29_3uxpt"): Vector2(0, 60)
+})
+dependencies = [NodePath("../MovingBox7")]
+
+[node name="MovingBox5" parent="ItemContainer/MovingBoxLayer" node_paths=PackedStringArray("dependencies") instance=ExtResource("7_7wjex")]
+offset_left = 148.0
+offset_top = 411.0
+offset_right = 148.0
+offset_bottom = 411.0
+children = Dictionary[PackedScene, Vector2]({
+ExtResource("23_ck7ih"): Vector2(0, 100)
+})
+dependencies = [NodePath("../MovingBox8")]
+
+[node name="MovingBox6" parent="ItemContainer/MovingBoxLayer" node_paths=PackedStringArray("dependencies") instance=ExtResource("7_7wjex")]
+offset_left = 226.0
+offset_top = 410.0
+offset_right = 226.0
+offset_bottom = 410.0
+children = Dictionary[PackedScene, Vector2]({
+ExtResource("24_6ri1y"): Vector2(30, 150)
+})
+dependencies = [NodePath("../MovingBox9")]
+
+[node name="MovingBox7" parent="ItemContainer/MovingBoxLayer" instance=ExtResource("7_7wjex")]
+offset_left = 76.0
+offset_top = 355.0
+offset_right = 76.0
+offset_bottom = 355.0
+children = Dictionary[PackedScene, Vector2]({
+ExtResource("33_i3165"): Vector2(60, 200)
+})
+
+[node name="MovingBox8" parent="ItemContainer/MovingBoxLayer" instance=ExtResource("7_7wjex")]
+offset_left = 155.0
+offset_top = 352.0
+offset_right = 155.0
+offset_bottom = 352.0
+children = Dictionary[PackedScene, Vector2]({
+ExtResource("5_7wjex"): Vector2(0, 200)
+})
+
+[node name="MovingBox9" parent="ItemContainer/MovingBoxLayer" instance=ExtResource("7_7wjex")]
+offset_left = 235.0
+offset_top = 350.0
+offset_right = 235.0
+offset_bottom = 350.0
+children = Dictionary[PackedScene, Vector2]({
+ExtResource("26_a8m5x"): Vector2(40, 200)
+})
+
+[node name="SoundSystem" parent="ItemContainer/MovingBoxLayer" instance=ExtResource("5_bwg4l")]
+offset_left = 52.0
+offset_top = 477.0
+offset_right = 52.0
+offset_bottom = 477.0
+
+[node name="NougatBits" parent="ItemContainer/MovingBoxLayer" instance=ExtResource("22_0m0gl")]
+offset_left = 188.0
+offset_top = 520.0
+offset_right = 188.0
+offset_bottom = 520.0
+children = Dictionary[PackedScene, Vector2]({
+ExtResource("31_3llmr"): Vector2(0, 60)
+})
+
+[node name="MedicalBills" parent="ItemContainer/MovingBoxLayer" instance=ExtResource("34_ashli")]
+offset_left = 370.0
+offset_top = 498.0
+offset_right = 370.0
+offset_bottom = 498.0
+
+[node name="KalaxLayer" type="Control" parent="ItemContainer"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="RockFace" parent="ItemContainer/KalaxLayer" instance=ExtResource("22_71s5n")]
+offset_left = 58.0
+offset_top = 182.0
+offset_right = 58.0
+offset_bottom = 182.0
+
+[node name="Canned_SPAM" parent="ItemContainer/KalaxLayer" instance=ExtResource("25_7tdvr")]
+offset_left = 299.0
+offset_top = 245.0
+offset_right = 299.0
+offset_bottom = 245.0
+
+[node name="Kallax" parent="ItemContainer/KalaxLayer" node_paths=PackedStringArray("dependencies") instance=ExtResource("4_vieql")]
+offset_left = 48.0
+offset_top = 286.0
+offset_right = 48.0
+offset_bottom = 286.0
+type = 4
+dependencies = [NodePath("../phone"), NodePath("../cobweb_bakery"), NodePath("../MovingBox"), NodePath("../RockFace"), NodePath("../Canned_SPAM"), NodePath("../ToiletPaper"), NodePath("../Ketchup"), NodePath("../SoggyNougatBits"), NodePath("../Cactus"), NodePath("../Canned_Beans"), NodePath("../RubberDuck"), NodePath("../ItemBase"), NodePath("../Teddy"), NodePath("../WeirdStone")]
+
+[node name="phone" parent="ItemContainer/KalaxLayer" instance=ExtResource("5_l10gb")]
+offset_left = 307.0
+offset_top = 434.0
+offset_right = 307.0
+offset_bottom = 434.0
+
+[node name="cobweb_bakery" parent="ItemContainer/KalaxLayer" instance=ExtResource("6_bwg4l")]
+offset_left = 380.0
+offset_top = 292.0
+offset_right = 380.0
+offset_bottom = 292.0
+
+[node name="MovingBox" parent="ItemContainer/KalaxLayer" instance=ExtResource("7_7wjex")]
+offset_left = 53.0
+offset_top = 479.0
+offset_right = 53.0
+offset_bottom = 479.0
+children = Dictionary[PackedScene, Vector2]({
+ExtResource("8_l10gb"): Vector2(10, 0)
+})
+
+[node name="ToiletPaper" parent="ItemContainer/KalaxLayer" instance=ExtResource("46_m3gmr")]
+offset_left = 297.0
+offset_top = 530.0
+offset_right = 297.0
+offset_bottom = 530.0
+
+[node name="Beer Crate" parent="ItemContainer/KalaxLayer" instance=ExtResource("27_n4lax")]
+offset_left = 206.0
+offset_top = 530.0
+offset_right = 206.0
+offset_bottom = 530.0
+
+[node name="TrashBag" parent="ItemContainer/KalaxLayer" instance=ExtResource("29_dgof3")]
+offset_left = 13.0
+offset_top = 511.0
+offset_right = 13.0
+offset_bottom = 511.0
+
+[node name="TrashBin" parent="ItemContainer/KalaxLayer" instance=ExtResource("30_u6n1r")]
+offset_left = 377.0
+offset_top = 526.0
+offset_right = 377.0
+offset_bottom = 526.0
+
+[node name="Ketchup" parent="ItemContainer/KalaxLayer" instance=ExtResource("40_qlkdb")]
+offset_left = 215.0
+offset_top = 321.0
+offset_right = 215.0
+offset_bottom = 321.0
+
+[node name="SoggyNougatBits" parent="ItemContainer/KalaxLayer" instance=ExtResource("31_7tdvr")]
+offset_left = 181.0
+offset_top = 341.0
+offset_right = 181.0
+offset_bottom = 341.0
+
+[node name="Cactus" parent="ItemContainer/KalaxLayer" instance=ExtResource("35_eir4w")]
+offset_left = 87.0
+offset_top = 322.0
+offset_right = 87.0
+offset_bottom = 322.0
+
+[node name="Canned_Beans" parent="ItemContainer/KalaxLayer" instance=ExtResource("36_ck7ih")]
+offset_left = 191.0
+offset_top = 426.0
+offset_right = 191.0
+offset_bottom = 426.0
+
+[node name="NougatBits" parent="ItemContainer/KalaxLayer" instance=ExtResource("22_0m0gl")]
+offset_left = 123.0
+offset_top = 566.0
+offset_right = 123.0
+offset_bottom = 566.0
+
+[node name="RubberDuck" parent="ItemContainer/KalaxLayer" instance=ExtResource("51_lcupl")]
+offset_left = 423.0
+offset_top = 342.0
+offset_right = 423.0
+offset_bottom = 342.0
+
+[node name="ItemBase" parent="ItemContainer/KalaxLayer" instance=ExtResource("53_x11v0")]
+offset_left = 184.0
+offset_top = 530.0
+offset_right = 184.0
+offset_bottom = 530.0
+
+[node name="Teddy" parent="ItemContainer/KalaxLayer" instance=ExtResource("54_i3165")]
+offset_left = 322.0
+offset_top = 335.0
+offset_right = 322.0
+offset_bottom = 335.0
+
+[node name="WeirdStone" parent="ItemContainer/KalaxLayer" instance=ExtResource("57_auat2")]
+offset_left = 398.0
+offset_top = 430.0
+offset_right = 398.0
+offset_bottom = 430.0
+
+[node name="Foreground" type="Control" parent="ItemContainer"]
+layout_mode = 3
+anchors_preset = 0
 
 [node name="door" parent="ItemContainer/Foreground" instance=ExtResource("3_h1ypa")]
+description = "\"Okay, today is the day. I avoided clearing out his old room and it has kind of become a storage room filled with all kinds of junk. This is gonna be tough.\""
 
 [node name="KeinMinigameContainer" type="Node" parent="."]
 unique_name_in_owner = true
@@ -37,3 +463,8 @@ unique_name_in_owner = true
 
 [node name="ItemOverview" parent="." instance=ExtResource("4_h87kb")]
 visible = false
+
+[node name="MusicAudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("61_auat2")
+autoplay = true
+parameters/looping = true
