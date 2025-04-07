@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://c382y4mxn5ko6"]
+[gd_scene load_steps=6 format=3 uid="uid://ltjcs0etachc"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_xef6r"]
 [ext_resource type="AudioStream" uid="uid://t4iceuciow3b" path="res://assets/sfx/bonk.wav" id="2_ibix0"]
@@ -14,7 +14,7 @@ region = Rect2(0, 32, 32, 32)
 
 [node name="Lamp" instance=ExtResource("1_xef6r")]
 item_name = "Lamp"
-description = "just a normal lamp"
+description = "\"It always made this annoying sound. When it broke, I finally felt peace at the silence of that lamp.\""
 sound = ExtResource("2_ibix0")
 
 [node name="Schatten" parent="." index="0"]

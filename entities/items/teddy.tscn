@@ -14,9 +14,12 @@ region = Rect2(0, 32, 32, 32)
 
 [node name="Teddy" instance=ExtResource("1_lmt8k")]
 item_name = "Teddy Bear"
-description = "My old Teddy Bear.
-a bit worn out"
-rarity = 3
+description = "\"I wonder where Chica and Foxy are at...
+
+
+
+Huh!?  I thought I heard something move behind me.\""
+type = 2
 sound = ExtResource("2_8bpwd")
 
 [node name="Schatten" parent="." index="0"]
