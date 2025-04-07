@@ -14,7 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://q5vblcrcq1dt" path="res://entities/items/gameboy.tscn" id="5_7q5cu"]
 [ext_resource type="PackedScene" uid="uid://c08shw21cmao6" path="res://entities/items/diary.tscn" id="5_7wjex"]
 [ext_resource type="PackedScene" uid="uid://dxwrwleevtcji" path="res://entities/items/sound_system.tscn" id="5_bwg4l"]
-[ext_resource type="PackedScene" uid="uid://hfrk2ffwp7a4" path="res://entities/items/phone.tscn" id="5_l10gb"]
+[ext_resource type="PackedScene" uid="uid://vbbvimmv2tq2" path="res://entities/items/phone.tscn" id="5_l10gb"]
 [ext_resource type="PackedScene" uid="uid://rqgr3k7lr4pf" path="res://entities/items/degree.tscn" id="5_whbkv"]
 [ext_resource type="PackedScene" uid="uid://capj1tcbdqip8" path="res://entities/items/cobweb_bakery.tscn" id="6_bwg4l"]
 [ext_resource type="PackedScene" uid="uid://bybmbb5c3ofpa" path="res://entities/items/birth_foto.tscn" id="6_f6wv6"]
@@ -23,7 +23,7 @@
 [ext_resource type="PackedScene" uid="uid://odfi2oci1jl6" path="res://entities/items/moving_box.tscn" id="7_7wjex"]
 [ext_resource type="PackedScene" uid="uid://cikir5d1ouov" path="res://entities/items/sock.tscn" id="7_oea3u"]
 [ext_resource type="PackedScene" uid="uid://b7xjkww8xapkx" path="res://entities/items/letter.tscn" id="7_shs6v"]
-[ext_resource type="PackedScene" uid="uid://bks07ofetfbrm" path="res://entities/items/pizza_cartons.tscn" id="8_bbv1t"]
+[ext_resource type="PackedScene" uid="uid://bsdo1etebyq8m" path="res://entities/items/pizza_cartons.tscn" id="8_bbv1t"]
 [ext_resource type="PackedScene" uid="uid://dcve5ttw3q2x6" path="res://entities/items/bong.tscn" id="8_l10gb"]
 [ext_resource type="PackedScene" uid="uid://cdf4658evx8mm" path="res://entities/items/moms_tears.tscn" id="10_ashli"]
 [ext_resource type="PackedScene" uid="uid://nyt07ovjnjwb" path="res://entities/items/bibel.tscn" id="11_ybg82"]
@@ -60,7 +60,7 @@
 [ext_resource type="PackedScene" uid="uid://c82l1lxgjjgtj" path="res://entities/items/sword.tscn" id="53_x11v0"]
 [ext_resource type="PackedScene" uid="uid://dai3ungis804f" path="res://entities/items/teddy.tscn" id="54_i3165"]
 [ext_resource type="PackedScene" uid="uid://dh0ur564yhykq" path="res://entities/items/weird_stone.tscn" id="57_auat2"]
-[ext_resource type="AudioStream" uid="uid://b7oktpihh82b0" path="res://assets/music/soundtrack.mp3" id="61_auat2"]
+[ext_resource type="AudioStream" uid="uid://bkwtp5h15ua21" path="res://assets/music/thorstens_zimmer.mp3" id="61_auat2"]
 
 [node name="FinalLevel2" type="Node2D"]
 script = ExtResource("1_a6mss")
