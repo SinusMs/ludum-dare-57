@@ -14,8 +14,8 @@ region = Rect2(0, 16, 32, 16)
 
 [node name="Key" instance=ExtResource("1_qncxq")]
 item_name = "Key to your moms room"
-description = "why is it common???"
-rarity = 2
+description = "common item"
+type = 2
 sound = ExtResource("2_kmxvu")
 
 [node name="Schatten" parent="." index="0"]

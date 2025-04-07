@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://q5powng1vrvp"]
+[gd_scene load_steps=5 format=3 uid="uid://dcra3b1uv2rm5"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_pxuw1"]
 [ext_resource type="Texture2D" uid="uid://b3tk50qw0u5xb" path="res://assets/items/bycicle.png" id="2_po7yn"]
@@ -12,6 +12,7 @@ atlas = ExtResource("2_po7yn")
 region = Rect2(0, 35, 64, 35)
 
 [node name="Bicycle" instance=ExtResource("1_pxuw1")]
+type = 1
 
 [node name="Schatten" parent="." index="0"]
 offset_left = -11.0

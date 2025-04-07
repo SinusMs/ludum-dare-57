@@ -16,7 +16,7 @@ region = Rect2(0, 32, 32, 32)
 item_name = "Moms Tears"
 description = "idk, never played isaac"
 labelText = "Drink"
-rarity = 3
+type = 3
 sound = ExtResource("2_8sn5y")
 
 [node name="Schatten" parent="." index="0"]

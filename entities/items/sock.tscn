@@ -16,7 +16,7 @@ region = Rect2(0, 32, 32, 32)
 mouse_filter = 0
 item_name = "Sock"
 description = "Why is it stiff?"
-rarity = 3
+type = 3
 sound = ExtResource("2_be4pa")
 
 [node name="Schatten" parent="." index="0"]

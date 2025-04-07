@@ -17,7 +17,7 @@ description = "Guppy! There you are!
 Are you alright?
 
 ..."
-rarity = 3
+type = 2
 sound = ExtResource("2_ny5n0")
 
 [node name="Schatten" parent="." index="0"]

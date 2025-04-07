@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://boqowy1i6cub8"]
+[gd_scene load_steps=5 format=3 uid="uid://baeir6blawq7m"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_q840x"]
 [ext_resource type="Texture2D" uid="uid://dfg3dqt3dabvb" path="res://assets/items/boots.png" id="2_4tx6c"]
@@ -12,6 +12,7 @@ atlas = ExtResource("2_4tx6c")
 region = Rect2(0, 64, 64, 64)
 
 [node name="Boots" instance=ExtResource("1_q840x")]
+type = 1
 
 [node name="Schatten" parent="." index="0"]
 offset_left = 8.0

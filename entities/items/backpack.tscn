@@ -16,7 +16,7 @@ region = Rect2(0, 64, 64, 64)
 item_name = "Backpack"
 description = "\"What might still be inside?\""
 labelText = "Open"
-rarity = 4
+type = 4
 sound = ExtResource("2_q37bs")
 
 [node name="Schatten" parent="." index="0"]

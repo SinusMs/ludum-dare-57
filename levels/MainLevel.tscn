@@ -226,6 +226,7 @@ offset_left = 19.0
 offset_top = 365.0
 offset_right = 19.0
 offset_bottom = 365.0
+item_name = "Odd Stone"
 type = 0
 
 [node name="Shite" parent="ItemContainer" instance=ExtResource("31_f6v30")]

@@ -16,7 +16,7 @@ region = Rect2(32, 32, 32, 32)
 item_name = "Beans"
 description = "\"They still smell pretty good\""
 labelText = "Eat"
-rarity = 3
+type = 3
 sound = ExtResource("2_3q7r2")
 
 [node name="Schatten" parent="." index="0"]

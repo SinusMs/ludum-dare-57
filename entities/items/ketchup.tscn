@@ -16,7 +16,7 @@ region = Rect2(0, 32, 32, 32)
 item_name = "Hela Curry Gewürz Ketchup"
 description = "Tasty?"
 labelText = "Drink"
-rarity = 3
+type = 3
 sound = ExtResource("2_ep12l")
 
 [node name="Schatten" parent="." index="0"]

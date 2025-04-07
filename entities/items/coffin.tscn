@@ -18,7 +18,7 @@ item_name = "Coffin"
 description = "What could be in there?
 could it be.."
 labelText = "Open"
-rarity = 4
+type = 4
 children = Dictionary[PackedScene, Vector2]({
 ExtResource("2_50cmg"): Vector2(0, 0)
 })

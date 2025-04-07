@@ -17,7 +17,7 @@ item_name = "Grandma"
 description = "-\"Hello Sweety!\"
 -\"beispieltext\"
 "
-rarity = 1
+type = 1
 sound = ExtResource("2_04dfe")
 
 [node name="Schatten" parent="." index="0"]

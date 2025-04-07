@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://w08vs12jji03"]
+[gd_scene load_steps=6 format=3 uid="uid://capj1tcbdqip8"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_2u7ks"]
 [ext_resource type="Texture2D" uid="uid://cx8ohya5ppmqq" path="res://assets/items/cobweb_bakery.png" id="2_raw5l"]
