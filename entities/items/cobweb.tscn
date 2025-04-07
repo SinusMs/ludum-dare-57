@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://wubfvotpglxu"]
+[gd_scene load_steps=6 format=3 uid="uid://wubfvotpglxu"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_4vu8f"]
 [ext_resource type="Texture2D" uid="uid://b6tisnewd8nm4" path="res://assets/items/cobweb.png" id="2_sscx5"]
+[ext_resource type="AudioStream" uid="uid://dqvhkvfmkngji" path="res://assets/sfx/raschel.wav" id="2_ssqmd"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ssqmd"]
 atlas = ExtResource("2_sscx5")
@@ -12,6 +13,10 @@ atlas = ExtResource("2_sscx5")
 region = Rect2(0, 152, 132, 152)
 
 [node name="Cobweb" instance=ExtResource("1_4vu8f")]
+item_name = "Cobweb"
+description = "\"Dammit, this is going to take a while\""
+labelText = "Remove"
+sound = ExtResource("2_ssqmd")
 
 [node name="Schatten" parent="." index="0"]
 offset_right = 270.0
