@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://b2ulgbg6d3os1"]
+[gd_scene load_steps=10 format=3 uid="uid://b2ulgbg6d3os1"]
 
 [ext_resource type="Script" uid="uid://d1paaxn2vd8jp" path="res://ui/item_overview.gd" id="1_rckij"]
 [ext_resource type="Texture2D" uid="uid://yew8y0lxqoq2" path="res://assets/UI/ItemOverviewBox.png" id="2_k7g6h"]
@@ -11,6 +11,90 @@ region = Rect2(0, 0, 33, 32)
 [sub_resource type="AtlasTexture" id="AtlasTexture_7ng00"]
 atlas = ExtResource("3_35c6p")
 region = Rect2(0, 32, 33, 32)
+
+[sub_resource type="Animation" id="Animation_k7g6h"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_rckij"]
+resource_name = "hide"
+length = 0.5
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.2, -410, 674.5, 0, -61, 0.533333, 16),
+"times": PackedFloat32Array(0, 0.366667)
+}
+
+[sub_resource type="Animation" id="Animation_35c6p"]
+resource_name = "show"
+length = 0.5
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.3)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(640, -0.25, 0, 0.25, 0, 0.5, -0.233333, -293, 0.25, 0),
+"times": PackedFloat32Array(0, 0.433333)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_35c6p"]
+_data = {
+&"RESET": SubResource("Animation_k7g6h"),
+&"hide": SubResource("Animation_rckij"),
+&"show": SubResource("Animation_35c6p")
+}
 
 [node name="ItemOverview" type="Panel"]
 z_index = 4
@@ -57,5 +141,10 @@ offset_bottom = 68.0
 pivot_offset = Vector2(16, 16)
 texture_normal = SubResource("AtlasTexture_pkhx7")
 texture_hover = SubResource("AtlasTexture_7ng00")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_35c6p")
+}
 
 [connection signal="button_down" from="ExitOverview" to="." method="_on_exit_overview_button_down"]
