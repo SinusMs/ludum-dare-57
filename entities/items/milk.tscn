@@ -14,7 +14,7 @@ region = Rect2(0, 32, 0, 32)
 
 [node name="Milk" instance=ExtResource("1_fst1a")]
 item_name = "Milk"
-description = "Dad actually came back!"
+description = "\"I changed my mind and came back after all.\""
 type = 3
 sound = ExtResource("2_mvl21")
 
