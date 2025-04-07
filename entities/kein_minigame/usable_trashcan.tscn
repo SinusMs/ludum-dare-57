@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://conosdt7fij7h"]
+[gd_scene load_steps=7 format=3 uid="uid://conosdt7fij7h"]
 
 [ext_resource type="Script" uid="uid://c84lrgiuopg3k" path="res://entities/kein_minigame/usable_trashcan.gd" id="1_kr2ys"]
 [ext_resource type="Texture2D" uid="uid://ch857s4754sju" path="res://assets/items/trashbag.png" id="1_s2eyq"]
@@ -10,6 +10,15 @@ region = Rect2(128, 0, 64, 64)
 [sub_resource type="AtlasTexture" id="AtlasTexture_vemr1"]
 atlas = ExtResource("1_s2eyq")
 region = Rect2(128, 64, 64, 64)
+
+[sub_resource type="Gradient" id="Gradient_kr2ys"]
+colors = PackedColorArray(1, 0, 0, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_vemr1"]
+gradient = SubResource("Gradient_kr2ys")
+fill = 1
+fill_from = Vector2(0.508547, 0.487179)
+fill_to = Vector2(0.807692, 0.24359)
 
 [node name="UsableTrashcan" type="Area2D"]
 texture_filter = 3
@@ -23,7 +32,11 @@ texture = SubResource("AtlasTexture_kr2ys")
 texture = SubResource("AtlasTexture_vemr1")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+visible = false
 polygon = PackedVector2Array(-25, -16, -12, 21, 11, 21, 24, -17, 16, -25, -16, -25)
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+texture = SubResource("GradientTexture2D_vemr1")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
