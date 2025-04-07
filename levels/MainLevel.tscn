@@ -288,6 +288,7 @@ offset_right = 488.0
 offset_bottom = 253.0
 
 [node name="door" parent="ItemContainer" instance=ExtResource("42_5m5mo")]
+description = "\"Let's finally clean this room.\""
 
 [node name="KeinMinigameContainer" type="Node" parent="."]
 unique_name_in_owner = true

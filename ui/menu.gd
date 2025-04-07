@@ -50,6 +50,7 @@ func _on_stash_button_button_down() -> void:
 		await get_tree().create_timer(.1).timeout
 	
 	#spawn children
+	
 	var has_children : bool = level._spawn_children(Utils.currently_selected_item)
 
 	# Create copy of item to show in "Discovered"
