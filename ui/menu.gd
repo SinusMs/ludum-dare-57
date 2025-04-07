@@ -12,10 +12,12 @@ func change_item(newLabelText: String) -> void:
 		$"CanvasLayer/Panel/DescriptionFrame/ScrollContainer/DescriptionLabel".text = ""
 		$"CanvasLayer/Panel/ItemFrame/ItemTexture".texture = null
 		$"CanvasLayer/Panel/StashButton/RichTextLabel".text = newLabelText
+		$"CanvasLayer/Panel/StashButton".hide()
 	else:
 		$"CanvasLayer/Panel/NameFrame/NameLabel".text = Utils.currently_selected_item.item_name
 		$"CanvasLayer/Panel/DescriptionFrame/ScrollContainer/DescriptionLabel".text = Utils.currently_selected_item.description
 		$"CanvasLayer/Panel/ItemFrame/ItemTexture".texture = Utils.currently_selected_item.get_node("Sprite").texture
+		$"CanvasLayer/Panel/StashButton".show()
 		$"CanvasLayer/Panel/StashButton/RichTextLabel".text = newLabelText
 
 		
