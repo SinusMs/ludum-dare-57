@@ -34,15 +34,27 @@ func _on_stash_button_button_down() -> void:
 	var picked_up_item : ItemBase
 	if Utils.currently_selected_item == null:
 		return
-	var has_children : bool = level._spawn_children(Utils.currently_selected_item)
-	if !has_children:
-		Utils.found_items+=1
-		picked_up_item = Utils.currently_selected_item.duplicate()
+	
+	#Play sound and particles
+	level.item_play_sound("")
 	level._spawn_particles(Utils.currently_selected_item)
+	#play shrinking animation
+	if Utils.currently_selected_item.type != Utils.TYPE.BOX:
+		Utils.currently_selected_item.pivot_offset = Utils.currently_selected_item.mittelpunkt
+		Utils.currently_selected_item.anim.play("hide")
+		await get_tree().create_timer(.1).timeout
+	
+	#spawn children
+	var has_children : bool = level._spawn_children(Utils.currently_selected_item)
+	picked_up_item = Utils.currently_selected_item.duplicate()
+	if !has_children and Utils.currently_selected_item.type != Utils.TYPE.BOX:
+		Utils.found_items += 1
+	
+	#delete item
 	Utils.currently_selected_item.queue_free()
 	Utils.currently_selected_item = null
 	SignalBus.item_changed.emit("")
-	if !has_children:
+	if !has_children and picked_up_item.type != Utils.TYPE.BOX:
 		SignalBus.item_picked_up.emit(picked_up_item)
 
 
@@ -54,11 +66,9 @@ func _on_background_gui_input(event:InputEvent) -> void:
 		Utils.currently_selected_item.call_deferred("showHighlight", false)
 		Utils.currently_selected_item = null
 		SignalBus.item_changed.emit("")
-
+		
 		if Utils.currently_hovered_item != null:
 			Utils.currently_hovered_item.set_deferred("isHighlighted", false)
-
-
 
 
 func _on_achievement_button_button_down() -> void:
@@ -69,7 +79,6 @@ func _on_toggle_achievements() -> void:
 	if $CanvasLayer/Panel/StashButton.visible:
 		$CanvasLayer/Panel/StashButton.hide()
 	else:
-
 		Utils.currently_selected_item = null
 		change_item("")
 		$CanvasLayer/Panel/StashButton.show()
