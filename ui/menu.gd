@@ -39,6 +39,9 @@ func _on_stash_button_button_down() -> void:
 	var picked_up_item : ItemBase
 	if Utils.currently_selected_item == null:
 		return
+	
+	if Utils.currently_selected_item.name == "Credits":
+		level.end_this()
 
 	#Play sound and particles
 	level.item_play_sound("")
@@ -52,7 +55,6 @@ func _on_stash_button_button_down() -> void:
 	#spawn children
 	
 	var has_children : bool = level._spawn_children(Utils.currently_selected_item)
-
 	# Create copy of item to show in "Discovered"
 	var item_base_scene = preload("res://entities/item_base.tscn")
 	picked_up_item = item_base_scene.instantiate()
@@ -65,9 +67,6 @@ func _on_stash_button_button_down() -> void:
 	picked_up_item.type = Utils.currently_selected_item.type
 	picked_up_item.sound = Utils.currently_selected_item.sound
 	
-
-
-
 	#  Utils.currently_selected_item.duplicate()
 	if !has_children and Utils.currently_selected_item.type != Utils.TYPE.BOX:
 		Utils.found_items += 1
