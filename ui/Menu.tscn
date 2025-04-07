@@ -136,6 +136,7 @@ vertical_alignment = 1
 visible_characters_behavior = 1
 
 [node name="StashButton" type="TextureButton" parent="CanvasLayer/Panel"]
+visible = false
 texture_filter = 1
 layout_mode = 1
 anchors_preset = 8
