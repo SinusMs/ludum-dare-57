@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://yvo3ewrb65e0"]
+[gd_scene load_steps=6 format=3 uid="uid://difqkrb4dklxk"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_0wo01"]
 [ext_resource type="Texture2D" uid="uid://bmhuxgbn733tb" path="res://assets/items/backpack.png" id="2_iku3g"]

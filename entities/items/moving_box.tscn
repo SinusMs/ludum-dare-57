@@ -14,8 +14,8 @@ region = Rect2(0, 64, 64, 64)
 
 [node name="MovingBox" instance=ExtResource("1_sx1vg")]
 item_name = "Moving Box"
-description = "\"An ordinary moving box. I should just leave it be.\""
-labelText = "leave it be"
+description = "An ordinary moving box."
+labelText = "Open"
 type = 4
 sound = ExtResource("2_rxb8h")
 

@@ -17,6 +17,7 @@ description = "\"His cat Guppy! There you are!
 Hey cutie, are you alright?\"
 
 \"oh...\""
+labelText = "Bury"
 type = 2
 sound = ExtResource("2_ny5n0")
 
