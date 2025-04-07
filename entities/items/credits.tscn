@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=3 uid="uid://c53c4im2wdt25"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_ffhiv"]
+[ext_resource type="AudioStream" uid="uid://dqvhkvfmkngji" path="res://assets/sfx/raschel.wav" id="2_blbma"]
+[ext_resource type="Texture2D" uid="uid://b2hgsdrfqipdv" path="res://assets/items/credits.png" id="3_ucqkb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a33y6"]
+atlas = ExtResource("3_ucqkb")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_anna7"]
+atlas = ExtResource("3_ucqkb")
+region = Rect2(0, 32, 32, 32)
+
+[node name="Credits" instance=ExtResource("1_ffhiv")]
+item_name = "Credits"
+description = "<Title>
+Made for Ludum Dare
+by:
+Zaubergurke
+Lipski
+Göndyr
+SinusMS
+MysteriousJuice
+Thanks for Playing <3"
+type = 1
+sound = ExtResource("2_blbma")
+
+[node name="Schatten" parent="." index="0"]
+offset_left = -6.0
+offset_top = 35.0
+offset_right = 58.0
+offset_bottom = 99.0
+scale = Vector2(1.12702, 0.388369)
+
+[node name="Sprite" parent="." index="1"]
+texture = SubResource("AtlasTexture_a33y6")
+
+[node name="Highlight" parent="." index="2"]
+texture = SubResource("AtlasTexture_anna7")
+
+[node name="Mittelpunkt" parent="." index="3"]
+position = Vector2(31, 31)
+
+[node name="CollisionPolygon2D" parent="." index="4"]
+polygon = PackedVector2Array(3, 17, 5, 15, 59, 15, 63, 19, 62, 43, 59, 47, 55, 45, 44, 45, 42, 41, 37, 45, 27, 45, 25, 42, 23, 45, 9, 44, 7, 48, 4, 45)
