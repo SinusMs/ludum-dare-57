@@ -86,8 +86,10 @@ Lipski
 Göndyr
 SinusMs
 MysteriousJuice
+Fi-on-a-Loop
 Thank you for Playing <3"
 labelText = "End Game"
+metadata/_edit_use_anchors_ = true
 
 [node name="FinalLayer" type="Control" parent="ItemContainer"]
 layout_mode = 3
