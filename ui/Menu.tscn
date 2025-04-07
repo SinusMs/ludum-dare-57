@@ -122,6 +122,8 @@ offset_top = 15.0
 offset_bottom = -13.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(0.814924, 1.05484)
+pivot_offset = Vector2(62, 46)
 
 [node name="DescriptionLabel" type="RichTextLabel" parent="CanvasLayer/Panel/DescriptionFrame/ScrollContainer"]
 texture_filter = 1
