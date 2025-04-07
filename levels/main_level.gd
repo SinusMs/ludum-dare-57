@@ -19,7 +19,7 @@ func _process(_delta: float) -> void:
 	pass
 
 
-func item_play_sound(string : String) -> void:
+func item_play_sound(string : String = "") -> void:
 	if Utils.currently_selected_item == null:
 		return
 	$AudioStreamPlayer.stream = Utils.currently_selected_item.sound
@@ -63,6 +63,7 @@ func spawn_trash(item : ItemBase) -> void:
 
 
 func remove_trash(trash : CharacterBody2D) -> void:
+	item_play_sound()
 	var rauchwolke: CPUParticles2D = rauchwolke_scene.instantiate()
 	rauchwolke.position = trash.position
 	rauchwolke.emitting = true

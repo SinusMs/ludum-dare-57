@@ -7,6 +7,9 @@ var newPosition = Vector2()
 
 var mouse_in = false
 
+func _ready() -> void:
+	$Sprite2D.texture.region = Rect2(16 * randi_range(0, 1), 0, 16, 16)
+
 func _input(event):
 	if event is InputEventMouseButton:
 		if event.is_pressed() && mouse_in:
