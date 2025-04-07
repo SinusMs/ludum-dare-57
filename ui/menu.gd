@@ -32,11 +32,23 @@ func _on_stash_button_button_down() -> void:
 	var picked_up_item : ItemBase
 	if Utils.currently_selected_item == null:
 		return
+	
+	#Play sound and particles
+	level.item_play_sound("")
+	level._spawn_particles(Utils.currently_selected_item)
+	
+	#spawn children
 	var has_children : bool = level._spawn_children(Utils.currently_selected_item)
 	if !has_children:
+		#play shrinking animation
+		Utils.currently_selected_item.pivot_offset = Utils.currently_selected_item.mittelpunkt
+		Utils.currently_selected_item.anim.play("hide")
+		await get_tree().create_timer(.1).timeout
+		
 		Utils.found_items+=1
 		picked_up_item = Utils.currently_selected_item.duplicate()
-	level._spawn_particles(Utils.currently_selected_item)
+	
+	#delete item
 	Utils.currently_selected_item.queue_free()
 	Utils.currently_selected_item = null
 	SignalBus.item_changed.emit("")
