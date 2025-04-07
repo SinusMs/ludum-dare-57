@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://clit3qrorn30j"]
+[gd_scene load_steps=8 format=3 uid="uid://clit3qrorn30j"]
 
 [ext_resource type="Script" uid="uid://bdqd4ww51i7pc" path="res://entities/item_base.gd" id="1_yh0nf"]
 
@@ -43,9 +43,13 @@ tracks/0/keys = {
 "values": [Vector2(1, 1), Vector2(0, 0)]
 }
 
+[sub_resource type="Animation" id="Animation_mto2k"]
+resource_name = "door"
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_mto2k"]
 _data = {
 &"RESET": SubResource("Animation_gk2da"),
+&"door": SubResource("Animation_mto2k"),
 &"hide": SubResource("Animation_yh0nf")
 }
 
