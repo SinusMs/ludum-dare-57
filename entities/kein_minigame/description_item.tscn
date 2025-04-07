@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_uayka"]
 [ext_resource type="AudioStream" uid="uid://dqvhkvfmkngji" path="res://assets/sfx/raschel.wav" id="2_6a4d7"]
 
-[node name="ItemBase" instance=ExtResource("1_uayka")]
+[node name="ItemBase2" instance=ExtResource("1_uayka")]
 item_name = "OH NO!"
 description = "Cleanup the trash to continue"
 sound = ExtResource("2_6a4d7")
