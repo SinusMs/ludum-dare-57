@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://c08shw21cmao6"]
+[gd_scene load_steps=6 format=3 uid="uid://c08shw21cmao6"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_1ho2u"]
+[ext_resource type="AudioStream" uid="uid://bnpb8e5pnttun" path="res://assets/sfx/paper_stack.wav" id="2_7scju"]
 [ext_resource type="Texture2D" uid="uid://iqfyglyikj08" path="res://assets/items/diary.png" id="2_lgdp0"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7scju"]
@@ -12,7 +13,9 @@ atlas = ExtResource("2_lgdp0")
 region = Rect2(0, 32, 32, 32)
 
 [node name="Diary" instance=ExtResource("1_1ho2u")]
+description = "Monday, 07.04.: I went to my first therapy session today. I feel like I opened pandoras box, but I feel somewhat better. I just kept talking and talking and talking and suddenly the time was up. I hadn't been aware I was even able to talk that much... \"Huh, he never told me he went to therapy.\""
 type = 1
+sound = ExtResource("2_7scju")
 
 [node name="Schatten" parent="." index="0"]
 offset_top = 3.0

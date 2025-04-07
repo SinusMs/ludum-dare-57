@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bsdo1etebyq8m"]
+[gd_scene load_steps=6 format=3 uid="uid://bks07ofetfbrm"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_127pp"]
 [ext_resource type="Texture2D" uid="uid://56qadasx5y2i" path="res://assets/items/pizza_cartons.png" id="2_51mvw"]
+[ext_resource type="AudioStream" uid="uid://flux4p1tccor" path="res://assets/sfx/karton_click.wav" id="2_lhvbw"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lhvbw"]
 atlas = ExtResource("2_51mvw")
@@ -12,6 +13,10 @@ atlas = ExtResource("2_51mvw")
 region = Rect2(0, 32, 32, 32)
 
 [node name="PizzaCartons" instance=ExtResource("1_127pp")]
+item_name = "Pizza Cartons"
+description = "\"All vegetarian, of course. I always found his refusal to eat meat pretty silly.\""
+type = 1
+sound = ExtResource("2_lhvbw")
 
 [node name="Schatten" parent="." index="0"]
 offset_top = 8.0

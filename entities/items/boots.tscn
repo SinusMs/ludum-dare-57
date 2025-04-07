@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://baeir6blawq7m"]
+[gd_scene load_steps=6 format=3 uid="uid://baeir6blawq7m"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_q840x"]
 [ext_resource type="Texture2D" uid="uid://dfg3dqt3dabvb" path="res://assets/items/boots.png" id="2_4tx6c"]
+[ext_resource type="AudioStream" uid="uid://t4iceuciow3b" path="res://assets/sfx/bonk.wav" id="2_cgw6p"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cgw6p"]
 atlas = ExtResource("2_4tx6c")
@@ -12,7 +13,10 @@ atlas = ExtResource("2_4tx6c")
 region = Rect2(0, 64, 64, 64)
 
 [node name="Boots" instance=ExtResource("1_q840x")]
+item_name = "Hiking Boots"
+description = "\"All of the hiking tours we did together were so long we both had to push ourselves to our physical limit. We always felt like we were the greatest when we fought through and made it to our destination.\""
 type = 1
+sound = ExtResource("2_cgw6p")
 
 [node name="Schatten" parent="." index="0"]
 offset_left = 8.0

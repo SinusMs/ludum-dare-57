@@ -14,8 +14,8 @@ region = Rect2(0, 32, 0, 32)
 
 [node name="Gameboy" instance=ExtResource("1_nv7c3")]
 item_name = "Old Console"
-description = "\"I don't get why he wasted so much time with this thing!\""
-type = 2
+description = "\"He spent hours staring at that screen. What a pity... Over the years he secluded himself more and more from me by playing video games.\""
+type = 1
 sound = ExtResource("2_0o22r")
 
 [node name="Schatten" parent="." index="0"]
