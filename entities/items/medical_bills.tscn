@@ -13,9 +13,9 @@ atlas = ExtResource("2_7k3qw")
 region = Rect2(0, 32, 32, 32)
 
 [node name="MedicalBills" instance=ExtResource("1_npwgq")]
-item_name = "Medical Bills"
-description = "phew...  whoever had to pay these had to spend a fortune"
-type = 1
+item_name = "Newspaper"
+description = "White House Threatens to do Stuff because Markets do Things..."
+type = 3
 sound = ExtResource("2_xp6w3")
 
 [node name="Schatten" parent="." index="0"]

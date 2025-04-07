@@ -18,8 +18,9 @@ offset_top = 1.0
 offset_right = 1.0
 offset_bottom = 1.0
 item_name = "Room Door"
-description = "\"Let's finally clean this room.\""
+description = "\"Okay, today is the day. I avoided clearing out his old room and it has kind of become a storage room. This is gonna be tough.\""
 labelText = "Open"
+type = 4
 sound = ExtResource("2_yxter")
 
 [node name="Sprite" parent="." index="1"]

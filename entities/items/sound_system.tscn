@@ -14,8 +14,8 @@ region = Rect2(0, 64, 64, 64)
 
 [node name="SoundSystem" instance=ExtResource("1_kwqwx")]
 item_name = "Sound System"
-description = "quite the collection of speakers"
-rarity = 3
+description = "\"I never knew what to say when he made me listen to that stuff. I just didn't enjoy it at all.\""
+type = 1
 sound = ExtResource("2_6bs2d")
 
 [node name="Schatten" parent="." index="0"]

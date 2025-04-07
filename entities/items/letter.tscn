@@ -15,7 +15,7 @@ region = Rect2(0, 32, 32, 32)
 
 [node name="Letter" instance=ExtResource("1_kdwnk")]
 item_name = "Letter"
-description = "What might be written in there????"
+description = "\"What might be written in there?\""
 labelText = "Open"
 type = 4
 children = Dictionary[PackedScene, Vector2]({

@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://rqgr3k7lr4pf"]
+[gd_scene load_steps=6 format=3 uid="uid://rqgr3k7lr4pf"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_i64bq"]
+[ext_resource type="AudioStream" uid="uid://dqvhkvfmkngji" path="res://assets/sfx/raschel.wav" id="2_3wheg"]
 [ext_resource type="Texture2D" uid="uid://ds0vna43csycn" path="res://assets/items/degree.png" id="2_flpd0"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3wheg"]
@@ -12,7 +13,10 @@ atlas = ExtResource("2_flpd0")
 region = Rect2(0, 32, 32, 32)
 
 [node name="Degree" instance=ExtResource("1_i64bq")]
+item_name = "Degree"
+description = "\"I wish I could have given him more guidance in life, but this computer stuff is just... too much for me. I just don´t get it.\""
 type = 1
+sound = ExtResource("2_3wheg")
 
 [node name="Sprite" parent="." index="1"]
 texture = SubResource("AtlasTexture_3wheg")

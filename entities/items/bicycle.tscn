@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://dcra3b1uv2rm5"]
+[gd_scene load_steps=6 format=3 uid="uid://dcra3b1uv2rm5"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_pxuw1"]
 [ext_resource type="Texture2D" uid="uid://b3tk50qw0u5xb" path="res://assets/items/bycicle.png" id="2_po7yn"]
+[ext_resource type="AudioStream" uid="uid://rclatapr1dbn" path="res://assets/sfx/stone_bonk.wav" id="2_urvkd"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_urvkd"]
 atlas = ExtResource("2_po7yn")
@@ -12,7 +13,10 @@ atlas = ExtResource("2_po7yn")
 region = Rect2(0, 35, 64, 35)
 
 [node name="Bicycle" instance=ExtResource("1_pxuw1")]
+item_name = "Bike"
+description = "\"His old bicycle... We used to spend countless hours riding and tinkering with our bikes. I wonder if he misses that too.\""
 type = 1
+sound = ExtResource("2_urvkd")
 
 [node name="Schatten" parent="." index="0"]
 offset_left = -11.0
