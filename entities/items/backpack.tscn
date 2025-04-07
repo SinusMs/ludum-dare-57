@@ -14,7 +14,7 @@ region = Rect2(0, 64, 64, 64)
 
 [node name="Backpack" instance=ExtResource("1_0wo01")]
 item_name = "Backpack"
-description = "\"It's been years since he last used this. I wonder if there still is anything inside.\""
+description = "\"This bag has seen better days for sure. I wonder if there's  anything inside.\""
 labelText = "Open"
 type = 4
 sound = ExtResource("2_q37bs")

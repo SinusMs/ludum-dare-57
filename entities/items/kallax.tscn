@@ -14,7 +14,7 @@ region = Rect2(0, 160, 0, 160)
 
 [node name="Kallax" instance=ExtResource("1_emgyx")]
 item_name = "Shelf"
-description = "\"It was cheap but it's not very pretty...\""
+description = "A shelf by some famous furniture company."
 sound = ExtResource("2_q6xnh")
 
 [node name="Schatten" parent="." index="0"]

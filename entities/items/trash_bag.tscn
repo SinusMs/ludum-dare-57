@@ -13,8 +13,9 @@ atlas = ExtResource("2_kgjq5")
 region = Rect2(0, 64, 64, 64)
 
 [node name="TrashBag" instance=ExtResource("1_c3l0l")]
-item_name = "Trashbag"
-description = "uhh stinky"
+item_name = "Trash Bag"
+description = "\"Judging by the smell, I don't want to know what's inside.\""
+labelText = "Throw away"
 sound = ExtResource("2_n7hhi")
 
 [node name="Schatten" parent="." index="0"]

@@ -14,7 +14,8 @@ region = Rect2(0, 32, 32, 32)
 
 [node name="WeirdStone" instance=ExtResource("1_ic0uq")]
 item_name = "Odd Stone"
-description = "Are there coming noises out of it??"
+description = "\"Are there coming voices out of it??\""
+labelText = "Store"
 type = 2
 sound = ExtResource("2_gs3oc")
 
