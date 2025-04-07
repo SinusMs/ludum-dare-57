@@ -30,7 +30,7 @@ func change_item(newLabelText: String) -> void:
 
 func _on_stash_button_button_down() -> void:
 	var picked_up_item : ItemBase
-	if Utils.currently_selected_item == null || Utils.currently_selected_item.type == Utils.TYPE.BOX:
+	if Utils.currently_selected_item == null:
 		return
 	var has_children : bool = level._spawn_children(Utils.currently_selected_item)
 	if !has_children:

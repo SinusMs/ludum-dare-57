@@ -18,6 +18,9 @@ func _on_item_picked_up(item: ItemBase) -> void:
 	
 func _on_toggle_achievements() -> void:
 	if $".".visible:
+		$"AnimationPlayer".play("hide")
+		await $"AnimationPlayer".animation_finished
 		$".".hide()
 	else:
 		$".".show()
+		$"AnimationPlayer".play("show")

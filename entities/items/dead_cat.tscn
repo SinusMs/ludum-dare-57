@@ -13,10 +13,10 @@ atlas = ExtResource("2_nil11")
 region = Rect2(0, 48, 48, 48)
 
 [node name="DeadCat" instance=ExtResource("1_7nj72")]
-description = "Guppy! There you are! 
-Are you alright?
+description = "\"His cat Guppy! There you are! 
+Hey cutie, are you alright?\"
 
-..."
+\"oh...\""
 type = 2
 sound = ExtResource("2_ny5n0")
 
