@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://vbbvimmv2tq2"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_iff2p"]
+[ext_resource type="AudioStream" uid="uid://rclatapr1dbn" path="res://assets/sfx/stone_bonk.wav" id="2_6mshg"]
+[ext_resource type="Texture2D" uid="uid://b4jcdd1rngcue" path="res://assets/items/phone.png" id="3_14jip"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_10ul6"]
+atlas = ExtResource("3_14jip")
+region = Rect2(0, 0, 0, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yb12q"]
+atlas = ExtResource("3_14jip")
+region = Rect2(0, 32, 0, 32)
+
+[node name="phone" instance=ExtResource("1_iff2p")]
+item_name = "broken phone"
+sound = ExtResource("2_6mshg")
+
+[node name="Schatten" parent="." index="0"]
+offset_left = -6.0
+offset_top = 46.0
+offset_right = 58.0
+offset_bottom = 110.0
+scale = Vector2(0.709604, 0.30151)
+
+[node name="Sprite" parent="." index="1"]
+texture = SubResource("AtlasTexture_10ul6")
+
+[node name="Highlight" parent="." index="2"]
+texture = SubResource("AtlasTexture_yb12q")
+
+[node name="Mittelpunkt" parent="." index="3"]
+position = Vector2(16, 29)
+
+[node name="CollisionPolygon2D" parent="." index="4"]
+polygon = PackedVector2Array(-1, 1, 33, 1, 33, 57, -1, 57)
