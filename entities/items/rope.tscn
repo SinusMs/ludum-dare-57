@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://blfw4433h4rjx"]
+[gd_scene load_steps=6 format=3 uid="uid://d3p7ky3gu36d0"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_0nr22"]
 [ext_resource type="AudioStream" uid="uid://dqvhkvfmkngji" path="res://assets/sfx/raschel.wav" id="2_662da"]
@@ -14,7 +14,7 @@ region = Rect2(0, 64, 64, 64)
 
 [node name="Rope" instance=ExtResource("1_0nr22")]
 item_name = "Rope"
-description = "What could it be used for??"
+description = "\"I used to teach him loads of knots. This one has always been his favourite.\""
 type = 3
 sound = ExtResource("2_662da")
 

@@ -14,7 +14,7 @@ region = Rect2(0, 32, 32, 32)
 
 [node name="Canned_SPAM" instance=ExtResource("1_2vavn")]
 item_name = "SPAM"
-description = "yummy"
+description = "You can never be too prepared for the apocalypse!"
 type = 3
 sound = ExtResource("2_5ydnb")
 

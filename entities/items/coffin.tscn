@@ -15,8 +15,8 @@ region = Rect2(0, 64, 128, 64)
 
 [node name="Coffin" instance=ExtResource("1_tiabs")]
 item_name = "Coffin"
-description = "What could be in there?
-could it be.."
+description = "\"What could be in there?
+could it be...\""
 labelText = "Open"
 type = 4
 children = Dictionary[PackedScene, Vector2]({

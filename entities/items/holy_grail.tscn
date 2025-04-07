@@ -14,8 +14,7 @@ region = Rect2(0, 32, 32, 32)
 
 [node name="HolyGrail" instance=ExtResource("1_i3bav")]
 item_name = "Holy Grail"
-description = "there even is some kind of liquid in there
-i have the strong urge to taste it"
+description = "\"Tastes like water.\""
 labelText = "Drink"
 type = 2
 sound = ExtResource("2_1eju3")

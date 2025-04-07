@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://4k2ur0vm0hif"]
+[gd_scene load_steps=6 format=3 uid="uid://wydwtx36e8yl"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_cf6b8"]
 [ext_resource type="AudioStream" uid="uid://cfykc4qgxrinm" path="res://assets/sfx/pop.wav" id="2_671wh"]
@@ -15,7 +15,7 @@ region = Rect2(0, 17, 0, 17)
 [node name="Embryo" instance=ExtResource("1_cf6b8")]
 item_name = "Embryo"
 description = "\"I think it's finally ripe.\""
-labelText = "Sell"
+labelText = "Eat"
 type = 3
 sound = ExtResource("2_671wh")
 

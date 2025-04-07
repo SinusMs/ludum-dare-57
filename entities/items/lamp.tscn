@@ -14,7 +14,7 @@ region = Rect2(0, 32, 32, 32)
 
 [node name="Lamp" instance=ExtResource("1_xef6r")]
 item_name = "Lamp"
-description = "just a normal lamp"
+description = "\"It always made this annoying sound. When it broke, I finally felt peace at the silence of that lamp.\""
 sound = ExtResource("2_ibix0")
 
 [node name="Schatten" parent="." index="0"]

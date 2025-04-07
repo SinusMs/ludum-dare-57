@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://3t18nkvur3j0"]
+[gd_scene load_steps=6 format=3 uid="uid://bml3qrimjf6g7"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_8fkem"]
 [ext_resource type="AudioStream" uid="uid://t4iceuciow3b" path="res://assets/sfx/bonk.wav" id="2_c42hn"]
@@ -14,8 +14,7 @@ region = Rect2(0, 128, 0, 128)
 
 [node name="punching_bag" instance=ExtResource("1_8fkem")]
 item_name = "Old Punching Bag"
-description = "\"It was already used when we bought it. A few punches will probably kill it for good\"."
-type = 1
+description = "\"It was already used when we bought it. A few more punches and it will suffer utter defeat.\""
 sound = ExtResource("2_c42hn")
 
 [node name="Schatten" parent="." index="0"]

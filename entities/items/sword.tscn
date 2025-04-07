@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://c82l1lxgjjgtj"]
+[gd_scene load_steps=6 format=3 uid="uid://c82l1lxgjjgtj"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_wp77e"]
 [ext_resource type="Texture2D" uid="uid://2fdk4ehskyfu" path="res://assets/items/sword.png" id="2_6yp1d"]
+[ext_resource type="AudioStream" uid="uid://bms0gea4l08rx" path="res://assets/sfx/klirr_lang.wav" id="2_gtidd"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gtidd"]
 atlas = ExtResource("2_6yp1d")
@@ -12,7 +13,10 @@ atlas = ExtResource("2_6yp1d")
 region = Rect2(0, 32, 32, 32)
 
 [node name="ItemBase" instance=ExtResource("1_wp77e")]
+item_name = "Sword"
+description = "It is too small to be called a sword. Wimpy, thin and far too dull. Indeed, it is nothing more than a toothpick."
 type = 3
+sound = ExtResource("2_gtidd")
 
 [node name="Schatten" parent="." index="0"]
 offset_top = 34.0

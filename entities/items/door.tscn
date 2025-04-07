@@ -13,12 +13,8 @@ atlas = ExtResource("3_xdkir")
 region = Rect2(0, 320, 0, 320)
 
 [node name="door" instance=ExtResource("1_juiyo")]
-offset_left = 1.0
-offset_top = 1.0
-offset_right = 1.0
-offset_bottom = 1.0
 item_name = "Room Door"
-description = "\"Okay, today is the day. I avoided clearing out his old room and it has kind of become a storage room. This is gonna be tough.\""
+description = "\"Okay, today is the day. I avoided clearing out his old room and it has kind of become a storage room filled with all kind of junk. This is gonna be tough.\""
 labelText = "Open"
 type = 4
 sound = ExtResource("2_yxter")
@@ -33,5 +29,4 @@ texture = SubResource("AtlasTexture_a17xs")
 position = Vector2(282, 303)
 
 [node name="CollisionPolygon2D" parent="." index="4"]
-position = Vector2(229, 156)
-polygon = PackedVector2Array(-68, -61, -53, 376, 140, 377, 155, -62)
+polygon = PackedVector2Array(160, 94, 174, 532, 370, 532, 384, 94)

@@ -14,8 +14,8 @@ region = Rect2(0, 32, 32, 32)
 
 [node name="ToiletPaper" instance=ExtResource("1_ffmh2")]
 item_name = "Toilet Paper"
-description = "always nice to have a backup"
-rarity = 3
+description = "Always nice to have a backup."
+labelText = "Use"
 sound = ExtResource("2_p7hgo")
 
 [node name="Schatten" parent="." index="0"]

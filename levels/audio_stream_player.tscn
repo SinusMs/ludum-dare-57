@@ -1,0 +1,4 @@
+[gd_scene format=3 uid="uid://b0o5camwh1t1j"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+max_polyphony = 10

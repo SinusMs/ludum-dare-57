@@ -14,7 +14,9 @@ region = Rect2(0, 32, 32, 32)
 
 [node name="RubberDuck" instance=ExtResource("1_atk2d")]
 item_name = "Rubber Duck"
-description = "\"Quack\""
+description = "Programmer: \"I explained my code to the rubber duck and it still didn’t work.\"
+Duck: \"Quack. That’s not the bug. You just suck.\""
+labelText = "Quack"
 sound = ExtResource("2_s24y5")
 
 [node name="Schatten" parent="." index="0"]

@@ -11,11 +11,12 @@ extends Control
 @export var dependencies: Array[ItemBase]
 var mittelpunkt : Vector2
 var isHighlighted : bool = false
+var anim : AnimationPlayer
 
 func _ready() -> void:
 	$Highlight.hide()
 	mittelpunkt = %Mittelpunkt.position
-	
+	anim = $AnimationPlayer
 	#ausdehnung der parent control node setzen für scrollcontainer
 	$".".custom_minimum_size = 2*Vector2($Sprite.texture.get_width(), $Sprite.texture.get_height())
 

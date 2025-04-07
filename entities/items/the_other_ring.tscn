@@ -13,12 +13,9 @@ atlas = ExtResource("2_pbikd")
 region = Rect2(0, 32, 0, 32)
 
 [node name="TheOtherRing" instance=ExtResource("1_p0mp5")]
-item_name = "One Ring"
-description = "Is that my Mom's wedding ring? Why is it here?
-There's an inscription on it:
-\"One Ring to be alone no more, One Ring to tie them;
-One Ring to bring them together and in marriage bind them.\""
-labelText = "Put on"
+item_name = "The One Ring"
+description = "Only fire will reveal whats inscripted."
+labelText = "briefly put on"
 type = 2
 sound = ExtResource("2_jor3n")
 

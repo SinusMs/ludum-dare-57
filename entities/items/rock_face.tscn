@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://b5xauaved37u8"]
+[gd_scene load_steps=6 format=3 uid="uid://5henor46r6mc"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_7gylb"]
 [ext_resource type="AudioStream" uid="uid://rclatapr1dbn" path="res://assets/sfx/stone_bonk.wav" id="2_c26lm"]
@@ -14,8 +14,8 @@ region = Rect2(0, 0, 64, 64)
 
 [node name="RockFace" instance=ExtResource("1_7gylb")]
 item_name = "Rock that looks like a Face"
-description = "Is it a rock or ist it a face?
-I think its a metaphor!"
+description = "\"Is it a rock or is it a face?
+I think it's a metaphor!\""
 type = 2
 sound = ExtResource("2_c26lm")
 
